@@ -5,7 +5,7 @@ import "../styles/PartnersSection.css";
 import godaddy from "../assets/images/Godaddy-logo.png";
 import shopify from "../assets/images/shopify.png";
 import shipium from "../assets/images/shiviom.png";
-import meta from "../assets/images/Meta.png";
+import meta from "../assets/images/meta.png";
 import wordpress from "../assets/images/wordpress.png";
 import googleads from "../assets/images/googleads.png";
 import resellerclub from "../assets/images/club.png";
