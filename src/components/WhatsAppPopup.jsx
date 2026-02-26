@@ -1,69 +1,24 @@
-import React, { useState } from "react";
-import "../styles/whatsappPopup.css";   // correct path
+import React from "react";
+import "../styles/whatsappPopup.css";
 
 const WhatsAppPopup = () => {
-  const [open, setOpen] = useState(false);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [msg, setMsg] = useState("");
 
-  const whatsappNumber = "919999999999"; // replace with your number
+  const phoneNumber = "917480860225";
 
-  const sendMessage = () => {
-    if (!name || !phone || !msg) {
-      alert("Please fill all fields");
-      return;
-    }
+  const message = `Hi Teejasoft Team 👋
+I visited your website and I’m interested in your services.
+Please assist me with more details.`;
 
-    const text = `Name: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  const handleClick = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 
   return (
-    <>
-      {/* Floating Button */}
-      <div className="whatsapp-float" onClick={() => setOpen(true)}>
-        <i className="fa-brands fa-whatsapp"></i>
-      </div>
-
-      {/* Popup Overlay */}
-      {open && (
-        <div className="wa-popup-overlay">
-          <div className="wa-popup">
-            <div className="wa-popup-header">
-              <h4>Chat with us</h4>
-              <button className="wa-close" onClick={() => setOpen(false)}>
-                ×
-              </button>
-            </div>
-
-            <div className="wa-popup-body">
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <input
-                type="text"
-                placeholder="Phone Number"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
-              <textarea
-                placeholder="Type your message..."
-                value={msg}
-                onChange={(e) => setMsg(e.target.value)}
-              />
-              <button className="wa-send" onClick={sendMessage}>
-                Send on WhatsApp
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-    </>
+    <div className="wa-float" onClick={handleClick}>
+      <i className="fa-brands fa-whatsapp"></i>
+      <span className="wa-text">Chat With Us</span>
+    </div>
   );
 };
 

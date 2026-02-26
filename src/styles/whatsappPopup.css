@@ -1,111 +1,75 @@
-/* Floating Button */
+/* ================= PREMIUM FLOAT BUTTON ================= */
+
 .whatsapp-float {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 60px;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
   height: 60px;
-  background: #25D366;
-  color: #fff;
-  border-radius: 50%;
+  min-width: 60px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  cursor: pointer;
   z-index: 9999;
-  cursor: pointer;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
-  animation: pulse 1.8s infinite;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.05);
-}
-
-/* Popup Overlay */
-.wa-popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  z-index: 99999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Popup Box */
-.wa-popup {
-  width: 360px;
-  background: #fff;
-  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  padding: 0 18px;
+  animation: waPulse 2s infinite;
 }
 
-/* Header */
-.wa-popup-header {
-  background: #25D366;
-  color: #fff;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* ICON */
+.whatsapp-float i {
+  font-size: 26px;
 }
 
-.wa-popup-header h4 {
-  margin: 0;
-  font-size: 18px;
+/* HOVER EXPAND */
+.whatsapp-float:hover {
+  min-width: 190px;
+  border-radius: 40px;
 }
 
-.wa-close {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* Body */
-.wa-popup-body {
-  padding: 15px;
-}
-
-.wa-popup-body input,
-.wa-popup-body textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.wa-popup-body textarea {
-  resize: none;
-  height: 80px;
-}
-
-/* Send Button */
-.wa-send {
-  width: 100%;
-  padding: 12px;
-  background: #25D366;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
+/* TEXT */
+.whatsapp-float::after {
+  content: "Chat With Us";
+  margin-left: 10px;
+  font-size: 14px;
   font-weight: 600;
-  cursor: pointer;
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.3s ease;
 }
 
-.wa-send:hover {
-  background: #1ebe5d;
+.whatsapp-float:hover::after {
+  opacity: 1;
 }
 
-/* Responsive */
+/* PULSE ANIMATION */
+@keyframes waPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37,211,102,0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37,211,102,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37,211,102,0);
+  }
+}
+
+/* MOBILE */
 @media(max-width: 480px) {
-  .wa-popup {
-    width: 90%;
+  .whatsapp-float {
+    height: 55px;
+    min-width: 55px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float i {
+    font-size: 22px;
   }
 }
