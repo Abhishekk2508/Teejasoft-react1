@@ -1,0 +1,41 @@
+.web-container {
+  padding: 80px 10%;
+  background: #f4f6fc;
+  text-align: center;
+}
+
+.web-container h1 {
+  font-size: 42px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.web-container p {
+  font-size: 18px;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.web-tech {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.web-tech span {
+  padding: 10px 20px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.web-tech span:hover {
+  background: #34495e;
+  transform: scale(1.05);
+}

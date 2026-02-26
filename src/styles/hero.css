@@ -1,0 +1,357 @@
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 800px; /* LOCKED for desktop */
+  display: grid;
+  grid-template-columns: 58% 42%;
+  overflow: hidden;
+}
+
+/* ================= MAIN RIGHT → LEFT GRADIENT ================= */
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    270deg,
+    #1C1A1A 37.02%,
+    rgba(28, 26, 26, 0.78) 51.44%,
+    rgba(28, 26, 26, 0) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ================= BOTTOM GRADIENT ================= */
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 152px;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 26, 26, 0) 0%,
+    #1C1A1A 85.57%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* ================= LEFT IMAGE ================= */
+
+.hero-left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= RIGHT CONTENT ================= */
+
+.hero-right {
+  padding: 100px 180px 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+  margin-left: -93px;
+}
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .hero-right {
+    margin-left: -60px;
+    padding: 80px 120px 80px 0;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero-right {
+    margin-left: -30px;
+    padding: 60px 60px 60px 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-right {
+    margin-left: 0; /* reset */
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* ================= HERO BADGE ================= */
+
+.hero-badge {
+  width: 282px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background: #371B0AED;
+  border-radius: 21px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+
+  margin-bottom: 24px;
+
+  /* hover prep */
+  cursor: pointer;
+  transition: 
+    background 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* ✨ Hover effect */
+.hero-badge:hover {
+  background: linear-gradient(270deg, #994D17 0%, #CB6520 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(203, 101, 32, 0.45);
+}
+
+
+/* ================= ROCKET ICON ================= */
+
+.rocket-icon {
+  font-size: 16px;
+  background: linear-gradient(135deg, #ff7a18, #ffdd00, #ff4e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: rocketFloat 2.5s ease-in-out infinite;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.hero-badge:hover .rocket-icon {
+  transform: translateY(-8px) rotate(-15deg) scale(1.15);
+  filter: drop-shadow(0 6px 12px rgba(255, 122, 24, 0.6));
+}
+
+/* ================= HEADING ================= */
+
+.hero-right h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 66px;
+  line-height: 70px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero-right h1 span {
+  color: #CB6520;
+}
+
+/* ================= PARAGRAPH ================= */
+
+
+.hero-right p {
+    max-width: 713px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: rgba(143, 150, 163, 1);
+    margin-bottom: 36px;
+    text-align: justify;
+}
+/* ================= BUTTONS ================= */
+
+.hero-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  width: 260px;
+  height: 54px;
+
+  border-radius: 49px;
+  background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  width: 216px;
+  height: 54px;
+
+  border-radius: 49px;
+  background: #ffffff;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #AD561B;
+
+  border: none;
+  cursor: pointer;
+}
+.btn-primary,
+.btn-secondary {
+  transition: all 0.35s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: linear-gradient(270deg, #994D17 0%, #CB6520 100%);
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.btn-primary:active,
+.btn-secondary:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes rocketFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* ================= RESPONSIVE START AFTER 1500px ================= */
+
+@media (max-width: 1499px) {
+  .hero-right {
+    padding: 80px 100px 80px 0;
+  }
+
+  .hero-right h1 {
+    font-size: 52px;
+    line-height: 58px;
+  }
+
+  .hero-right p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero-left img {
+    /* height: 420px; */
+  }
+
+  .hero-right {
+    padding: 40px 25px;
+  }
+
+  .hero-right h1 {
+    font-size: 42px;
+    line-height: 48px;
+            color: #000;
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  }
+
+ .hero-right p {
+        font-size: 16px;
+        text-align: center;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .hero-btns {
+        flex-direction: column;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .hero-badge {
+        width: auto;
+        height: auto;
+        padding: 10px 16px;
+        font-size: 13px;
+        border-radius: 20px;
+        gap: 6px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .hero-badge {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+  .hero-right h1 {
+    font-size: 32px;
+    line-height: 38px;
+    color: #000;
+  }
+
+  .hero-right p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+}
+/* Remove left gradient only on small screens (mobile/tablet) */
+@media (max-width: 991px) {
+  .hero-section::before {
+    background: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    .hero-btns {
+        flex-direction: column; /* stack buttons vertically */
+        align-items: center;    /* center horizontally */
+        gap: 15px;              /* thoda kam gap for tablet */
+    }
+}

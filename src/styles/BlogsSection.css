@@ -1,0 +1,375 @@
+/* .blog-section {
+  background: rgba(28, 26, 26, 1);
+  padding: clamp(60px, 6vw, 120px) 5%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+} */
+.blog-section {
+  background: rgba(28, 26, 26, 1);
+  padding: clamp(18px, 2.5vw, 44px) 5%; /* SAME VERTICAL SPACING */
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* ---------------- TITLES ---------------- */
+
+.blog-subtitle {
+  color: #AD561B;
+  font-weight: 500;
+  font-size: clamp(16px, 1.2vw, 22px);
+}
+
+.blog-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: clamp(28px, 2.6vw, 46px);
+}
+
+.blog-desc {
+  color: #8F96A3;
+  font-size: clamp(14px, 1.1vw, 20px);
+  margin: 12px auto clamp(40px,4vw,60px);
+  max-width: 800px;
+}
+
+/* ---------------- GRID ---------------- */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 26vw, 503px), 1fr));
+  gap: clamp(20px, 2vw, 35px);
+  justify-content: center;
+}
+
+/* ---------------- CARD ---------------- */
+
+.blog-card {
+  background: #16202E;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px solid transparent;
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  border: 1.5px solid #9A4E17;
+  transform: translateY(-8px);
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.blog-img-wrapper {
+  position: relative;
+  aspect-ratio: 503/244;
+  overflow: hidden;
+}
+
+.blog-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* gradient overlay like image */
+.blog-img-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0) 40%,
+    rgba(0,0,0,0.75) 100%
+  );
+}
+
+.blog-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #CB6520;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 12px;
+  z-index: 2;
+      padding: 7px 20px;
+      box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.3);
+
+ 
+}
+
+/* ---------------- CONTENT ---------------- */
+
+.blog-content {
+  padding: clamp(16px,1.4vw,24px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-content h3 {
+  color: #fff;
+  font-size: clamp(17px,1.3vw,24px);
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.blog-card:hover h3 {
+  color: #CB6520;
+}
+
+.blog-content p {
+  color: #8F96A3;
+  font-size: clamp(13px,0.9vw,16px);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.blog-footer span {
+  color: #9A4D17;
+  font-size: clamp(13px,0.9vw,16px);
+}
+
+.read-btn {
+  background: transparent;     /* no box */
+  border: none;
+  color: #CB6520;               /* orange text */
+  font-size: clamp(13px,0.9vw,16px);
+  cursor: pointer;
+  padding: 0;                   /* remove pill padding */
+  border-radius: 49px;
+  transition: all 0.3s ease;
+}
+.blog-card:hover .read-btn {
+  padding: 7px 22px;   /* pill appears */
+  color: #fff;
+  background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
+}
+.blog-card:hover .read-btn {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(203,101,32,0.3);
+}
+
+
+/* ---------------- VIEW BUTTON ---------------- */
+
+.view-btn {
+  margin-top: clamp(40px,4vw,40px);
+  padding: clamp(10px,1vw,14px) clamp(30px,2.5vw,50px);
+  border-radius: 49px;
+  border: none;
+  font-size: clamp(14px,1vw,18px);
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(270deg,#CB6520 0%,#994D17 100%);
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* 
+container :1920px; background :rgba(28, 26, 26, 1);
+
+Our Blogs
+width: 107;
+height: 27;
+angle: 0 deg;
+opacity: 1;
+top: 6673px;
+left: 907px;
+font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 22px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 2%;
+text-align: center;
+color:rgba(173, 86, 27, 1)
+
+Latest Insights & Articles
+width: 709;
+height: 55;
+angle: 0 deg;
+opacity: 1;
+top: 6725px;
+left: 606px;
+font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 46px;
+leading-trim: NONE;
+line-height: 52px;
+letter-spacing: 0%;
+text-align: center;
+color:rgba(255, 255, 255, 1);
+
+Stay updated with the latest trends, tips, and industry insights from our experts
+width: 802;
+height: 26;
+angle: 0 deg;
+opacity: 1;
+top: 6793px;
+left: 559px;
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+color:rgba(143, 150, 163, 1);
+
+blog-card properties:
+width: 503;
+height: 490;
+angle: 0 deg;
+opacity: 1;
+top: 6853px;
+left: 179px;
+border-radius: 16px;
+border-width: 1.5px;
+border: 1.5px solid rgba(154, 78, 23, 1);
+
+blog-img-wrapper img
+width: 503;
+height: 244;
+angle: 0 deg;
+opacity: 1;
+top: 6853px;
+left: 179px;
+
+10 Digital Marketing Trends for 2026
+width: 439;
+height: 33;
+angle: 0 deg;
+opacity: 1;
+top: 7133px;
+left: 211px;
+font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 23px;
+letter-spacing: 0%;
+background: rgba(255, 255, 255, 1);
+hover card par kre to ye krdo color:rgba(155, 78, 23, 1);
+
+
+Stay ahead of the curve with the latest digital marketing strategies that are transforming businesses...
+width: 423;
+height: 44;
+angle: 0 deg;
+opacity: 1;
+top: 7174px;
+left: 211px;
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 22px;
+letter-spacing: 0%;
+color:background: rgba(143, 150, 163, 1);
+
+horizontal line 
+
+width: 440.00000000000165;
+height: 0px;
+angle: 0 deg;
+opacity: 1;
+top: 7263px;
+left: 211px;
+border-width: 1px;
+border: 1px solid rgba(54, 65, 83, 1)
+
+5 min read
+width: 87;
+height: 16;
+angle: 0 deg;
+opacity: 1;
+top: 7282px;
+left: 211px;
+
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 16px;
+letter-spacing: 0%;
+color:rgba(153, 77, 23, 1);
+
+read more buttonwidth: 144;
+height: 31;
+angle: 0 deg;
+opacity: 1;
+top: 7274px;
+left: 507px;
+border-radius: 49px;
+background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
+
+
+Read More text
+width: 87;
+height: 16;
+angle: 0 deg;
+opacity: 1;
+top: 7282px;
+left: 522px;
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 16px;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+
+
+view all articles button
+width: 213;
+height: 48;
+angle: 0 deg;
+opacity: 1;
+top: 7383px;
+left: 854px;
+border-radius: 49px;
+background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
+
+text: View All Articles
+width: 146;
+height: 22;
+angle: 0 deg;
+opacity: 1;
+top: 7396px;
+left: 888px;
+font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 2%;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+
+
+jo mai diya hu wo 1920px ke screen ke according isko scale krte rhna according to screen size 320px to 1920px tak fully responisve */

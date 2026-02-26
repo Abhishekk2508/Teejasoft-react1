@@ -1,0 +1,141 @@
+.partners-section {
+  width: 100%;
+  background: #1C1A1A;
+  display: flex;
+  justify-content: center;
+  padding: clamp(18px, 2.5vw, 44px) 0;
+  overflow: hidden;
+}
+
+
+
+
+/* 
+.partners-section {
+  width: 100%;
+  background: #1C1A1A;
+  display: flex;
+  justify-content: center;
+  padding: clamp(28px, 4vw, 70px) 0;  /* FIXED */
+  /* overflow: hidden; */
+/* } */
+
+/* 170px side spacing at 1920 */
+.partners-container {
+  width: calc(100% - clamp(24px, 17.7vw, 340px));
+  max-width: 1580px;
+  text-align: center;
+}
+
+/* TEXT */
+.partners-subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: clamp(14px, 1.15vw, 22px);
+  letter-spacing: 0.02em;
+  color: #AD561B;
+  margin-bottom: clamp(10px, 1.2vw, 15px);
+}
+
+.partners-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 2.4vw, 46px);
+  line-height: clamp(30px, 2.7vw, 52px);
+  color: #fff;
+  margin-bottom: clamp(12px, 1.5vw, 18px);
+}
+
+.partners-desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.1vw, 20px);
+  line-height: clamp(18px, 1.4vw, 26px);
+  color: #8F96A3;
+  max-width: 802px;
+  margin: 0 auto clamp(40px, 5vw, 47px);
+}
+
+/* 🔥 ALWAYS 5 CARDS */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: clamp(8px, 1.8vw, 28px);
+}
+
+/* CARD */
+.partner-card {
+  width: 100%;
+  aspect-ratio: 297 / 96; /* keeps original design ratio */
+  min-width: 0; /* prevents overflow bug */
+  background: #1A2434E5;
+  border: 1px solid #FFFFFF66;
+  border-radius: clamp(8px, 1vw, 20px);
+  backdrop-filter: blur(5.3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.partner-card img {
+  max-width: 70%;
+  max-height: 60%;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: 0.4s ease;
+}
+
+.partner-card:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+.partner-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: #AD561B;
+  box-shadow: 0 0 20px rgba(173, 86, 27, 0.4);
+}
+
+.partner-card:hover img {
+  filter: grayscale(0%);
+}
+.partner-card {
+  width: 100%;
+  aspect-ratio: 297 / 96;
+  min-width: 0;
+  background: #1A2434E5;
+  border: 1px solid #FFFFFF66;
+  border-radius: clamp(8px, 1vw, 20px);
+  backdrop-filter: blur(5.3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+/* Logo */
+
+
+/* 🔥 Make cards bigger on smaller screens */
+@media (max-width: 768px) {
+  .partner-card {
+    aspect-ratio: 297 / 110; /* slightly taller */
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-card {
+    aspect-ratio: 297 / 130; /* noticeably taller for mobile */
+  }
+
+  .partner-card img {
+    max-height: 70%;
+  }
+}
+.partner-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: #AD561B;
+  box-shadow: 0 0 20px rgba(173, 86, 27, 0.4);
+}

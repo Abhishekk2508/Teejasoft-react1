@@ -1,0 +1,111 @@
+/* Floating Button */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  z-index: 9999;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+  animation: pulse 1.8s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+}
+
+/* Popup Overlay */
+.wa-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Box */
+.wa-popup {
+  width: 360px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Header */
+.wa-popup-header {
+  background: #25D366;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wa-popup-header h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.wa-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Body */
+.wa-popup-body {
+  padding: 15px;
+}
+
+.wa-popup-body input,
+.wa-popup-body textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.wa-popup-body textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Send Button */
+.wa-send {
+  width: 100%;
+  padding: 12px;
+  background: #25D366;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wa-send:hover {
+  background: #1ebe5d;
+}
+
+/* Responsive */
+@media(max-width: 480px) {
+  .wa-popup {
+    width: 90%;
+  }
+}

@@ -1,0 +1,744 @@
+/* ================= HERO SECTION ================= */
+.aboutpg-hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 320px;
+  max-height: 600px;
+  height: clamp(320px, 35vw, 600px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(28, 26, 26, 0.5) 0%, rgba(28, 26, 26, 0) 50%, rgba(28, 26, 26, 0.5) 86.06%, #1C1A1A 100%);
+
+}
+
+.aboutpg-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/aboutusbanner.jpg") center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+  /* initial state */
+  transform: translateY(120%) scale(0.8) rotate(-8deg);
+  opacity: 0;
+
+  /* animation */
+  animation: circularZoomLift 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* ================= KEYFRAMES ================= */
+@keyframes circularZoomLift {
+  0% {
+    transform: translateY(120%) scale(0.8) rotate(-8deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10%) scale(1.05) rotate(3deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(5%) scale(0.98) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0%) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+/* Inner wrapper max-width */
+.aboutpg-content {
+  width: 100%;
+  max-width: 1200px; /* adjust for large screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* ================= BADGE BUTTON ================= */
+.aboutpg-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 16px);
+  letter-spacing: 0.05em;
+  color: #fff;
+  border-radius: 25px;
+  background: rgba(55, 27, 10, 0.93);
+}
+
+/* ================= TITLE ================= */
+.aboutpg-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: clamp(24px, 6vw, 76px);
+  line-height: 1.1;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.aboutpg-title span {
+  color: #AD561B;
+}
+
+/* ================= SUBTITLE ================= */
+.aboutpg-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 20px);
+  line-height: 1.5;
+  color: rgba(191,195,204,1);
+  margin: 0;
+  max-width: 90%;
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+@media (max-width: 768px) {
+  .aboutpg-hero {
+    padding: 2rem 1rem;
+  }
+
+  .aboutpg-title {
+    font-size: clamp(20px, 8vw, 40px);
+  }
+
+  .aboutpg-subtitle {
+    font-size: clamp(12px, 4vw, 18px);
+  }
+
+  .aboutpg-badge {
+    font-size: clamp(10px, 3vw, 14px);
+    padding: 0.4em 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutpg-hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .aboutpg-title {
+    font-size: clamp(18px, 9vw, 30px);
+  }
+
+  .aboutpg-subtitle {
+    font-size: clamp(10px, 5vw, 16px);
+  }
+
+  .aboutpg-badge {
+    font-size: clamp(8px, 4vw, 12px);
+    padding: 0.3em 0.6em;
+  }
+}
+
+
+/* 2nd section */
+/* ================= WHO WE ARE ================= */
+.who-we-are {
+  width: 100%;
+  background: rgba(28, 26, 26, 1);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.who-container {
+  width: 100%;
+  max-width: 1920px;
+
+  /* Horizontal Padding: 320px pe 16px, 1920px pe 170px */
+  padding-inline: clamp(16px, 8.85vw, 170px);
+  
+  /* TOP PADDING KAM KIYA: 320px pe 20px, 1920px pe 50px */
+  /* Pehle ye 120px tak ja raha tha, ab max 50px rahega */
+  padding-top: clamp(20px, 3vw, 50px);
+  
+  /* Bottom Padding: Thoda balance rakhne ke liye */
+  padding-bottom: clamp(40px, 5vw, 80px);
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(32px, 5vw, 85px);
+  align-items: center;
+}
+
+/* Mobile (Tablet tak) ke liye Grid ko Stack karna zaroori hai */
+@media (max-width: 1024px) {
+  .who-container {
+    grid-template-columns: 1fr; /* Single column for mobile/tablet */
+    padding-top: clamp(15px, 4vw, 30px); /* Mobile pe aur bhi kam padding */
+    text-align: center;
+  }
+}
+/* ================= LEFT CONTENT ================= */
+
+.who-content {
+  max-width: 830px;
+}
+
+.who-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: clamp(13px, 1.15vw, 22px);
+  letter-spacing: 0.02em;
+  color: rgba(173, 86, 27, 1);
+  display: inline-block;
+  margin-bottom: clamp(12px, 1.6vw, 30px);
+}
+
+.who-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(26px, 3.125vw, 60px);
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: clamp(20px, 2.6vw, 50px);
+}
+
+.who-title span {
+  color: rgba(173, 86, 27, 1);
+}
+
+.who-content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.04vw, 20px);
+  line-height: 1.7;
+  color: rgba(143, 150, 163, 1);
+  margin-bottom: clamp(14px, 1.8vw, 28px);
+      text-align: justify;
+}
+
+/* ================= FEATURE BOXES ================= */
+
+.who-features {
+  display: flex;
+  gap: clamp(16px, 2.5vw, 40px);
+  margin-top: clamp(24px, 3vw, 48px);
+  flex-wrap: wrap;
+}
+
+.who-feature {
+  position: relative;
+  width: clamp(260px, 17vw, 326px);
+  min-height: 83px;
+  display: flex;
+  gap: 14px;
+  padding: 16px 16px 16px 22px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #121111 0%, #1C1A1A 100%);
+  align-items: center;
+  overflow: hidden;
+}
+
+.who-feature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 9px;
+  height: 100%;
+
+  background: rgba(173, 86, 27, 1);
+
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+
+.who-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  background: rgba(173, 86, 27, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.who-icon i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+.who-feature h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(15px, 1.04vw, 20px);
+  color: #ffffff;
+}
+
+.who-feature span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 0.9vw, 14px);
+  color: rgba(143, 150, 163, 1);
+}
+
+/* ================= RIGHT IMAGE ================= */
+
+.who-image {
+  position: relative;
+  max-width: 665px;
+  width: 100%;
+}
+
+.who-image img {
+  width: 100%;
+  height: auto;
+  border-radius: clamp(14px, 1.2vw, 20px);
+  display: block;
+  object-fit: cover;
+}
+
+/* ================= IMAGE BADGE ================= */
+
+.who-badge {
+  position: absolute;
+
+  /* 🔒 1920px par exact position */
+  left: clamp(-40px, -4.16vw, -80px);
+  bottom: clamp(-24px, -2.34vw, -45px);
+
+  width: clamp(150px, 12vw, 187px);
+  height: clamp(95px, 7vw, 119px);
+
+  background: linear-gradient(
+    278.86deg,
+    #9D4F17 27.56%,
+    #BE5E1D 91.25%
+  );
+
+  border-radius: clamp(10px, 1vw, 14px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.who-badge strong {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, 1.56vw, 30px);
+  color: #ffffff;
+}
+
+.who-badge span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 0.9vw, 14px);
+  color: #ffffff;
+  text-align: center;
+  margin-top: 6px;
+}
+.who-badge span {
+  display: block;
+  text-align: center;
+}
+
+.who-badge span::after {
+  content: "Rate";
+  display: block;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .who-container {
+    grid-template-columns: 1fr;
+  }
+
+  .who-image {
+    max-width: 100%;
+  }
+
+  .who-badge {
+        left: -29px;
+        bottom: -32px;
+        width: clamp(110px, 12vw, 187px);
+        height: clamp(65px, 7vw, 119px);
+    }
+    .who-badge strong{
+            font-size: clamp(14px, 1.56vw, 30px);
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+  .who-features {
+    flex-direction: column;
+  }
+
+  .who-feature {
+    width: 100%;
+  }
+}
+
+/* ================= PAGE LOAD ANIMATIONS ================= */
+
+/* 1. Left side se aane wala content (Text & Labels) */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 2. Right side se aane wala content (Image & Badge) */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 3. Niche se upar aane wale cards (Foundation Section) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= APPLYING TO WHO-WE-ARE ================= */
+
+.who-content {
+  animation: slideInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.who-image {
+  animation: slideInRight 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Features ko thoda delay se dikhana (Staggered effect) */
+.who-feature:nth-child(1) {
+  animation: fadeInUp 0.8s ease-out 0.8s backwards;
+}
+
+.who-feature:nth-child(2) {
+  animation: fadeInUp 0.8s ease-out 1s backwards;
+}
+
+/* Badge ko pop-in effect dena */
+@keyframes popIn {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.who-badge {
+  animation: popIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 1.2s backwards;
+}
+
+/* ================= APPLYING TO FOUNDATION SECTION ================= */
+
+.foundation-label, .foundation-title, .foundation-subtitle {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.foundation-card {
+  opacity: 0; /* Initial state */
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Cards ek-ek karke aayenge */
+.foundation-card:nth-child(1) { animation-delay: 0.3s; }
+.foundation-card:nth-child(2) { animation-delay: 0.5s; }
+.foundation-card:nth-child(3) { animation-delay: 0.7s; }
+
+/* Foundation Icon Floating Effect (Premium Touch) */
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.foundation-icon i {
+  display: inline-block;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+/* Card Hover Effect (Jo aapne pehle maanga tha) */
+.foundation-card {
+  transition: all 0.4s ease;
+}
+
+.foundation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(173, 86, 27, 0.2);
+  border-color: rgba(173, 86, 27, 1);
+}
+
+/* 3rd section */
+/* ================= FOUNDATION SECTION ================= */
+.foundation-section {
+    width: 100%;
+    background: rgba(28, 26, 26, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.foundation-container {
+    width: 100%;
+    max-width: 1920px;
+    
+    /* TOP PADDING: Mobile pe 5px, Desktop pe max 20px (Ekdum minimal) */
+    padding-top: clamp(5px, 1.5vw, 20px);
+    
+    /* SIDE PADDING: Responsive rakha hai taaki content kote nahi */
+    padding-inline: clamp(20px, 8.85vw, 170px);
+    
+    /* BOTTOM PADDING: Isse bhi kam kar diya (Mobile 40px, Desktop 60px) */
+    padding-bottom: clamp(40px, 4vw, 60px);
+    
+    text-align: center;
+}
+
+/* Foundation Cards Layout Responsibility */
+.foundation-cards {
+    display: grid;
+    /* Grid 1 column on mobile, 3 on desktop */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(20px, 3vw, 40px);
+    margin-top: clamp(30px, 4vw, 60px);
+}
+
+@media (max-width: 600px) {
+    .foundation-container {
+        /* Mobile par side padding thodi aur kam kar sakte hain space bachane ke liye */
+        padding-inline: 20px;
+        padding-top: 15px; 
+    }
+}
+
+
+/* ---------- HEADER ---------- */
+
+.foundation-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 1.15vw, 22px);
+  letter-spacing: 0.02em;
+  color: #AD561B;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.foundation-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 3vw, 46px);
+  line-height: 52px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.foundation-subtitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.3vw, 20px);
+  line-height: 26px;
+  color: #8F96A3;
+  max-width: 802px;
+  margin: 0 auto 80px;
+}
+
+/* ---------- CARDS WRAPPER ---------- */
+/* ALWAYS 3 CARDS ON DESKTOP */
+
+.foundation-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  /* 1920px = 170px, smaller desktop = scaled */
+  gap: clamp(40px, 8.85vw, 70px);
+}
+
+/* ---------- CARD ---------- */
+
+.foundation-card {
+  width: 100%;
+  max-width: 480px;           /* 1920px exact */
+  min-height: clamp(360px, 24vw, 430px);
+
+  padding: clamp(22px, 2vw, 32px)
+           clamp(18px, 2vw, 28px);
+
+  background: linear-gradient(
+    147.44deg,
+    #101726 29.83%,
+    #000000 98.89%
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5.3px);
+  border-radius: 20px;
+
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* ---------- ICON BOX ---------- */
+
+/* ================= ICON BASE ================= */
+
+.foundation-icon {
+  width: clamp(56px, 4vw, 78px);
+  height: clamp(56px, 4vw, 77px);
+  border-radius: clamp(10px, 1vw, 14px);
+
+  background: linear-gradient(
+    293.95deg,
+    #BE5E1D 9.39%,
+    #9D4F17 92.88%
+  );
+
+  box-shadow:
+    inset 4px 4px 7px rgba(0, 0, 0, 0.2),
+    0 0 0 rgba(190, 94, 29, 0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: clamp(20px, 2vw, 28px);
+
+  position: relative;
+  overflow: hidden;
+
+  animation: iconFloat 4s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ================= ICON FLOAT ================= */
+
+@keyframes iconFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ================= SHINE EFFECT ================= */
+
+.foundation-icon::after {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -120%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.25),
+    transparent 70%
+  );
+  transform: rotate(0deg);
+  transition: all 0.6s ease;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.foundation-card:hover .foundation-icon {
+  transform: translateY(-10px) scale(1.08);
+  box-shadow:
+    inset 4px 4px 7px rgba(0, 0, 0, 0.25),
+    0 12px 30px rgba(190, 94, 29, 0.45);
+}
+
+.foundation-card:hover .foundation-icon::after {
+  top: 120%;
+  left: 120%;
+  transform: rotate(180deg);
+}
+
+/* ================= ICON ================= */
+
+.foundation-icon i {
+  font-size: clamp(20px, 1.6vw, 26px);
+  color: #ffffff;
+  transition: transform 0.4s ease;
+}
+
+/* ================= ICON HOVER ================= */
+
+.foundation-card:hover .foundation-icon i {
+  transform: rotate(-8deg) scale(1.15);
+}
+
+/* ---------- CARD TEXT ---------- */
+
+.foundation-card h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(22px, 1.7vw, 32px);
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.foundation-card p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 22px;
+  color: #8F96A3;
+  max-width: 360px;
+}
+
+/* ================= RESPONSIVE ================= */
+/* STACK ONLY ON TABLET / MOBILE */
+
+@media (max-width: 1024px) {
+  .foundation-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .foundation-card {
+    max-width: 100%;
+  }
+
+  .foundation-title {
+    font-size: 28px;
+  }
+}

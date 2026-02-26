@@ -1,0 +1,64 @@
+import React from "react";
+import { FaChartLine, FaPaintBrush, FaBullhorn, FaGlobe } from "react-icons/fa";
+import "../styles/services.css";
+
+const services = [
+  {
+    icon: FaChartLine,
+    title: "Digital Marketing",
+    desc: "Boost your online presence with data-driven marketing strategies that deliver measurable results.",
+    points: ["SEO Optimization", "Social Media Marketing", "Content Strategy", "Email Campaigns"]
+  },
+  {
+    icon: FaPaintBrush,
+    title: "Design Services",
+    desc: "Create stunning visuals and user experiences that captivate your audience and elevate your brand.",
+    points: ["UI/UX Design", "Brand Identity", "Graphic Design", "Web Design"]
+  },
+  {
+    icon: FaBullhorn,
+    title: "Paid Advertising",
+    desc: "Maximize ROI with targeted paid ad campaigns across all major platforms and channels.",
+    points: ["Google Ads", "Facebook Ads", "LinkedIn Ads", "Remarketing"]
+  },
+  {
+    icon: FaGlobe,
+    title: "Domain & Hosting",
+    desc: "Secure your online identity with reliable domain registration and high-performance hosting solutions.",
+    points: ["Domain Registration", "Web Hosting", "SSL Certificates", "Email Hosting"]
+  }
+];
+
+export default function Services() {
+  return (
+    <section className="services">
+      <div className="services-container">
+        <p className="ta">Our Services</p>
+        <h2 className="title">Comprehensive IT Solutions</h2>
+        <p className="subtitle">
+          From strategy to execution, we provide end-to-end digital services to grow your business
+        </p>
+
+        <div className="grid">
+          {services.map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div className="card" key={i}>
+                <div className="icons-box">
+                  <Icon />
+                </div>
+                <h3>{item.title}</h3>
+                <p className="desc">{item.desc}</p>
+                <ul>
+                  {item.points.map((p, idx) => (
+                    <li key={idx}>{p}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,758 @@
+/* ================= ROOT ================= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* ================= GLOBAL FLUID SCALE ================= */
+:root {
+  --fluid: calc(100vw / 1920);
+}
+
+/* ================= HERO ================= */
+.contact-hero {
+  position: relative;
+  width: 100%;
+  min-height: clamp(520px, 36.7vw, 705px);
+  background: url("../assets/images/contactbanner1.png") center/cover no-repeat;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* ================= CONTENT ================= */
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-left: clamp(20px, 9.27vw, 178px);
+  padding-top: clamp(96px, 7.96vw, 153px);
+}
+
+/* ================= LEFT ================= */
+.blog-left {
+  max-width: clamp(320px, 37.5vw, 720px);
+}
+
+/* ================= TEXT ================= */
+.hero-title {
+  margin-top: clamp(18px, 1.7vw, 32px);
+  font-size: clamp(34px, 3.45vw, 66px);
+  line-height: clamp(42px, 3.65vw, 70px);
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-title span {
+  color: #9C4E17;
+}
+
+.hero-description {
+  margin-top: clamp(14px, 1.2vw, 20px);
+  max-width: clamp(320px, 37.1vw, 713px);
+  font-size: clamp(14px, 1.04vw, 20px);
+  line-height: clamp(20px, 1.35vw, 26px);
+  color: #8F96A3;
+}
+
+.scroll-indicator {
+  margin-top: clamp(32px, 4.85vw, 93px);
+  font-size: clamp(14px, 1vw, 18px);
+  color: #fff;
+  display: flex;
+  gap: 8px;
+}
+
+/* ================= FLOAT AREA ================= */
+.contact-right {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* ================= GLASS CARDS ================= */
+.floatting-card {
+  position: absolute;
+  width: clamp(110px, 9vw, 170px);
+  height: clamp(100px, 8vw, 145px);
+  border-radius: clamp(14px, 1.1vw, 22px);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 5px 4px 4.2px rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.floatting-card h3 {
+  font-size: clamp(26px, 2.19vw, 42px);
+  line-height: clamp(32px, 2.7vw, 52px);
+  margin: 0;
+}
+
+.floatting-card p {
+  font-size: clamp(14px, 0.94vw, 18px);
+  margin: 0;
+}
+
+/* ================= FLUID CARD POSITIONS ================= */
+.card-1 {
+  top: clamp(60%, 74%, 68%);
+  left: clamp(50%, 42vw, 58%);
+  transform: rotate(19.66deg);
+}
+
+.card-2 {
+  top: clamp(45%, 48%, 52%);
+  left: clamp(62%, 64vw, 70%);
+  transform: rotate(-19.34deg);
+}
+
+.card-3 {
+  top: clamp(22%, 25%, 30%);
+  left: clamp(58%, 60vw, 66%);
+  transform: rotate(-27.59deg);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes breatheGlow {
+  0% {
+    transform: scale(1) rotate(var(--r));
+    opacity: .85;
+  }
+  50% {
+    transform: scale(1.08) rotate(var(--r));
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(var(--r));
+    opacity: .85;
+  }
+}
+
+.floatting-card.card-1 { --r: 19.66deg; animation: breatheGlow 6.5s ease-in-out infinite; }
+.floatting-card.card-2 { --r: -19.34deg; animation: breatheGlow 6.5s ease-in-out infinite; }
+.floatting-card.card-3 { --r: -27.59deg; animation: breatheGlow 6.5s ease-in-out infinite; }
+
+/* ================= RESPONSIVE ================= */
+
+/* Medium screens (<=1200px) */
+@media (max-width: 1200px) {
+  .contact-hero-content {
+    flex-direction: column;
+    align-items: center;
+    padding-left: clamp(20px, 5vw, 100px);
+    padding-top: clamp(60px, 5vw, 120px);
+  }
+
+  .blog-left {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .floatting-card {
+    position: relative;
+    margin: 20px auto;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+  }
+}
+@media (max-width: 768px) {
+
+  .contact-hero {
+    background: 
+      url("../assets/images/contactbanner1.png")
+      top center / contain no-repeat;
+
+    background-color: #000;  /* black after image */
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+
+  .contact-hero-content {
+    display: block;
+    padding: 40vw 20px 0 20px;  /* image ke neeche space */
+    text-align: left;           /* force left */
+  }
+
+  .blog-left {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-title,
+  .hero-description,
+  .scroll-indicator {
+    text-align: left;
+  }
+
+  .contact-right {
+    display: none;   /* floating cards remove mobile */
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================= GLOBAL ================= */
+* {
+  box-sizing: border-box;
+}
+
+.contact-section {
+  width: 100%;
+  padding-top: clamp(40px, 6vw, 100px);
+  padding-bottom: clamp(40px, 6vw, 100px);
+
+  /* 1920px exact padding preserved */
+  padding-left: clamp(20px, 9.2vw, 178px);
+  padding-right: clamp(20px, 8.8vw, 170px);
+
+  background: #1C1A1A;
+}
+
+/* =============== CONTAINER =============== */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(20px, 2vw, 38px);
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* =============== CARD SHARED STYLE =============== */
+.contact-form-card {
+  width: 100%;
+  max-width: 800px;
+  min-height: 944px;
+  border-radius: 20px;
+  border: 1px solid #FFFFFF66;
+  background: linear-gradient(147.44deg, rgba(16, 23, 38, 0.7) 29.83%, rgba(0, 0, 0, 0.7) 98.89%);
+  backdrop-filter: blur(5.3px);
+  box-shadow: 1px 6px 6.2px 0px #00000057;
+  padding: clamp(25px, 3vw, 40px);
+}
+
+.contact-image-card {
+  width: 100%;
+  max-width: 734px;
+  min-height: 944px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contact-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =============== HEADINGS =============== */
+.contact-form-card h2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: clamp(22px, 2vw, 36px);
+  line-height: clamp(30px, 3vw, 52px);
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: clamp(14px, 1.2vw, 20px);
+  line-height: 22px;
+  color: #8F96A3;
+  margin-bottom: 30px;
+}
+
+/* =============== FORM =============== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 1.2vw, 18px);
+}
+
+.form-row {
+  display: flex;
+  gap: clamp(12px, 1vw, 16px);
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+label {
+  margin-bottom: 12px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: clamp(14px, 1.1vw, 20px);
+  color: #FFFFFF;
+}
+
+/* =============== INPUTS =============== */
+input,
+select,
+textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #FFFFFF66;
+  background: #FFFFFF1A;
+  backdrop-filter: blur(5.3px);
+  color: #B6BCC9;
+  font-family: Inter;
+  font-size: clamp(14px, 1vw, 18px);
+  padding: 16px;
+  outline: none;
+}
+
+input,
+select {
+  height: clamp(48px, 4vw, 60px);
+}
+
+textarea {
+  min-height: clamp(120px, 10vw, 166px);
+  resize: none;
+}
+
+/* Email & Phone split */
+.email,
+.phone {
+  flex: 1;
+}
+
+/* =============== BUTTON =============== */
+.submit-btn {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 707px;
+  height: clamp(50px, 4vw, 61px);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px #ff550044;
+}
+
+.btn-text,
+.btn-arrow {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: clamp(14px, 1vw, 18px);
+  color: #FFFFFF;
+}
+
+/* =============== PRIVACY NOTE =============== */
+.privacy-note {
+  margin-top: 20px;
+  font-family: Inter;
+  font-size: clamp(12px, 1vw, 16px);
+  color: #B6BCC9;
+  text-align: center;
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card,
+  .contact-image-card {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-form-card,
+  .contact-image-card {
+    min-height: auto;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .contact-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact-form-card {
+    border-radius: 16px;
+  }
+}
+/* ================= INPUT WITH ICON FIX ================= */
+
+.input-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Input / Select / Textarea full width */
+.input-wrap input,
+.input-wrap select,
+.input-wrap textarea {
+  width: 100%;
+  padding-left: 48px; /* icon ke liye space */
+}
+
+/* ICON STYLE */
+.input-wrap i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #B6BCC9;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* TEXTAREA ICON FIX */
+.textarea-wrap i {
+  top: 20px;
+  transform: none;
+}
+
+/* Make sure textarea text top se start ho */
+.textarea-wrap textarea {
+  padding-top: 16px;
+}
+/* ================= IMAGE HOVER EFFECT ================= */
+
+.contact-image-card {
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.contact-image-card img {
+  transition: transform 0.5s ease, filter 0.4s ease;
+}
+
+.contact-image-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.contact-image-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ================= INPUT HOVER EFFECT ================= */
+
+.input-wrap input,
+.input-wrap select,
+.input-wrap textarea {
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.input-wrap:hover input,
+.input-wrap:hover select,
+.input-wrap:hover textarea {
+  border: 1px solid #CB6520;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(203, 101, 32, 0.15);
+}
+
+/* Focus (jab click kare user) */
+.input-wrap input:focus,
+.input-wrap select:focus,
+.input-wrap textarea:focus {
+  border: 1px solid #CB6520;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 4px rgba(203, 101, 32, 0.25);
+}
+
+
+/* ================= ICON HOVER EFFECT ================= */
+
+.input-wrap i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.input-wrap:hover i {
+  color: #CB6520;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Textarea icon fix (since no translateY) */
+.textarea-wrap:hover i {
+  transform: scale(1.1);
+}
+.input-wrap select {
+  height: 60px;
+  padding: 0 45px 0 48px;
+  line-height: 60px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------- */
+
+/* ================= REACH SECTION ================= */
+
+.reach-section {
+  background: #1C1A1A;
+  padding-top: clamp(60px, 8vw, 120px);
+  padding-bottom: clamp(60px, 8vw, 120px);
+  padding-left: clamp(15px, 8vw, 168px); /* scaled left padding */
+  padding-right: clamp(15px, 8vw, 167px); /* scaled right padding */
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+padding: 0 clamp(16px, 4vw, 80px) clamp(50px, 4vw, 80px);
+}
+
+.reach-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Top Small Tag */
+.reach-tag {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: clamp(14px, 1.1vw, 22px);
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: center;
+    color: #AD561B;
+    margin: 0 auto clamp(8px, 1.5vw, 20px) auto; /* space below tag */
+    width: fit-content;
+}
+
+.reach-title {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: clamp(28px, 2.4vw, 46px);
+    line-height: clamp(32px, 2.6vw, 52px);
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto clamp(8px, 1.5vw, 20px) auto; /* space below title */
+    max-width: clamp(250px, 52vw, 992px);
+}
+
+.reach-subtitle {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 1.2vw, 20px);
+    line-height: clamp(20px, 1.4vw, 26px);
+    text-align: center;
+    color: #8F96A3;
+    margin: 0 auto; /* no bottom needed, it's last element */
+    max-width: clamp(200px, 42vw, 802px);
+}
+
+
+/* Subtitle */
+.reach-subtitle {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.2vw, 20px);
+  line-height: clamp(20px, 1.4vw, 26px);
+  text-align: center;
+  color: #8F96A3;
+  margin: 0 auto;
+  max-width: clamp(200px, 42vw, 802px);
+}
+
+/* ================= GRID ================= */
+
+.reach-grid {
+  margin-top: clamp(40px, 5vw, 70px);
+  display: grid;
+  grid-template-columns: repeat(4, clamp(200px, 20vw, 385px));
+  gap: 15px; /* 1920px design */
+  justify-content: center;
+}
+
+/* ================= CARD ================= */
+
+.reach-card {
+  position: relative;
+  width: clamp(200px, 20vw, 385px);
+  height: clamp(80px, 6vw, 114px);
+  border-radius: 6px;
+  background: linear-gradient(90deg, #121111 0%, #1C1A1A 100%);
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1vw, 15px);
+  padding-left: clamp(15px, 1.5vw, 22px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Orange Left Line */
+.reach-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: clamp(6px, 0.5vw, 11px);
+  height: 100%;
+  background: #AD561B;
+  border-radius: 6px 0 0 6px;
+}
+
+/* Hover Effect */
+.reach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon */
+.reach-icon {
+  color: #AD561B;
+  font-size: clamp(18px, 1.5vw, 30px);
+  flex-shrink: 0;
+  width: clamp(18px, 1.5vw, 36px);
+  height: clamp(18px, 1.5vw, 36px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title & Description Container */
+.reach-card-content {
+  flex: 1;
+  text-align: left;
+}
+
+/* Title */
+.reach-card h4 {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.2vw, 20px);
+  line-height: clamp(18px, 1.3vw, 26px);
+  color: #FFFFFF;
+  text-align:justify ;
+}
+
+/* Description */
+.reach-card p {
+  margin: 4px 0 0 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: clamp(12px, 1vw, 16px);
+  line-height: clamp(18px, 1.2vw, 24px);
+  color: #8F96A3;
+  text-align: justify;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Medium devices - tablets */
+@media (max-width: 1200px) {
+  .reach-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reach-card {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Small devices - mobiles */
+@media (max-width: 768px) {
+  .reach-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .reach-card {
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .reach-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .reach-tag,
+  .reach-title,
+  .reach-subtitle {
+    width: 100% !important;
+    font-size: clamp(14px, 4vw, 22px);
+    line-height: normal;
+  }
+}
+/* Small screens (<=768px) */
+@media (max-width: 768px) {
+  .reach-container {
+    text-align: center; /* heading + subtitle center */
+  }
+
+  .reach-tag,
+  .reach-title,
+  .reach-subtitle {
+    margin: 0 auto 12px auto;
+    text-align: center;
+  }
+
+  .reach-grid {
+    grid-template-columns: 1fr;
+    justify-content: center; /* cards centered */
+  }
+
+  .reach-card {
+    margin: 0 auto;
+  }
+}

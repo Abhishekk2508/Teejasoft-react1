@@ -1,0 +1,50 @@
+<section className="contact-hero-banner">
+  <div className="banner-overlay">
+    <div className="precise-container">
+
+      {/* LEFT CONTENT */}
+      <div className="hero-left-content">
+
+        <div className="breadcrumb-wrap">
+          <span className="breadcrumb-text">Home &gt; Contact Us</span>
+        </div>
+
+        <h1 className="main-heading">
+          Let's <br />
+          <span className="talk-color">Talk</span>
+        </h1>
+
+        <p className="description-text">
+          Ready to transform your digital presence? We're here to make it happen.
+          Let's create something extraordinary together.
+        </p>
+
+        <div className="scroll-indicator">
+          ↓ Scroll to get in touch
+        </div>
+
+      </div>
+
+      {/* FLOATING BOXES */}
+      <div className="floating-boxes-wrapper">
+
+        <div className="floating-box box-support">
+          <span className="box-number">24/7</span>
+          <span className="box-label">Support</span>
+        </div>
+
+        <div className="floating-box box-happy">
+          <span className="box-number">98%</span>
+          <span className="box-label">Happy Clients</span>
+        </div>
+
+        <div className="floating-box box-projects">
+          <span className="box-number">50+</span>
+          <span className="box-label">Projects Done</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

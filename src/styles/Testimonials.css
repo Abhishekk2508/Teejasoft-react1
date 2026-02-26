@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+.test-section {
+  width: 100%;
+  background: rgba(28, 26, 26, 1);
+  padding: clamp(18px, 2.5vw, 44px) 0;  /* SAME AS OTHER SECTIONS */
+  font-family: "Inter", sans-serif;
+}
+
+
+.test-container {
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 clamp(20px, 9vw, 172px);
+  text-align: center;
+}
+
+/* ---------- HEAD ---------- */
+
+.test-tag {
+  font-size: clamp(14px, 1.15vw, 22px);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: rgba(173, 86, 27, 1);
+}
+
+.test-title {
+  margin: 12px 0;
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* ---------- GRID (3 x 2) ---------- */
+.test-grid {
+    display: grid;
+    max-width: 1580px;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(5, 1fr);
+    gap: clamp(16px, 2vw, 33px);
+
+    justify-items: center;
+    padding: 0 16px; /* prevents edge hugging on mobile */
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+    .test-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .test-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .test-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- CARD ---------- */
+
+.test-card {
+  height: 268px;
+  padding: 24px 26px;
+  border-radius: 20px;
+  background: linear-gradient(147.44deg, #111929 1.17%, #1d2838 70.23%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5.3px);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* ---------- TOP ---------- */
+
+.test-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.test-stars {
+    color: rgba(184, 91, 28, 1);
+    font-size: clamp(16px, 1.4vw, 29px) !important;
+    width: 19px !important;
+    height: 18px !important;
+}
+.test-quote {
+  font-size: 96px;
+  line-height: 70px;
+  color: rgba(255, 255, 255, 0.33);
+      margin-right: 40px;
+}
+
+/* ---------- TEXT ---------- */
+
+.test-text {
+    margin-top: -30px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+    color: rgba(209, 213, 220, 1);
+    /* background: rgba(209, 213, 220, 1); */
+}
+
+/* ---------- DIVIDER ---------- */
+
+.test-divider {
+    /* margin: 18px 0 14px; */
+    /* height: 1px; */
+    background: #364153;
+    /* width: 100%; */
+    width: 426px;
+    height: 0;
+    border-top: 1px solid rgba(54, 65, 83, 1);
+    margin: 6px 0 32px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.test-footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: -25px;
+}
+
+.test-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid rgba(184, 91, 28, 1);
+  padding: 3px;
+  margin-bottom: 12px;
+}
+
+.test-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.test-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+      margin-bottom: 0px;
+}
+
+.test-role {
+ font-size: 14px;
+    color: rgba(143, 150, 163, 1);
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 480px) {
+  .test-card {
+    height: auto;
+  }
+
+  .test-quote {
+    font-size: 72px;
+  }
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"); */
+
+
+
+.test-container {
+  max-width: 1920px;
+  margin: auto;
+  padding: 0 clamp(16px, 6vw, 172px);
+  text-align: center;
+}
+
+/* ---------- HEAD ---------- */
+
+.test-tag {
+  font-size: clamp(13px, 1.1vw, 22px);
+  font-weight: 500;
+  color: rgba(173, 86, 27, 1);
+
+}
+
+.test-title {
+  margin: 10px 0;
+  font-size: clamp(26px, 3vw, 46px);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+
+.test-subtitle {
+  font-size: clamp(14px, 1.3vw, 20px);
+  color: rgba(143, 150, 163, 1);
+  margin-bottom: clamp(40px, 4vw, 47px);
+}
+/* ---------- GRID ---------- */
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 40px);
+}
+
+@media (max-width: 1200px) {
+  .test-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .test-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- CARD ---------- */
+
+.test-card {
+  width: 100%;               /* mobile friendly */
+  max-width: 499px;          /* desktop exact width */
+  min-height: auto;         /* desktop height */
+  padding: clamp(20px, 2vw, 26px);
+  border-radius: 20px;
+
+  /* ===== Design styling ===== */
+  background: linear-gradient(147.44deg, #111929 1.17%, #1D2838 70.23%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5.3px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  height: auto;              /* content decides height */
+}
+
+/* ---------- MOBILE CAROUSEL ---------- */
+@media (max-width: 640px) {
+  .test-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+  }
+
+  .test-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .test-card {
+    min-width: 90%;          /* 1 card at a time, small margin */
+    scroll-snap-align: center;
+  }
+}
+
+
+/* ---------- TOP ---------- */
+
+.test-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.test-stars {
+  color: rgba(184, 91, 28, 1);
+  font-size: clamp(16px, 1.4vw, 20px);
+}
+
+.test-quote {
+  font-size: clamp(60px, 6vw, 96px);
+  line-height: 1;
+  color:  rgba(255, 255, 255, 0.33);
+}
+
+/* ---------- TEXT ---------- */
+
+.test-text {
+  font-size: clamp(14px, 1vw, 15px);
+  line-height: 1.7;
+  font-weight: 500;
+  color: rgba(209, 213, 220, 1);
+
+  width: 100%;           /* fluid */
+  max-width: 421px;      /* desktop exact width */
+  box-sizing: border-box; 
+  margin: -52px auto 0;  /* ✅ top shift + center horizontally */
+}
+
+
+/* ---------- DIVIDER ---------- */
+
+.test-divider {
+  width: 100%;                 /* ✅ fluid */
+  border-top: 1px solid rgba(54, 65, 83, 1);
+  margin: 8px 0 20px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.test-footer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.test-avatar {
+  width: clamp(44px, 4vw, 55px);
+  height: clamp(44px, 4vw, 55px);
+  border-radius: 50%;
+  border: 2px solid rgba(184, 91, 28, 1);
+  padding: 3px;
+}
+
+.test-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.test-name {
+  font-size: clamp(16px, 1.2vw, 18px);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+.test-role {
+  font-size: clamp(13px, 1vw, 14px);
+  color: rgba(143, 150, 163, 1)
+}
+/* ---------- MOBILE CAROUSEL ---------- */
+@media (max-width: 640px) {
+
+  .test-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .test-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .test-card {
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+
+  .test-nav {
+    display: flex;
+  }
+}
+
+/* ---------- NAV ---------- */
+
+.test-nav {
+  display: none;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.test-nav button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #b85b1c;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .test-text {
+    font-size: clamp(13px, 2.5vw, 14px);
+    line-height: 1.6;
+    max-width: 90%;      /* small margin from sides */
+  }
+}

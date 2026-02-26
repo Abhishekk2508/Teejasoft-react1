@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* ================= WRAPPER ================= */
+/* .expertise-wrapper {
+  width: 100%;
+  background: #1C1A1A;
+  display: flex;
+  justify-content: center;
+  padding: clamp(40px, 6vw, 120px) 0;
+  font-family: 'Inter', sans-serif;
+} */
+
+
+
+.expertise-wrapper {
+  width: 100%;
+  background: #1C1A1A;
+  display: flex;
+  justify-content: center;
+  padding: clamp(18px, 2.5vw, 44px) 0;  /* SAME AS OTHERS */
+
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* ================= CONTAINER ================= */
+.expertise-container {
+  width: 100%;
+  max-width: 1920px;
+  padding-left: clamp(10px, 2vw, 60px);  /* reduce padding to allow 5 cards */
+  padding-right: clamp(10px, 2vw, 60px);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ================= HEADINGS ================= */
+.expertise-label {
+  font-size: clamp(14px, 1.15vw, 22px);
+  letter-spacing: 0.02em;
+  color: #AD561B;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.expertise-title {
+  font-size: clamp(26px, 3vw, 46px);
+  line-height: clamp(32px, 3.2vw, 52px);
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.expertise-desc {
+  font-size: clamp(14px, 1.3vw, 20px);
+  line-height: clamp(20px, 1.6vw, 26px);
+  color: #8F96A3;
+  max-width: 760px;
+  margin: 0 auto clamp(30px, 4vw, 47px);
+}
+
+/* ================= GRID ================= */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* FORCE 5 cards per row */
+  gap: clamp(12px, 1.04vw, 20px);
+  justify-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ================= CARD ================= */
+.expertise-card {
+  padding: clamp(14px, 1.15vw, 22px);
+  border-radius: clamp(14px, 1vw, 20px);
+  border: 1px solid #FFFFFF66;
+  background: linear-gradient(141.99deg, #111929 8.95%, #1D2838 75.16%);
+  backdrop-filter: blur(5.3px);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+/* ================= CARD HEADER (ICON + TITLE ROW) ================= */
+.card-header {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  gap: clamp(8px, 0.5vw, 12px);
+  margin-bottom: 12px;
+}
+
+/* ================= ICON ================= */
+.iconn-box {
+  width: clamp(30px, 2.1vw, 39px);
+  height: clamp(30px, 2.1vw, 38px);
+  border-radius: 8px;
+  background: linear-gradient(293.95deg, #BE5E1D 9.39%, #9D4F17 92.88%);
+  box-shadow: inset 2px 2px 5px #00000033;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: clamp(14px, 1vw, 18px);
+  flex-shrink: 0;
+      margin-bottom: 18px;
+}
+
+/* ================= TITLE ================= */
+.card-header h4 {
+    font-size: clamp(14px, 1.15vw, 18px);
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1.2;
+    word-break: break-word;
+    margin-top: -18px;
+}
+/* ================= PROGRESS ================= */
+.progress-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(12px, 1vw, 15px);
+  color: #8F96A3;
+  margin-bottom: 6px;
+}
+
+.progress-row .percent {
+  color: #A35118;
+  font-weight: 500;
+}
+
+/* ================= BAR ================= */
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  transition: var(--bs-progress-bar-transition);
+  width: 100%; /* full width */
+  height: clamp(6px, 0.7vw, 9px);
+  border-radius: 16px;
+  background: #4C586D !important; /* background bar color */
+}
+
+
+.progress-fill {
+  width: 100%; /* React inline style will adjust width dynamically */
+  height: 100%;
+  background: #B85B1C;
+  border-radius: 16px;
+  transition: width 0.6s ease;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1500px) {
+  .expertise-container {
+    padding-left: clamp(10px, 2vw, 50px);
+    padding-right: clamp(10px, 2vw, 50px);
+  }
+  .expertise-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr)); /* FORCE 5 cards */
+  }
+}
+
+@media (max-width: 1200px) {
+  .expertise-card {
+    padding: clamp(10px, 1vw, 16px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .expertise-grid {
+    grid-template-columns: repeat(3, 1fr); /* now reduce for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .expertise-card {
+    font-size: 12px;
+  }
+  .icon-box {
+    width: 28px;
+    height: 28px;
+  }
+  .card-header h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* 
+container size 1920px
+left padding 172px
+right padding 171px 
+gap between cards 40px
+
+What Our Clients Say
+font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 46px;
+leading-trim: NONE;
+line-height: 52px;
+letter-spacing: 0%;
+text-align: center;
+color: #FFFFFF;
+
+Don't just take our word for it - hear from our satisfied clients
+
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+color: #8F96A3;
+
+box size :
+width: 499;
+height: 268;
+top: 4926px;
+left: 172px;
+angle: 0 deg;
+opacity: 1;
+border-radius: 20px;
+border-width: 1px;
+background: linear-gradient(147.44deg, #111929 1.17%, #1D2838 70.23%);
+border: 1px solid #FFFFFF66backdrop-filter: blur(5.300000190734863px)
+
+box ke under top per ratings h, then ” -> font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 96px;
+leading-trim: NONE;
+line-height: 71px;
+letter-spacing: 0%;
+
+“Outstanding service! They transformed our digital
+presence and doubled our online leads within 3 months.
+Highly professional team.”
+font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 15px;
+leading-trim: NONE;
+line-height: 26px;
+letter-spacing: 0%;
+color: #D1D5DC;
+
+Line 1
+width: 426.0000000000016;
+height: 0px;
+top: 5095px;
+left: 209px;
+angle: 0 deg;
+opacity: 1;
+border-width: 1px;
+border: 1px solid #364153
+
+
+circlr mr img::afterwidth: 55;
+height: 55;
+top: 5110px;
+left: 209px;
+angle: 0 deg;
+opacity: 1;
+
+border: 2px solid #B85B1C
+Johnson
+font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 23px;
+letter-spacing: 0%;
+color: #FFFFFF;
+
+CEO, TechStart Inc.
+font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 26px;
+letter-spacing: 0%;
+color: #8F96A3; */

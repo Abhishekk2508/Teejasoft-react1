@@ -1,0 +1,32 @@
+.about-highlight img {
+  max-width: 100%;
+}
+
+.highlight-list {
+  list-style: none;
+  padding: 0;
+}
+
+.highlight-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.highlight-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #c65a00;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #c65a00;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #a94c00;
+}

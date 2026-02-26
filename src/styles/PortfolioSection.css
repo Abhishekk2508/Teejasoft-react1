@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+/* ================= SECTION ================= */
+
+.portfolio-section {
+  width: 100%;
+  background: rgba(28, 26, 26, 1);
+  display: flex;
+  justify-content: center;
+  padding: clamp(18px, 2.5vw, 44px) 0; /* SAME AS OTHER SECTIONS */
+  font-family: 'Inter', sans-serif;
+}
+
+.portfolio-container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 clamp(20px, 6vw, 140px);
+  text-align: center;
+}
+
+/* ================= HEADINGS ================= */
+.portfolio-tag {
+  font-size: clamp(16px, 1.2vw, 22px);
+  font-weight: 500;
+  letter-spacing: 2%;
+  color: rgba(173, 86, 27, 1);
+  margin-bottom: 14px;
+}
+
+.portfolio-title {
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  line-height: 52px;
+  margin-bottom: 14px;
+}
+
+.portfolio-subtitle {
+  font-size: clamp(14px, 1.3vw, 20px);
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(143, 150, 163, 1);
+  max-width: 802px;
+  margin: 0 auto 60px auto;
+    margin-bottom: clamp(40px, 4vw, 47px);
+
+}
+
+/* ================= GRID ================= */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 2vw, 30px);
+}
+
+/* ================= CARD ================= */
+.portfolio-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #000;
+  height: clamp(260px, 20vw, 345px);
+  transition: border 0.3s ease;
+  border: 2px solid transparent;
+      max-width: 505px;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* ================= OVERLAY ================= */
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  background: linear-gradient(
+    179.94deg,
+    rgba(0,0,0,0) 8.7%,
+    rgba(0,0,0,0.36) 35.59%,
+    rgba(0,0,0,0.7) 56.72%,
+    #000000 99.95%
+  );
+}
+
+.portfolio-overlay h3 {
+  font-size: clamp(18px, 1.6vw, 28px);
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.44);
+}
+
+/* Subtitle & Button hidden initially */
+.portfolio-overlay p,
+.view-project-btn {
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show on hover */
+.portfolio-card:hover {
+  border: 2px solid rgba(184, 91, 28, 1);
+  
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-card:hover .portfolio-overlay p,
+.portfolio-card:hover .view-project-btn {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ================= DESCRIPTION ================= */
+.portfolio-overlay p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  color: rgba(209, 213, 220, 1);
+  margin-bottom: 12px;
+  max-width: 431px;
+}
+
+/* ================= VIEW PROJECT BUTTON ================= */
+.view-project-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 146px;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 7px;
+  border: 1px solid rgba(184, 91, 28, 1);
+  background: #fff;
+  cursor: pointer;
+}
+
+.view-project-btn .btn-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(184, 91, 28, 1);
+}
+
+.view-project-btn .btn-eye {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1.8px solid rgba(184, 91, 28, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .view-project-btn .btn-eye img {
+  width: 11px;
+  height: 11px;
+} */
+
+/* ================= VIEW ALL BUTTON ================= */
+.view-all-btn {
+  margin-top:clamp(20px, 3vw, 40px);
+  width: 213px;
+  height: 48px;
+  border-radius: 49px;
+  border: none;
+  background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  opacity: 0.85;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1440px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+ 
+}
+@media (max-width: 600px) {
+  .view-project-btn {
+    width: 100%;          /* fill the card width */
+    max-width: 200px;     /* optional: don't exceed 200px */
+    flex-direction: row;  /* keep text & icon in one row */
+    justify-content: center;
+    gap: 6px;             /* space between text & icon */
+    white-space: nowrap;  /* prevent wrapping */
+  }
+
+  .view-project-btn .btn-text {
+    font-size: 12px;
+  }
+
+  .view-project-btn .btn-eye {
+    width: 16px;
+    height: 16px;
+  }
+}

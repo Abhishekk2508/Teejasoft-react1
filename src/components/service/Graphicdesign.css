@@ -1,0 +1,33 @@
+.graphic-container {
+  padding: 80px 10%;
+  background: #fff8f0;
+  text-align: center;
+}
+
+.graphic-container h1 {
+  font-size: 40px;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.graphic-container p {
+  font-size: 18px;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.graphic-card {
+  background: #ffffff;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.graphic-card:hover {
+  transform: translateY(-8px);
+}
