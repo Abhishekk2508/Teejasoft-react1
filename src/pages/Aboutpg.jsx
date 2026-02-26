@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import AboutSection from "../sections/AboutSection";
 import "../styles/Aboutpg.css";
 import whoImg from "../assets/images/whower.png";

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom"; //  FIXED
 
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import BlogsSection from "../sections/BlogsSection";
 import "../styles/Contactpg.css";
 import contactImg from "../assets/images/contact.png";

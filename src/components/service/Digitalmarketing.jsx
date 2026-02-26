@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Navbar from "../navbar";
-import Footer from "../footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./Digitalmarketing.css";
 import bannerImg from "../../assets/images/digitalm-banner.jpg";
 
