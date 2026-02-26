@@ -228,3 +228,6 @@ body {
   }
 
 }
+.collapse:not(.show) {
+    display: none !important;
+}
