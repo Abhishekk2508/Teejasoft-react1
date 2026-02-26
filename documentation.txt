@@ -1,0 +1,203 @@
+🧾 Project Name: Teejasoft React Website
+
+🔗 Live Website: https://teejasoft-react1-v9ki.vercel.app/
+
+==================== 📌 1. Project Overview ========================
+
+The TeejaSoft Business Website is a modern, fully responsive corporate website developed using React JS.
+It is designed to represent the company’s digital presence, showcase services, portfolio, client testimonials, blogs, and provide essential business information in an interactive and user-friendly manner.
+
+The project follows a component-based architecture, ensuring scalability, maintainability, and performance optimization.
+This website represents Teejasoft’s:
+
+-> Company Profile/ Home page / Landing Page
+-> Services (4 pgs) --- (Digital Marketing, Graphic Design, Paid Ads, Web Development)
+-> About us 
+-> Portfolio 
+-> Blogs
+-> Contact Us
+
+
+==================== 🛠️ 2. Tech Stack Used ========================
+
+
+| Technology       | Description         |
+| ---------------- | ------------------- |
+| HTML5            | Page Structure      |
+| CSS3             | Styling             |
+| JavaScript (ES6) | Functionality       |
+| React.js         | UI Library          |
+| Vite             | Build Tool          |
+| Git              | Version Control     |
+| GitHub           | Code Repository     |
+| Vercel           | Deployment Platform |
+
+
+==================== 📁 3. Project Folder Structure ========================
+
+Teejasoft-react1/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── service/
+│   │        └── Webdevelopment.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Aboutpg.jsx
+│   │   ├── Contactpg.jsx
+│   │   └── Servicepg.jsx
+│   │
+│   ├── sections/
+│   │   ├── Hero.jsx
+│   │   ├── AboutSection.jsx
+│   │   ├── SuccessNumbers.jsx
+│   │   ├── PartnersSection.jsx
+│   │   ├── Services.jsx
+│   │   ├── Expertise.jsx
+│   │   ├── TrustedBrands.jsx
+│   │   ├── Testimonials.jsx
+│   │   ├── PortfolioSection.jsx
+│   │   ├── BlogsSection.jsx
+│   │   └── FaqSection.jsx
+|   |
+|   |── styles/
+│   │   
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+└── vite.config.js
+
+
+==================== 🧩 4. Components Description ========================
+
+🔹 Navbar Component
+
+-> Provides website navigation
+-> Reusable across all pages
+
+🔹 Footer Component
+
+-> Contains contact info & company links
+-> Displayed globally on all pages
+
+🔹 Service Components
+
+-> Dynamic service description sections
+
+
+==================== 🧠 5. Features Implemented ========================
+
+✔ Responsive Design
+✔ Component-Based Architecture
+✔ SEO-Friendly Layout
+✔ Reusable Sections
+✔ Fast Build using Vite
+✔ Clean UI/UX
+✔ Modular Code Structure
+✔ Optimized Images
+✔ Case-Sensitive Import Fix for Linux Deployment
+✔ Production Ready Deployment
+
+
+==================== 🚀 6. Installation & Setup (Local Environment) ========================
+
+Step 1: Clone Repository from
+-> git clone https://github.com/Abhishekk2508/Teejasoft-react1.git
+
+Step 2: Navigate to Project
+-> cd Teejasoft-react1
+
+Step 3: Install Dependencies
+-> npm install
+
+Step 4: Run Project
+-> npm run dev
+
+Project runs on: http://localhost:5173
+
+
+==================== 🏗️ 7. Production Build ========================
+
+ Production Build
+-> npm run build
+
+==================== 🌐 8. Deployment ========================
+Deployment
+
+This project is deployed using
+👉 Vercel
+
+Deployment Steps:
+Connect GitHub repository
+
+Select Framework: Vite
+
+Build Command: npm run build
+
+Output Directory: dist
+
+==================== 🔄 9. Future Updates Deployment ========================
+
+git add .
+git commit -m "update"
+git push
+
+Website will auto-update after deployment.
+
+==================== ⚠️ 10. Important Notes ========================
+
+-> Import paths must be case-sensitive
+-> Folder structure should remain unchanged
+-> Images must be imported with correct filename casing
+-> Linux servers treat: 
+
+Example: Logo.png ≠ logo.png
+
+==================== 📌 11. Conclusion ========================
+
+The Teejasoft React Website is a scalable, high-performance
+frontend solution built using modern Reactjs technologies,
+and deployed in production mode for real-world usage.
+
+==================== 📌 12. Screeshots ========================
+
+-> I have add all the pages Screenshots in pdf format in the project file.
+File Name: TEEJAYSOFT_pdf_pgs
+
+==================== 👨‍💻 13. Developer Information ========================
+
+Developer Name: Abhishek Kumar
+Email: abhishek890.kr@gmail.com
+
+Role: Full stack Developer
+
+Responsibilities:
+
+-> Designed and developed full frontend UI
+-> Implemented reusable React components
+-> Managed responsive layouts
+-> Integrated all website sections
+-> Deployed website on Vercel
+-> Tested performance across devices and perform various types of Manual testing as well as Automation testing.
+
+
+========================================================================================
+
+=================================== End of Documentation =====================================================
+
+This document concludes the development and deployment of the Teejasoft Web Application.
+
+*************** Engineered with precision. Delivered with performance. *************** 
+
+Developed by: Abhishek Kumar
+========================================================================================
+
