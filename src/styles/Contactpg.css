@@ -247,7 +247,7 @@
 .contact-form-card {
   width: 100%;
   max-width: 800px;
-  min-height: 944px;
+  /* min-height: 944px; */
   border-radius: 20px;
   border: 1px solid #FFFFFF66;
   background: linear-gradient(147.44deg, rgba(16, 23, 38, 0.7) 29.83%, rgba(0, 0, 0, 0.7) 98.89%);
