@@ -207,5 +207,11 @@ body {
     margin: 15px auto 0 auto;
     text-align: center;
   }
+    .custom-navbar .navbar-collapse {
+    background: #ffffff !important;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
 
 }
