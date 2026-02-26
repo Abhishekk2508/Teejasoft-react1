@@ -191,7 +191,6 @@ body {
     padding-right: 60px;
   }
 }
-/* FIX TABLET NAVBAR BACKGROUND */
 @media (min-width: 768px) and (max-width: 991px) {
 
   .custom-navbar {
