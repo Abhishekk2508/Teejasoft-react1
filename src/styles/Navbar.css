@@ -198,6 +198,8 @@ body {
     display: flex !important;
     flex-direction: column;
     align-items: center;
+    background: #ffffff !important;
+
   }
 
   .btn-talk {
