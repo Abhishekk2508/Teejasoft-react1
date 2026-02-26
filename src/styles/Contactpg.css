@@ -163,13 +163,13 @@
     text-align: center;
   } */
 
-  .floatting-card {
-    position: relative;
-    margin: 200px auto;
-    transform: none !important;
-    left: auto !important;
-    top: auto !important;
-  }
+     .floatting-card {
+        position: relative;
+        margin: 0px auto;
+        transform: none !important;
+        left: 204px !important;
+        top: 80px !important;
+    }
 }
 @media (max-width: 768px) {
 
