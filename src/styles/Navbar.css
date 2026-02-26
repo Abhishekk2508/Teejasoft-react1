@@ -191,27 +191,40 @@ body {
     padding-right: 60px;
   }
 }
-/* CENTER CTA BUTTON IN TABLET VIEW */
+/* ================= TABLET 768px to 991px FIX ================= */
 @media (min-width: 768px) and (max-width: 991px) {
 
-  .navbar-collapse {
+  .custom-navbar .navbar-collapse {
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    background: #ffffff !important;
+    padding: 20px;
+    margin: 0 !important;
+    border-radius: 0;
+
     display: flex !important;
     flex-direction: column;
     align-items: center;
-    background: #ffffff !important;
 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   }
 
+  /* remove side cut issue */
+  .custom-navbar .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* center button */
   .btn-talk {
     display: block;
     margin: 15px auto 0 auto;
     text-align: center;
-  }
-    .custom-navbar .navbar-collapse {
-    background: #ffffff !important;
-    padding: 15px 20px;
-    margin-top: 10px;
-    border-radius: 8px;
   }
 
 }
