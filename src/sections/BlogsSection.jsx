@@ -36,9 +36,9 @@ const BlogsSection = () => {
   return (
     <section className="blog-section">
       <p className="blog-subtitle">Our Blogs</p>
-      <h2 className="blog-title">Latest Insights & Articles</h2>
+      <h2 className="blog-title">Latest Blogs & Articles</h2>
       <p className="blog-desc">
-        Stay updated with the latest trends, tips, and industry insights from our experts
+        Stay updated with the latest trends, tips, and industry insights 
       </p>
 
       <div className="blog-grid">

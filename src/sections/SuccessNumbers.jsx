@@ -5,10 +5,10 @@ import { FaShieldAlt, FaCheckCircle, FaChartBar, FaSearch, FaUserFriends } from 
 
 const stats = [
   { icon: <FaShieldAlt />, number: 100, suffix: "%", label: "Results Guaranteed" },
-  { icon: <FaCheckCircle />, number: 10, suffix: "+", label: "Years Experience" },
-  { icon: <FaChartBar />, number: 50, suffix: "K+", label: "Keywords Ranked" },
-  { icon: <FaSearch />, number: 500, suffix: "+", label: "Projects Completed" },
-  { icon: <FaUserFriends />, number: 10, suffix: "K+", label: "Leads Generated" },
+  { icon: <FaCheckCircle />, number: 9, suffix: "+", label: "Years Experience" },
+  { icon: <FaChartBar />, number: 15, suffix: "K+", label: "Keywords Ranked" },
+  { icon: <FaSearch />, number: 100, suffix: "+", label: "Projects Completed" },
+  { icon: <FaUserFriends />, number: 2, suffix: "K+", label: "Leads Generated" },
 ];
 
 function Counter({ end, suffix, start }) {
@@ -45,7 +45,7 @@ export default function SuccessNumbers() {
         <p className="success-top fade-up">Figures / Results</p>
         <h2 className="success-heading fade-up delay-1">Our Success in Numbers</h2>
         <p className="success-subtext fade-up delay-2">
-          Delivering exceptional results and exceeding expectations for our clients worldwide
+          Delivering exceptional results and exceeding expectations for our clients 
         </p>
 
         <div className="stats-grid">

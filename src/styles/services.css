@@ -162,3 +162,63 @@
   box-shadow: inset 4px 4px 7px #00000033;
 }
 
+
+.grid-wrapper {
+  overflow: hidden !important; /* keep slider clipping */
+  position: relative;
+  padding: 20px 0 40px 0 !important; /* top + bottom padding */
+}
+
+.grid {
+  display: flex;
+  transition: transform 0.5s ease !important;
+}
+
+.card {
+  flex: 0 0 calc(25% - 16px) !important; /* 4 cards by default */
+  margin-right: 16px !important;
+  margin-bottom: 40px !important; /* space for hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
+  z-index: 10 !important; /* ensure hovered card is on top */
+}
+
+/* Slider buttons */
+.slider-buttons {
+  margin-top: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 10px !important;
+}
+
+.slider-buttons button {
+  padding: 8px 16px !important;
+  background: #BE5E1D !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+}
+
+/* Responsive */
+
+/* Tablets: 2 cards per view */
+@media (max-width: 1200px) {
+  .card {
+    flex: 0 0 calc(50% - 16px) !important;
+  }
+}
+
+/* Mobile: 1 card per view */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 100% !important;
+    margin-right: 0 !important; /* remove gap on single card */
+  }
+}

@@ -19,7 +19,7 @@ const Aboutpg = () => {
         <div className="aboutpg-content">
 
           <div className="aboutpg-badge">
-            Welcome to About Us
+            Get to Know Us
           </div>
 
           <h1 className="aboutpg-title">
@@ -47,15 +47,15 @@ const Aboutpg = () => {
       </h2>
 
       <p>
-        We are more than just an IT company — we are your strategic partner
-        in navigating the digital age. With 15 years of expertise, we've
-        mastered the art of turning complex challenges into elegant solutions.
+        At Teejaysoft, we transform ideas into impactful digital experiences that drive real growth.
+         With years of 
+        industry expertise, we turn complex challenges into smart, scalable and high-performing solutions.
       </p>
 
       <p>
-        Our team of passionate technologists, creative designers, and strategic
-        thinkers work in perfect harmony to deliver solutions that don't just
-        meet expectations — they exceed them.
+       Our team of passionate developers, creative designers, and digital strategists work collaboratively to
+        deliver solutions that not only meet expectations but consistently exceed them. By blending technology, 
+       creativity and strategy, we help businesses grow, adapt and lead in competitive markets.
       </p>
 
      <div className="who-features">
@@ -122,14 +122,13 @@ const Aboutpg = () => {
         <h4>Vision</h4>
 
         <p>
-          To revolutionize the digital landscape and become the most innovative
-          IT solutions provider, empowering businesses globally with cutting-edge
-          technology.
+          To become a driving force in digital transformation by delivering innovative, scalable and 
+          future-ready technology solutions. We aim to help businesses adapt to change, 
+          embrace innovation and achieve sustainable growth in an increasingly competitive digital landscape.
         </p>
          <p>
-          Built on integrity, innovation, and impact. We believe in creating
-          value through collaboration, maintaining transparency, and fostering
-          growth for all stakeholders.
+          We envision a future where technology empowers organizations to unlock new opportunities,
+           improve efficiency and create meaningful digital experiences.
         </p>
       </div>
 
@@ -142,14 +141,13 @@ const Aboutpg = () => {
         <h4>Mission</h4>
 
         <p>
-          Delivering exceptional IT solutions that transform businesses through
-          innovation, dedication, and a relentless pursuit of excellence in
-          everything we do.
+          Our mission is to provide high-quality digital solutions that combine creativity, 
+          technical expertise and strategic insight. We focus on delivering measurable results that
+           enhance performance, strengthen brand presence and accelerate business growth.
         </p>
          <p>
-          Built on integrity, innovation, and impact. We believe in creating
-          value through collaboration, maintaining transparency, and fostering
-          growth for all stakeholders.
+          Through dedication, collaboration and continuous improvement,
+           we strive to exceed expectations and build lasting digital success.
         </p>
       </div>
 
@@ -162,15 +160,14 @@ const Aboutpg = () => {
         <h4>Values</h4>
 
         <p>
-          Built on integrity, innovation, and impact. We believe in creating
-          value through collaboration, maintaining transparency, and fostering
-          growth for all stakeholders.
+          We are guided by integrity, innovation and accountability in everything we do.
+           Our work is built on trust, transparency and a 
+          commitment to delivering excellence at every stage of the process.
         </p>
 
          <p>
-          Built on integrity, innovation, and impact. We believe in creating
-          value through collaboration, maintaining transparency, and fostering
-          growth for all stakeholders.
+          By fostering teamwork, embracing new ideas and prioritizing client success,
+           we create impactful solutions that drive long-term value.
         </p>
       </div>
 

@@ -20,7 +20,7 @@ const AboutSection = () => {
 
             {/* BOTTOM LEFT EXPERIENCE BOX */}
             <div className="experience-box">
-              <h3>5+</h3>
+              <h3>09+</h3>
               <p>Years</p>
             </div>
           </div>
@@ -30,8 +30,9 @@ const AboutSection = () => {
             <span className="about-label">About Us</span>
             <h2>We Are Your Digital Success Partners</h2>
             <p>
-              With over a decade of experience in the IT industry, we've helped hundreds of businesses transform their digital presence. 
-              Our team of experts specializes in delivering innovative solutions that drive growth and maximize ROI.
+              Teejaysoft delivers end-to-end IT and digital marketing solutions designed for performance and scalability. 
+              By combining technical expertise with advanced marketing strategies, we help businesses improve search visibility,
+              optimize user experience and accelerate revenue growth in a rapidly evolving digital landscape.
             </p>
             <p>
               From cutting-edge web development to result-driven digital marketing campaigns, we provide comprehensive IT services tailored to your unique business needs.

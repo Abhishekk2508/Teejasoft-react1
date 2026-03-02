@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="hero-right">
         <span className="hero-badge">
           <FaRocket className="rocket-icon" />
-          Welcome to Digital Excellence
+          Welcome to Teejaysoft
         </span>
 
         <h1>
@@ -21,14 +21,13 @@ const Hero = () => {
         </h1>
 
         <p>
-          Empowering businesses with cutting-edge IT solutions, digital marketing
-          strategies, and innovative design services. Let’s build your success
-          story together.
+          Empowering brands with innovative IT solutions and performance-driven
+           digital marketing strategies that accelerate measurable growth.
         </p>
 
         <div className="hero-btns">
-          <button className="btn-primary">Let’s Start Your Journey</button>
-          <button className="btn-secondary">View Our Work</button>
+          <button className="btn-primary">Get Free Consultation</button>
+          <button className="btn-secondary">View Our Services</button>
         </div>
       </div>
     </section>

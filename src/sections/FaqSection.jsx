@@ -4,27 +4,27 @@ import "../styles/FaqSection.css";
 const faqData = [
   {
     q: "What services do you offer?",
-    a: "We provide web development, UI/UX design, SEO, branding, and digital marketing solutions tailored to your business."
+    a: "Teejaysoft provides end-to-end digital solutions including website development, UI/UX design, logo and creative design, digital marketing, paid advertising and domain & hosting services tailored to business needs."
   },
   {
     q: "How long does a typical project take?",
-    a: "Project timelines vary, but most websites take between 2–6 weeks depending on complexity."
+    a: "Project timelines depend on scope and complexity. A standard website typically takes 2–4 weeks, while larger or custom projects may require additional time. We provide a clear timeline before starting."
   },
   {
     q: "What is your pricing structure?",
-    a: "Our pricing is flexible and based on project scope, features, and business requirements."
+    a: "Our pricing is based on project requirements, features and deliverables. We offer flexible packages to suit startups, growing businesses and enterprises."
   },
   {
     q: "Do you provide ongoing support?",
-    a: "Yes, we offer maintenance and support packages to ensure your website runs smoothly."
+    a: "Yes, we offer ongoing website maintenance, performance monitoring, updates and technical support to ensure your digital presence runs smoothly."
   },
   {
     q: "Can you help with SEO and digital marketing?",
-    a: "Absolutely. We provide complete SEO, social media marketing, and paid ad strategies."
+    a: "Absolutely. We provide SEO, social media marketing, paid advertising and content strategies designed to increase visibility, traffic, and conversions."
   },
   {
     q: "Do you work with businesses of all sizes?",
-    a: "Yes, from startups to enterprises — we tailor solutions for every scale."
+    a: "Yes, we work with startups, small businesses, and established enterprises across various industries, delivering customized digital solutions."
   }
 ];
 

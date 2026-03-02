@@ -161,6 +161,8 @@
   letter-spacing: 0%;
   color: #ffffff;
   margin-bottom: 20px;
+  MAX-WIDTH: 710px;
+    WIDTH: 100%;
 }
 
 .hero-right h1 span {
