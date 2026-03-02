@@ -3,13 +3,12 @@ import { Link } from "react-router-dom"; //  FIXED
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import BlogsSection from "../sections/BlogsSection";
 import "../styles/Contactpg.css";
 import contactImg from "../assets/images/contact.png";
 
-import blogImage from "../assets/images/contactbanner1.png";
+// import blogImage from "../assets/images/contactbanner1.png";
 
-const Blogpg = () => {
+const Contactpg = () => {
   return (
     <>
       <Navbar />
@@ -208,4 +207,4 @@ const Blogpg = () => {
   );
 };
 
-export default Blogpg;
+export default Contactpg;
