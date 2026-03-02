@@ -395,3 +395,26 @@
     max-width: 90%;      /* small margin from sides */
   }
 }
+
+
+
+
+@media (max-width: 640px) {
+
+    .test-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        justify-content: flex-start;   /* IMPORTANT FIX */
+        padding-left: 16px;            /* left cut prevent */
+        padding-right: 16px;
+    }
+
+    .test-grid > * {
+        flex: 0 0 85%;                 /* card width control */
+        scroll-snap-align: start;
+    }
+}
