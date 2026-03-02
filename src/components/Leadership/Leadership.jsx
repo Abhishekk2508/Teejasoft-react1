@@ -14,7 +14,7 @@ const leaders = [
   { name: "Inderpreet Singh", role: "CEO & Founder", img: T1, bg: "#FFE0C2" },
   { name: "Ravinder Sharma", role: "Full-Stack Developer", img: T2, bg: "#FFD6D6" },
   { name: "Yogesh", role: "SEO & Digital Marketing Expert", img: T3, bg: "#DCEFFF" },
-  { name: "Pooja", role: "Social Media Executive", img: T4, bg: "#FFE9CC" },
+  { name: "Pooja", role: "Social Media Manager", img: T4, bg: "#FFE9CC" },
   { name: "Ankit Mandial", role: "UI/UX And Graphic Designer", img: T5, bg: "#FFD6D6" },
   { name: "Abhishek Kumar", role: "Software Engineer", img: T6, bg: "#DCEFFF" },
   { name: "Robin Beni", role: "Digital Marketing Manager", img: T7, bg: "#FFE9CC" },
@@ -55,7 +55,7 @@ export default function Leadership() {
   return (
     <section className="leadership-section">
       <div className="leadership-container">
-        <span className="leadership-label">Leadership</span>
+        <span className="leadership-label">Our Team</span>
         <h2 className="leadership-title">Meet Our Visionaries</h2>
         <p className="leadership-subtitle">
           The masterminds driving innovation and excellence

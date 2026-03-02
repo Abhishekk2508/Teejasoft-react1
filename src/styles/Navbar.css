@@ -94,8 +94,8 @@ body {
 
 /* CTA Button */
 .btn-talk {
-  background: #994D17;
-  color: #fff;
+  background: #994D17 !important;
+  color: #fff !important;;
   border-radius: 25px;
   padding: 12px 25px;
   font-family: Inter, sans-serif;

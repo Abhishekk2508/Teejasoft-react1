@@ -85,8 +85,11 @@ const Contactpg = () => {
             </h1>
 
             <p className="hero-description">
-              Ready to transform your digital presence? We're here to make it happen.
-              Let's create something extraordinary together.
+              Ready to transform your digital presence?
+               Whether you’re starting from scratch or looking to scale,
+                our team is here to understand your vision and deliver tailored solutions that drive
+                measurable results. From strategy to execution,
+               we’re committed to helping your business grow and succeed in today’s competitive digital landscape.
             </p>
 
             <div className="scroll-indicator">
@@ -97,7 +100,7 @@ const Contactpg = () => {
 
           <div className="contact-right">
             <div className="floatting-card card-1">
-              <h3>50+</h3>
+              <h3>100+</h3>
               <p>Projects Done</p>
             </div>
 
@@ -107,8 +110,8 @@ const Contactpg = () => {
             </div>
 
             <div className="floatting-card card-3">
-              <h3>24/7</h3>
-              <p>Support</p>
+              <h3>09+</h3>
+              <p>Years of Experience</p>
             </div>
           </div>
         </div>
@@ -121,7 +124,7 @@ const Contactpg = () => {
           <div className="contact-form-card">
             <h2>Send us a Message</h2>
             <p className="subtitle">
-              Fill out the form below and we’ll get back to you within 24 hours
+              Fill out the form below and we’ll get back to you.
             </p>
 
             <form className="contact-form" onSubmit={handleSubmit}>
@@ -225,7 +228,7 @@ const Contactpg = () => {
       <section className="reach-section">
         <div className="reach-container">
           {/* Top Text */}
-          <span className="reach-tag">Choose your</span>
+          <span className="reach-tag">Choose </span>
           {/* Heading */}
           <h2 className="reach-title">Other Ways to Reach Us</h2>
           <p className="reach-subtitle"> Choose the method that works best for you </p>

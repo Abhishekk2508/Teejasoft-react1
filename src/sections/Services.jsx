@@ -6,7 +6,7 @@ const services = [
   {
      icon: FaLaptopCode,
     title: "Web Development",
-    desc: "Build fast, secure, and scalable websites tailored to your business goals.",
+    desc: "Build fast, secure and scalable websites tailored to your business goals.",
     points: ["Custom Website Development", "E-commerce Website Development", "WordPress Development", "Website Maintenance & Support"]
   },
    {

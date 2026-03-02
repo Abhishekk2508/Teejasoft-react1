@@ -24,7 +24,7 @@ const faqData = [
   },
   {
     q: "Do you work with businesses of all sizes?",
-    a: "Yes, we work with startups, small businesses, and established enterprises across various industries, delivering customized digital solutions."
+    a: "Yes, we work with startups, small businesses and established enterprises across various industries, delivering customized digital solutions."
   }
 ];
 

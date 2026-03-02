@@ -38,7 +38,7 @@ const BlogsSection = () => {
       <p className="blog-subtitle">Our Blogs</p>
       <h2 className="blog-title">Latest Blogs & Articles</h2>
       <p className="blog-desc">
-        Stay updated with the latest trends, tips, and industry insights 
+        Stay updated with the latest trends, tips and industry insights 
       </p>
 
       <div className="blog-grid">

@@ -144,7 +144,7 @@ const Navbar = () => {
 
           {/* RIGHT CTA BUTTON */}
           <div className="cta-btn">
-            <NavLink to="/contact" className="btn btn-talk">
+            <NavLink to="/Contactpg" className="btn btn-talk">
               <FaHandshake className="me-2" />
               Let's Talk
             </NavLink>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // ✅ FIXED
+import { Link } from "react-router-dom"; //  FIXED
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -30,16 +30,17 @@ const Blogpg = () => {
 
             <h1 className="hero-title">
               Discover Our <br />
-              <span>Tech Insights</span>
+              <span>Latest Blogs & Articles</span>
             </h1>
 
             <p className="hero-description">
-              Explore cutting edge technology trends, development practices,
-              and industry innovations from our expert team.
+             Stay informed with expert insights, digital trends and practical strategies designed
+              to help businesses grow,
+              innovate and succeed in today’s competitive landscape.
             </p>
 
             <button className="blog-btn">
-              Explore Articles <span>→</span>
+              Explore Our Blogs <span>→</span>
             </button>
           </div>
 
@@ -64,7 +65,7 @@ const Blogpg = () => {
       <section className="featured-section">
         <div className="featured-card">
           <div className="featured-left">
-            <span className="featured-badge">Featured Articles</span>
+            <span className="featured-badge">Featured Blogs</span>
             <img src={blogImage} alt="Featured Blog" />
           </div>
 
@@ -93,7 +94,7 @@ const Blogpg = () => {
       <section className="category-section">
   <div className="category-container">
     <h2>Browse by Category</h2>
-    <p>Find articles that match your interests</p>
+    <p>Find Blogs & Articles that match your interests</p>
 
     <div className="category-buttons">
       <button className="category-btn active category1-btn">All</button>

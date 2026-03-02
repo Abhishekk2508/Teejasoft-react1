@@ -35,9 +35,9 @@ const Portfoliopg = () => {
           </h1>
 
           <p className="portfolio-desc-fixed">
-            Empowering businesses with cutting-edge IT solutions, digital
-            marketing strategies, and innovative design services. Let's build
-            your success story together.
+            Take a closer look at the work that defines our expertise. From website development
+             to digital marketing campaigns,
+             we create solutions designed to generate impact and long-term success.
           </p>
 
           <div className="portfolio-buttons-fixed">
