@@ -68,10 +68,12 @@ const Footer = () => {
         <div>
           <h4 className="gradient-underline">Our Services</h4>
           <ul>
+            <li>Web Development</li>
             <li>Digital Marketing</li>
             <li>Design Services</li>
             <li>Paid Advertising</li>
-            <li>Domains & Hosting</li>
+            <li>Domain & Hosting</li>
+
           </ul>
         </div>
 
