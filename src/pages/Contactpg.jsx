@@ -186,13 +186,13 @@ const Contactpg = () => {
                   >
                     <option value="">Select a Service</option>
                     <option value="Web Development">Web Development</option>
-                    <option value="App Development">App Development</option>
-                    <option value="SEO">SEO</option>
-                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="App Development">Digital Marketing</option>
+                    <option value="SEO">Design Services</option>
+                    <option value="UI/UX Design">Paid Advertising</option>
+                    <option value="Domain & Hosting">Domain & Hosting</option>
                   </select>
                 </div>
               </div>
-
               <div className="form-group full">
                 <label>Your Message</label>
                 <div className="input-wrap textarea-wrap">
