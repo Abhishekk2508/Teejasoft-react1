@@ -355,3 +355,10 @@
         margin-bottom:15px;
     }
 }
+/* Screens between 1300px and 1500px */
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .corner-shape, .experience-box {
+        bottom: 9%;
+        left: -5%;
+    }
+}
