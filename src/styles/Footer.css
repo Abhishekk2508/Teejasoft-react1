@@ -787,11 +787,11 @@
 
 /* Large devices: 769px - 1200px */
 @media (min-width: 769px) and (max-width: 1200px) {
-  .newsletter-box button {
+  /* .newsletter-box button {
     width: 100%;
     padding: 10px 20px;
     border-radius: 6px 6px 6px 6px;
-  }
+  } */
 }
 
 /* Extra large devices: 1201px - 1600px */
