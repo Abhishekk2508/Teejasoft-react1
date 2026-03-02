@@ -33,7 +33,7 @@ const Footer = () => {
 
           <span className="contact-item">
             <FaPhoneAlt className="contact-icon" />
-            +91 98765 43210
+            +91 98724 69996
           </span>
         </div>
 

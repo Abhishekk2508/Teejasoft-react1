@@ -76,7 +76,7 @@ const TrustedBrands = () => {
 
         {/* Footer */}
         <p className="trusted-footer">
-          And <span>100+</span> more amazing clients worldwide
+          {/* And <span>100+</span> more amazing clients worldwide */}
         </p>
       </div>
     </section>

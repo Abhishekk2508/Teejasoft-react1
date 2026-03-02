@@ -9,6 +9,12 @@ const services = [
     desc: "Build fast, secure, and scalable websites tailored to your business goals.",
     points: ["Custom Website Development", "E-commerce Website Development", "WordPress Development", "Website Maintenance & Support"]
   },
+   {
+    icon: FaChartLine,
+    title: "Digital Marketing",
+    desc: "Boost your online presence with data-driven marketing strategies that deliver measurable results.",
+    points: ["SEO", "Social Media Marketing", "Content Strategy", "Email Marketing"]
+  },
   {
     icon: FaPaintBrush,
     title: "Design Services",
@@ -26,12 +32,6 @@ const services = [
     title: "Domain & Hosting",
     desc: "Secure your online presence with reliable and high-performance hosting solutions.",
     points: ["Domain Registration", "Web Hosting", "SSL Certificates", "Server Management"]
-  },
-  {
-    icon: FaChartLine,
-    title: "Digital Marketing",
-    desc: "Boost your online presence with data-driven marketing strategies that deliver measurable results.",
-    points: ["SEO", "Social Media Marketing", "Content Strategy", "Email Marketing"]
   }
 ];
 

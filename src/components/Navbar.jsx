@@ -42,8 +42,8 @@ const Navbar = () => {
 
             {/* HOME */}
             <li className="nav-item">
-              <NavLink 
-                to="/" 
+              <NavLink
+                to="/"
                 className={({ isActive }) => "nav-link " + (isActive ? "active-link" : "")}
               >
                 Home
@@ -61,41 +61,49 @@ const Navbar = () => {
               >
                 Our Services
               </button>
-             <ul className={`dropdown-menu ${serviceOpen ? "show" : ""}`}>
+              <ul className={`dropdown-menu ${serviceOpen ? "show" : ""}`}>
 
                 <li>
-    <NavLink className="dropdown-item" to="/services/digital-marketing">
-      Digital Marketing
-    </NavLink>
-  </li>
-
-  <li>
-    <NavLink className="dropdown-item" to="/services/graphic-design">
-      Graphic Design
-    </NavLink>
-  </li>
+                  <NavLink className="dropdown-item" to="/services/web-development">
+                    Web Development
+                  </NavLink>
+                </li>
 
 
+                <li>
+                  <NavLink className="dropdown-item" to="/services/digital-marketing">
+                    Digital Marketing
+                  </NavLink>
+                </li>
 
-  <li>
-    <NavLink className="dropdown-item" to="/services/paid-ads">
-      Paid Ads
-    </NavLink>
-  </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/services/graphic-design">
+                    Graphic Design
+                  </NavLink>
+                </li>
 
-    <li>
-    <NavLink className="dropdown-item" to="/services/web-development">
-      Web Development
-    </NavLink>
-  </li>
-</ul>
+
+                <li>
+                  <NavLink className="dropdown-item" to="/services/paid-ads">
+                    Paid Advertising
+                  </NavLink>
+                </li>
+
+
+                <li>
+                  <NavLink className="dropdown-item" to="/services/web-development">
+                    Domain & Hosting
+                  </NavLink>
+                </li>
+
+              </ul>
 
             </li>
 
             {/* ABOUT US */}
             <li className="nav-item">
-              <NavLink 
-                to="/Aboutpg" 
+              <NavLink
+                to="/Aboutpg"
                 className={({ isActive }) => "nav-link " + (isActive ? "active-link" : "")}
               >
                 About Us
@@ -104,8 +112,8 @@ const Navbar = () => {
 
             {/* PORTFOLIO */}
             <li className="nav-item">
-              <NavLink 
-                to="/Portfoliopg" 
+              <NavLink
+                to="/Portfoliopg"
                 className={({ isActive }) => "nav-link " + (isActive ? "active-link" : "")}
               >
                 Portfolio
@@ -114,8 +122,8 @@ const Navbar = () => {
 
             {/* BLOG */}
             <li className="nav-item">
-              <NavLink 
-                to="/Blogpg" 
+              <NavLink
+                to="/Blogpg"
                 className={({ isActive }) => "nav-link " + (isActive ? "active-link" : "")}
               >
                 Blog
@@ -124,8 +132,8 @@ const Navbar = () => {
 
             {/* CONTACT US */}
             <li className="nav-item">
-              <NavLink 
-                to="/Contactpg" 
+              <NavLink
+                to="/Contactpg"
                 className={({ isActive }) => "nav-link " + (isActive ? "active-link" : "")}
               >
                 Contact Us
