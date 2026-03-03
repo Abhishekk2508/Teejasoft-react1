@@ -116,7 +116,7 @@
 }
 
 .card-2 {
-  top: clamp(45%, 48%, 52%);
+  top: clamp(45%, 54%, 52%);
   left: clamp(62%, 64vw, 70%);
   transform: rotate(-19.34deg);
 }
@@ -755,4 +755,10 @@ padding: 0 clamp(16px, 4vw, 80px) clamp(50px, 4vw, 80px);
   .reach-card {
     margin: 0 auto;
   }
+}
+
+
+.xyz{
+  background: #212529;
+  color: #fff;
 }

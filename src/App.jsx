@@ -12,6 +12,7 @@ import Webdevelopment from "./components/service/Webdevelopment";
 import Graphicdesign from "./components/service/Graphicdesign";
 import Digitalmarketing from "./components/service/Digitalmarketing";
 import Paidads from "./components/service/Paidads";
+import Domainhosting from "./components/service/Domainhosting";
 
 const App = () => {
   return (
@@ -31,6 +32,8 @@ const App = () => {
         <Route path="/services/graphic-design" element={<Graphicdesign />} />
         <Route path="/services/digital-marketing" element={<Digitalmarketing />} />
         <Route path="/services/paid-ads" element={<Paidads />} />
+        <Route path="/services/domainhosting" element={<Domainhosting />} />
+
       </Routes>
     </>
   );

@@ -91,7 +91,7 @@ const Navbar = () => {
 
 
                 <li>
-                  <NavLink className="dropdown-item" to="/services/web-development">
+                  <NavLink className="dropdown-item" to="/services/Domainhosting">
                     Domain & Hosting
                   </NavLink>
                 </li>

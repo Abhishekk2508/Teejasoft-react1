@@ -13,14 +13,10 @@ const Portfoliopg = () => {
 
       {/* ================= FULL WIDTH BANNER ================= */}
       <section className="portfolio-banner">
-
-        {/* background */}
         <div className="portfolio-banner-bg"></div>
 
-        {/* 1920 reference content */}
         <div className="portfolio-banner-content">
-
-          {/* ✅ FIXED BREADCRUMB (CLICKABLE HOME) */}
+          {/* FIXED BREADCRUMB */}
           <div className="breadcrumb-pill">
             <Link to="/" className="breadcrumb-link">
               Home
@@ -36,8 +32,8 @@ const Portfoliopg = () => {
 
           <p className="portfolio-desc-fixed">
             Take a closer look at the work that defines our expertise. From website development
-             to digital marketing campaigns,
-             we create solutions designed to generate impact and long-term success.
+            to digital marketing campaigns,
+            we create solutions designed to generate impact and long-term success.
           </p>
 
           <div className="portfolio-buttons-fixed">
@@ -45,19 +41,19 @@ const Portfoliopg = () => {
             <button className="btn-secondary-fixed">Get Started</button>
           </div>
 
-          {/* 👉 RIGHT SIDE IMAGE */}
+          {/* RIGHT SIDE IMAGE */}
           <img
             src={bannerImg}
             alt="Portfolio visual"
             className="portfolio-right-img"
           />
-
         </div>
       </section>
 
       {/* ================= PORTFOLIO CARDS ================= */}
       <div className="portfolio-page">
-        <PortfolioSection />
+        {/* Hide "View All Projects" button on Portfolio Page */}
+        <PortfolioSection showViewAll={false} />
       </div>
 
       {/* ================= CTA ================= */}

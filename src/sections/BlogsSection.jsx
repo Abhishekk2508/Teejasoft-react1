@@ -32,7 +32,7 @@ const articles = [
   },
 ];
 
-const BlogsSection = () => {
+const BlogsSection = ({ showViewAll = true }) => {
   return (
     <section className="blog-section">
       <p className="blog-subtitle">Our Blogs</p>
@@ -53,23 +53,23 @@ const BlogsSection = () => {
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
 
-              <div class="test-divider"></div>
+              <div className="test-divider"></div>
 
               <div className="blog-footer">
-  <span>{item.time}</span>
-  <button className="read-btn">Read More →</button>
-</div>
-
+                <span>{item.time}</span>
+                <button className="read-btn">Read More →</button>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
-      <button className="view-btn">View All Articles</button>
+      {/* Conditionally render the View All button */}
+      {showViewAll && (
+        <button className="view-btn">View All Articles</button>
+      )}
     </section>
   );
 };
 
 export default BlogsSection;
-
-

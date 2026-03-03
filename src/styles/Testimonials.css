@@ -3,7 +3,7 @@
 .test-section {
   width: 100%;
   background: rgba(28, 26, 26, 1);
-  padding: clamp(18px, 2.5vw, 44px) 0;  /* SAME AS OTHER SECTIONS */
+  /* padding: clamp(18px, 2.5vw, 44px) 0;   */
   font-family: "Inter", sans-serif;
 }
 

@@ -5,7 +5,6 @@ import {
   FaInstagram,
   FaTwitter,
   FaLinkedinIn,
-  FaYoutube,
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
@@ -23,33 +22,6 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      {/* TOP BAR */}
-      <div className="footer-top">
-        <div className="contact-left">
-          <span className="contact-item">
-            <FaEnvelope className="contact-icon" />
-            info@teejasoft.com
-          </span>
-
-          <span className="contact-item">
-            <FaPhoneAlt className="contact-icon" />
-            +91 98724 69996
-          </span>
-        </div>
-
-        <div className="social-right">
-          <p class="contactus">Follow Us on:</p>
-          <div className="icons">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedinIn />
-            <FaYoutube />
-          </div>
-        </div>
-      </div>
-
-      <div className="divider" />
 
       {/* GRID */}
       <div className="footer-grid">
@@ -73,16 +45,26 @@ const Footer = () => {
             <li>Design Services</li>
             <li>Paid Advertising</li>
             <li>Domain & Hosting</li>
-
           </ul>
         </div>
 
-        <div className="newsletter">
-          <h4 className="gradient-underline">Newsletter</h4>
-          <p>Subscribe to our newsletter for the latest updates and insights.</p>
-          <div className="newsletter-box">
-            <input type="email" placeholder="Enter your email" />
-            <button>Subscribe</button>
+        {/* Contact Info (replacing newsletter) */}
+        <div className="contact-replace">
+          <h4 className="gradient-underline">Contact Us</h4>
+          <span className="contact-item">
+            <FaEnvelope className="contact-icon" />
+            info@teejasoft.com
+          </span>
+          <span className="contact-item">
+            <FaPhoneAlt className="contact-icon" />
+            +91 98724 69996
+          </span>
+          <p className="contactus">Follow Us on:</p>
+          <div className="icons">
+            <FaFacebookF />
+            <FaInstagram />
+            <FaTwitter />
+            <FaLinkedinIn />
           </div>
         </div>
       </div>

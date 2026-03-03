@@ -22,7 +22,7 @@ const projects = [
   { title: "Small Business Platform", img: p6 },
 ];
 
-const PortfolioSection = () => {
+const PortfolioSection = ({ showViewAll = true }) => {
   return (
     <section className="portfolio-section">
       <div className="portfolio-container">
@@ -56,7 +56,10 @@ const PortfolioSection = () => {
           ))}
         </div>
 
-        <button className="view-all-btn">View All Projects</button>
+        {/* Conditionally render View All button */}
+        {showViewAll && (
+          <button className="view-all-btn">View All Projects</button>
+        )}
       </div>
     </section>
   );

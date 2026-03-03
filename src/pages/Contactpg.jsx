@@ -184,12 +184,12 @@ const Contactpg = () => {
                     value={formData.service}
                     onChange={handleChange}
                   >
-                    <option value="">Select a Service</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="App Development">Digital Marketing</option>
-                    <option value="SEO">Design Services</option>
-                    <option value="UI/UX Design">Paid Advertising</option>
-                    <option value="Domain & Hosting">Domain & Hosting</option>
+                    <option value="" class="xyz">Select a Service</option>
+                    <option value="Web Development" class="xyz">Web Development</option>
+                    <option value="App Development" class="xyz">Digital Marketing</option>
+                    <option value="SEO" class="xyz">Design Services</option>
+                    <option value="UI/UX Design" class="xyz">Paid Advertising</option>
+                    <option value="Domain & Hosting" class="xyz">Domain & Hosting</option>
                   </select>
                 </div>
               </div>

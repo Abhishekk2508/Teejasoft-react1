@@ -18,12 +18,8 @@ const Blogpg = () => {
 
         <div className="blog-hero-content">
           <div className="blogg-left">
-
-            {/* Breadcrumb Button */}
             <div className="breadcrumb-pill">
-              <Link to="/" className="breadcrumb-link">
-                Home
-              </Link>
+              <Link to="/" className="breadcrumb-link">Home</Link>
               <span className="breadcrumb-separator">&gt;</span>
               <span className="breadcrumb-current">Blog</span>
             </div>
@@ -34,14 +30,11 @@ const Blogpg = () => {
             </h1>
 
             <p className="hero-description">
-             Stay informed with expert insights, digital trends and practical strategies designed
-              to help businesses grow,
-              innovate and succeed in today’s competitive landscape.
+              Stay informed with expert insights, digital trends and practical strategies designed
+              to help businesses grow, innovate and succeed in today’s competitive landscape.
             </p>
 
-            <button className="blog-btn">
-              Explore Our Blogs <span>→</span>
-            </button>
+            <button className="blog-btn">Explore Our Blogs <span>→</span></button>
           </div>
 
           <div className="blog-right">
@@ -71,20 +64,15 @@ const Blogpg = () => {
 
           <div className="featured-right">
             <h2>The Complete Guide to SEO in 2026</h2>
-
             <p>
               Master the art of search engine optimization with our comprehensive
               guide covering everything from basics to advanced strategies.
             </p>
-                          <div class="feature-divider"></div>
-
+            <div className="feature-divider"></div>
 
             <div className="featured-bottom">
               <span className="read-time">8 min read</span>
-
-              <button className="read-mor-btn">
-                Read More <span>→</span>
-              </button>
+              <button className="read-mor-btn">Read More <span>→</span></button>
             </div>
           </div>
         </div>
@@ -92,22 +80,23 @@ const Blogpg = () => {
 
       {/* ================= BROWSE CATEGORY ================= */}
       <section className="category-section">
-  <div className="category-container">
-    <h2>Browse by Category</h2>
-    <p>Find Blogs & Articles that match your interests</p>
+        <div className="category-container">
+          <h2>Browse by Category</h2>
+          <p>Find Blogs & Articles that match your interests</p>
 
-    <div className="category-buttons">
-      <button className="category-btn active category1-btn">All</button>
-      <button className="category-btn category2-btn">Digital Marketing</button>
-      <button className="category-btn category3-btn">Design</button>
-      <button className="category-btn category4-btn">SEO</button>
-    </div>
-  </div>
-</section>
+          <div className="category-buttons">
+            <button className="category-btn active category1-btn">All</button>
+            <button className="category-btn category2-btn">Digital Marketing</button>
+            <button className="category-btn category3-btn">Design</button>
+            <button className="category-btn category4-btn">SEO</button>
+          </div>
+        </div>
+      </section>
 
-
+      {/* ================= BLOGS SECTION ================= */}
       <div className="blog-page">
-        <BlogsSection />
+        {/* Hide "View All Articles" button on Blog Page */}
+        <BlogsSection showViewAll={false} />
       </div>
 
       {/* ================= CTA ================= */}

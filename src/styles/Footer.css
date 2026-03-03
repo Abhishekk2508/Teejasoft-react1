@@ -1552,3 +1552,80 @@
     }
 }
 
+/* Base styles */
+.contact-replace {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;       /* Space between items */
+}
+
+.contact-replace h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact-replace .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;        /* Space between icon and text */
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.contact-replace .contactus {
+  margin: 8px 0 4px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.contact-replace .icons {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-replace .icons svg {
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-replace {
+    align-items: center;  /* Center everything horizontally */
+    text-align: center;   /* Center text */
+    gap: 10px;
+  }
+
+  .contact-replace h4 {
+    font-size: 16px;
+  }
+
+  .contact-replace .contact-item,
+  .contact-replace .contactus {
+    font-size: 14px;
+  }
+
+  .contact-replace .icons {
+    justify-content: center; /* Center the icons */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-replace {
+    gap: 8px;
+  }
+
+  .contact-replace h4 {
+    font-size: 15px;
+  }
+
+  .contact-replace .contact-item,
+  .contact-replace .contactus {
+    font-size: 13px;
+  }
+
+  .contact-replace .icons {
+    gap: 8px;
+  }
+}
