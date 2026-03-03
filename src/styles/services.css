@@ -166,7 +166,7 @@
 .grid-wrapper {
   overflow: hidden !important; /* keep slider clipping */
   position: relative;
-  padding:  0 40px 0 !important; /* top + bottom padding */
+  padding:  20px 40px 0 !important; /* top + bottom padding */
 }
 
 .grid {
