@@ -611,8 +611,11 @@ padding: 0 clamp(16px, 4vw, 80px) clamp(50px, 4vw, 80px);
 .reach-grid {
   margin-top: clamp(40px, 5vw, 70px);
   display: grid;
-  grid-template-columns: repeat(4, clamp(200px, 20vw, 385px));
-  gap: 15px; /* 1920px design */
+
+  /* Auto fit so 3 cards perfectly center */
+  grid-template-columns: repeat(auto-fit, clamp(200px, 20vw, 385px));
+
+  gap: 15px;
   justify-content: center;
 }
 

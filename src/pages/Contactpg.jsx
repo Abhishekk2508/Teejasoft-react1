@@ -232,46 +232,38 @@ const Contactpg = () => {
           {/* Heading */}
           <h2 className="reach-title">Other Ways to Reach Us</h2>
           <p className="reach-subtitle"> Choose the method that works best for you </p>
-          {/* Cards */}
-          <div className="reach-grid">
-            <div className="reach-card">
-              <div className="reach-icon">
-                <i className="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <h4>Visit Our Office</h4>
-                <p>lorem ipsum &nbsp; lorem ipsum</p>
-              </div>
-            </div>
-            <div className="reach-card">
-              <div className="reach-icon">
-                <i className="fas fa-phone">
-                </i>
-              </div>
-              <div>
-                <h4>Call Us</h4>
-                <p>+91 98724 69996</p>
-              </div>
-            </div>
-            <div className="reach-card">
-              <div className="reach-icon">
-                <i className="fas fa-envelope"></i>
-              </div>
-              <div>
-                <h4>Email Us</h4>
-                <p>info@teejaysoft.com</p>
-              </div>
-            </div>
-            <div className="reach-card">
-              <div className="reach-icon">
-                <i className="fas fa-clock"></i>
-              </div>
-              <div>
-                <h4>Working Hours</h4>
-                <p>Monday - Friday: 9:30 AM – 6:30 PM</p>
-              </div>
-            </div>
-          </div>
+{/* Cards */}
+<div className="reach-grid">
+  <div className="reach-card">
+    <div className="reach-icon">
+      <i className="fas fa-phone"></i>
+    </div>
+    <div>
+      <h4>Call Us</h4>
+      <p>+91 98724 69996</p>
+    </div>
+  </div>
+
+  <div className="reach-card">
+    <div className="reach-icon">
+      <i className="fas fa-envelope"></i>
+    </div>
+    <div>
+      <h4>Email Us</h4>
+      <p>info@teejaysoft.com</p>
+    </div>
+  </div>
+
+  <div className="reach-card">
+    <div className="reach-icon">
+      <i className="fas fa-clock"></i>
+    </div>
+    <div>
+      <h4>Working Hours</h4>
+      <p>Monday - Friday: 9:30 AM – 6:30 PM</p>
+    </div>
+  </div>
+</div>
         </div>
       </section>
 
