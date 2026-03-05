@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/AboutSection.css";
 import aboutImg from "../assets/images/About.png";
 import rewardIcon from "../assets/images/reward.png"; // Add your reward icon here
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -30,7 +31,7 @@ const AboutSection = () => {
             <span className="about-label">About Us</span>
             <h2>We Are Your Digital Success Partners</h2>
             <p>
-              Teejaysoft delivers end-to-end IT and digital marketing solutions designed for performance and scalability. 
+              Teejaysoft delivers end-to-end IT and digital marketing solutions designed for performance and scalability.
               By combining technical expertise with advanced marketing strategies, we help businesses improve search visibility,
               optimize user experience and accelerate revenue growth in a rapidly evolving digital landscape.
             </p>
@@ -38,7 +39,9 @@ const AboutSection = () => {
               From cutting-edge web development to result-driven digital marketing campaigns, we provide comprehensive IT services tailored to your unique business needs.
               Our mission is to empower your brand with technology and creativity.
             </p>
-            <button className="about-btn">Read More</button>
+            <Link to="/Aboutpg">
+              <button className="about-btn">Read More</button>
+            </Link>
           </div>
 
         </div>

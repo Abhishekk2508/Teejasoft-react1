@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -15,6 +16,11 @@ import analyticsImg from "../../assets/images/analytics-reporting.png";
 
 
 const Digitalmarketing = () => {
+
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

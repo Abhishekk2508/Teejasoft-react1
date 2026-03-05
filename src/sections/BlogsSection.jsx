@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/BlogsSection.css";
+import { Link } from "react-router-dom";
 
 import img1 from "../assets/images/blog1.png";
 import img2 from "../assets/images/blog2.png";
@@ -38,7 +39,7 @@ const BlogsSection = ({ showViewAll = true }) => {
       <p className="blog-subtitle">Our Blogs</p>
       <h2 className="blog-title">Latest Blogs & Articles</h2>
       <p className="blog-desc">
-        Stay updated with the latest trends, tips and industry insights 
+        Stay updated with the latest trends, tips and industry insights
       </p>
 
       <div className="blog-grid">
@@ -66,7 +67,9 @@ const BlogsSection = ({ showViewAll = true }) => {
 
       {/* Conditionally render the View All button */}
       {showViewAll && (
-        <button className="view-btn">View All Articles</button>
+        <Link to="/Blogpg">  {/* Replace with correct route */}
+          <button className="view-btn">View All Articles</button>
+        </Link>
       )}
     </section>
   );

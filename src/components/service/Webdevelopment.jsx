@@ -6,6 +6,7 @@ import Footer from "../Footer";
 
 import "./Digitalmarketing.css";
 import bannerImg from "../../assets/images/digitalm-banner.jpg";
+import { useEffect } from "react";
 
 import seoImg from "../../assets/images/seo.png";
 import socialmmImg from "../../assets/images/socialmm.png";
@@ -16,6 +17,11 @@ import analyticsImg from "../../assets/images/analytics-reporting.png";
 
 
 const Webdevelopment = () => {
+    // Scroll to top on page load
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   return (
     <>
       <Navbar />

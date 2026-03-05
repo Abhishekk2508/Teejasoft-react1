@@ -72,7 +72,7 @@
   line-height: 1.5;
   
   /* Margin-bottom 70px desktop par achi hai, par mobile par gap kam hona chahiye */
-  margin-bottom: clamp(40px, 5vw, 70px);
+  /* margin-bottom: clamp(40px, 5vw, 70px); */
   
   max-width: 800px; /* Text ko bohot zyada wide hone se rokta hai */
   margin-inline: auto; /* Subtitle ko hamesha center mein rakhta hai */
@@ -196,7 +196,7 @@
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin: clamp(30px, 5vw, 60px) 0;
+  /* margin: clamp(30px, 5vw, 60px) 0; */
 }
 
 .nav-btn {
@@ -311,7 +311,7 @@
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin: clamp(30px, 5vw, 60px) 0;
+  /* margin: clamp(30px, 5vw, 60px) 0; */
 }
 
 .nav-btn {

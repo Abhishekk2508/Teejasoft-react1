@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/PortfolioSection.css";
 import eyeIcon from "../assets/images/eye.png";
+import { Link } from "react-router-dom";
 
 import p1 from "../assets/images/ecom.png";
 import p2 from "../assets/images/consultancy platform.png";
@@ -58,7 +59,9 @@ const PortfolioSection = ({ showViewAll = true }) => {
 
         {/* Conditionally render View All button */}
         {showViewAll && (
-          <button className="view-all-btn">View All Projects</button>
+          <Link to="/Portfoliopg">
+            <button className="view-all-btn">View All Projects</button>
+          </Link>
         )}
       </div>
     </section>

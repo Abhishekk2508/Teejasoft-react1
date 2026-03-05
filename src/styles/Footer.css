@@ -1561,7 +1561,6 @@
 
 .contact-replace h4 {
   margin-bottom: 10px;
-  font-size: 18px;
 }
 
 .contact-replace .contact-item {
@@ -1628,4 +1627,9 @@
   .contact-replace .icons {
     gap: 8px;
   }
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
 }
