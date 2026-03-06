@@ -159,16 +159,20 @@
   width: 205px;
   height: 48px;
   align-self: flex-start;
+
+  display: inline-flex;        /* FIX */
+  justify-content: center;     /* horizontal center */
+  align-items: center;         /* vertical center */
+
   background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
-  border: none;
   border-radius: 49px;
   color: #fff;
   cursor: pointer;
   font-weight: 500;
   font-size: 18px;
   text-align: center;
+  text-decoration: none;
 }
-
 /* ================= DESKTOP (≥992px) ================= */
 @media (min-width: 992px) {
   .about-container-1920 {
@@ -361,4 +365,16 @@
         bottom: 9%;
         left: -5%;
     }
+}
+@media (max-width: 576px) {
+  .about-btn {
+    order: 5;
+    width: 100%;
+    margin-top: 16px;
+    align-self: center;      /* fix alignment */
+    display: flex;
+    justify-content: center; /* text center */
+    align-items: center;
+    text-decoration: none;
+  }
 }

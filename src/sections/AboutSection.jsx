@@ -39,8 +39,8 @@ const AboutSection = () => {
               From cutting-edge web development to result-driven digital marketing campaigns, we provide comprehensive IT services tailored to your unique business needs.
               Our mission is to empower your brand with technology and creativity.
             </p>
-            <Link to="/Aboutpg">
-              <button className="about-btn">Read More</button>
+            <Link to="/Aboutpg" className="about-btn">
+              Read More
             </Link>
           </div>
 

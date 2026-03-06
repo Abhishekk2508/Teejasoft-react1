@@ -39,7 +39,7 @@ const BlogsSection = ({ showViewAll = true }) => {
       <p className="blog-subtitle">Our Blogs</p>
       <h2 className="blog-title">Latest Blogs & Articles</h2>
       <p className="blog-desc">
-        Stay updated with the latest trends, tips and industry insights
+        Stay updated with the latest trends, tips and industry insights 
       </p>
 
       <div className="blog-grid">
@@ -66,11 +66,11 @@ const BlogsSection = ({ showViewAll = true }) => {
       </div>
 
       {/* Conditionally render the View All button */}
-      {showViewAll && (
-        <Link to="/Blogpg">  {/* Replace with correct route */}
-          <button className="view-btn">View All Articles</button>
-        </Link>
-      )}
+{showViewAll && (
+  <Link to="/Blogpg">  {/* Replace with correct route */}
+    <button className="view-btn">View All Articles</button>
+  </Link>
+)}
     </section>
   );
 };
