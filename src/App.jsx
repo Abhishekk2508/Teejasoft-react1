@@ -6,8 +6,10 @@ import Aboutpg from "./pages/Aboutpg";
 import Portfoliopg from "./pages/Portfoliopg";
 import Blogpg from "./pages/Blogpg";
 import Contactpg from "./pages/Contactpg";
+import EcommerceProject from "./pages/EcommerceProject";
 
-// ✅ SERVICES (Correct Path from src/App.jsx)
+
+//  SERVICES (Correct Path from src/App.jsx)
 import Webdevelopment from "./components/service/Webdevelopment";
 import Graphicdesign from "./components/service/Graphicdesign";
 import Digitalmarketing from "./components/service/Digitalmarketing";
@@ -33,6 +35,7 @@ const App = () => {
         <Route path="/services/digital-marketing" element={<Digitalmarketing />} />
         <Route path="/services/paid-ads" element={<Paidads />} />
         <Route path="/services/domainhosting" element={<Domainhosting />} />
+        <Route path="/ecommerce-project" element={<EcommerceProject />} />
 
       </Routes>
     </>

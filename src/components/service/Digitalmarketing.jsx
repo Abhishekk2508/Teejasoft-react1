@@ -41,13 +41,11 @@ const Digitalmarketing = () => {
             </div>
 
             <h1>
-              Digital Marketing <br />
-              <span>Solutions</span>
+              Digital&nbsp;<span>Marketing</span>
             </h1>
 
             <p>
-              Elevate your brand with data-driven digital marketing strategies that deliver measurable results and maximize your ROI.
-            </p>
+              Build consistent visibility and long-term growth with strategic digital marketing tailored to your business goals. At Teejaysoft, we combine creativity, data and performance-driven strategies to help your brand reach the right audience, generate qualified leads and turn traffic into real business results.            </p>
 
             <button className="hero-btn">
               <span className="hero-btn-text">Get Started Today</span>
@@ -62,8 +60,7 @@ const Digitalmarketing = () => {
           <p className="mini-title">What We Offer</p>
           <h2>Comprehensive Digital Marketing Services</h2>
           <p className="sub-text">
-            From SEO to social media, we provide end-to-end digital marketing solutions
-            that help your business grow and thrive in the digital landscape.
+            From strategy and content to optimization and analytics, we manage every part of your digital marketing journey. Our goal is to build strong online visibility, increase engagement and help your business grow sustainably.
           </p>
         </div>
       </section>
@@ -85,7 +82,7 @@ const Digitalmarketing = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fas fa-magnifying-glass"></i>
+                <i className="fas fa-search"></i>
               </div>
               <div className="badge-text">
                 <span>Service # 1</span>
@@ -97,22 +94,21 @@ const Digitalmarketing = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-magnifying-glass"></i>
+              <i className="fas fa-search"></i>
             </div>
 
-            <h3>Search Engine Optimization</h3>
+            <h3>Search Engine Optimization (SEO)</h3>
             <p>
-              Boost your website's visibility and organic traffic with our comprehensive SEO strategies. We optimize your online presence to rank higher in search results and attract quality leads.
-            </p>
+              Improve your search visibility and attract the right audience with SEO strategies designed for long-term growth and consistent traffic.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Keyword Research & Analysis</li>
-              <li><i className="fas fa-check-circle"></i> On-Page & Technical SEO</li>
-              <li><i className="fas fa-check-circle"></i> Link Building & Outreach</li>
-              <li><i className="fas fa-check-circle"></i> Performance Tracking & Reporting</li>
+              <li><i className="fas fa-check-circle"></i> Keyword research & strategy</li>
+              <li><i className="fas fa-check-circle"></i> On-page SEO </li>
+              <li><i className="fas fa-check-circle"></i> Technical SEO improvements</li>
+              <li><i className="fas fa-check-circle"></i> Content optimization</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -131,7 +127,7 @@ const Digitalmarketing = () => {
             {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
-                <i className="fas fa-share-nodes"></i>
+                <i className="fab fa-facebook-f"></i>
               </div>
               <div className="badge-text">
                 <span>Service # 2</span>
@@ -143,22 +139,23 @@ const Digitalmarketing = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-share-nodes"></i>
+              <i className="fab fa-facebook-f"></i>
+
+
             </div>
 
             <h3>Social Media Marketing</h3>
             <p>
-              Engage your audience and build a strong brand presence across all major social platforms. Our creative campaigns drive engagement, followers, and conversions.
-            </p>
+              Build a strong brand presence across social platforms with engaging content and targeted strategies that connect with your audience.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Multi-Platform Management</li>
-              <li><i className="fas fa-check-circle"></i> Content Creation & Curation</li>
-              <li><i className="fas fa-check-circle"></i> Community Engagement</li>
-              <li><i className="fas fa-check-circle"></i> Influencer Partnerships</li>
+              <li><i className="fas fa-check-circle"></i> Content planning & posting</li>
+              <li><i className="fas fa-check-circle"></i> Social media campaigns</li>
+              <li><i className="fas fa-check-circle"></i> Audience engagement</li>
+              <li><i className="fas fa-check-circle"></i> Performance tracking</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
@@ -178,7 +175,7 @@ const Digitalmarketing = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fa-solid fa-dollar-sign"></i>
+                <i className="fas fa-chart-pie"></i>
               </div>
               <div className="badge-text">
                 <span>Service # 3</span>
@@ -190,29 +187,28 @@ const Digitalmarketing = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fa-solid fa-dollar-sign"></i>
+              <i className="fas fa-chart-pie"></i>
             </div>
 
-            <h3>Pay-Per-Click Advertising</h3>
+            <h3>Analytics & Optimization</h3>
             <p>
-              Maximize your advertising ROI with targeted PPC campaigns. We create data-driven strategies that convert clicks into customers across Google Ads, Facebook, and more.
-            </p>
+              Measure performance and continuously improve results using real data and insights to refine strategies and maximize ROI.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Campaign Strategy & Setup</li>
-              <li><i className="fas fa-check-circle"></i> Ad Copy & Creative Design</li>
-              <li><i className="fas fa-check-circle"></i> Bid Management & Optimization</li>
-              <li><i className="fas fa-check-circle"></i> Conversion Rate Optimization</li>
+              <li><i className="fas fa-check-circle"></i> Campaign performance tracking</li>
+              <li><i className="fas fa-check-circle"></i> Conversion optimization</li>
+              <li><i className="fas fa-check-circle"></i> Marketing analytics setup</li>
+              <li><i className="fas fa-check-circle"></i> Data-driven strategy improvements</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
         {/* 4th SERVICE */}
-        <div className="service-row service-two reverse">
+        {/* <div className="service-row service-two reverse">
 
-          {/* RIGHT IMAGE */}
+        
           <div className="service-image">
             <div className="image-card right-tilt"></div>
 
@@ -221,7 +217,7 @@ const Digitalmarketing = () => {
               alt="Content Marketing"
             />
 
-            {/* Bottom Right Overlay Badge */}
+        
             <div className="image-badge badge-right">
               <div className="badge-icon">
                 <i className="fa-solid fa-newspaper"></i> 
@@ -233,7 +229,7 @@ const Digitalmarketing = () => {
             </div>
           </div>
 
-          {/* LEFT CONTENT */}
+         
           <div className="service-content">
             <div className="icon-box">
               <i className="fa-solid fa-newspaper"></i>  
@@ -254,12 +250,12 @@ const Digitalmarketing = () => {
             <button className="learn-btn">Learn More</button>
           </div>
 
-        </div>
+        </div> */}
 
         {/* 5th SERVICE */}
-        <div className="service-row service-one">
+        {/* <div className="service-row service-one">
 
-          {/* LEFT IMAGE */}
+         
           <div className="service-image">
             <div className="image-card"></div>
 
@@ -268,7 +264,7 @@ const Digitalmarketing = () => {
               alt="Email Marketing"
             />
 
-            {/* Bottom Left Overlay Card */}
+          
             <div className="image-badge">
               <div className="badge-icon">
                 <i className="fa-solid fa-envelope"></i>
@@ -280,7 +276,7 @@ const Digitalmarketing = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
+    
           <div className="service-content">
             <div className="icon-box">
               <i className="fa-solid fa-envelope"></i>     
@@ -300,12 +296,12 @@ const Digitalmarketing = () => {
 
             <button className="learn-btn">Learn More</button>
           </div>
-        </div>
+        </div> */}
 
         {/* 6th SERVICE */}
-        <div className="service-row service-two reverse">
+        {/* <div className="service-row service-two reverse">
 
-          {/* RIGHT IMAGE */}
+          
           <div className="service-image">
             <div className="image-card right-tilt"></div>
 
@@ -314,7 +310,6 @@ const Digitalmarketing = () => {
               alt="Analytics"
             />
 
-            {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -326,7 +321,6 @@ const Digitalmarketing = () => {
             </div>
           </div>
 
-          {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
               <i className="fa-solid fa-chart-column"></i>     
@@ -347,7 +341,7 @@ const Digitalmarketing = () => {
             <button className="learn-btn">Learn More</button>
           </div>
 
-        </div>
+        </div> */}
       </section>
 
       {/* WHY CHOOSE US SECTION */}

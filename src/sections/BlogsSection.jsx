@@ -1,76 +1,108 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/BlogsSection.css";
 import { Link } from "react-router-dom";
+import { client, urlFor } from "../sanityClient";
 
-import img1 from "../assets/images/blog1.png";
-import img2 from "../assets/images/blog2.png";
-import img3 from "../assets/images/blog3.png";
+const BlogsSection = ({ showViewAll = true, category = "All" }) => {
 
-const articles = [
-  {
-    id: 1,
-    tag: "Digital Marketing",
-    title: "10 Digital Marketing Trends for 2026",
-    desc: "Stay ahead of the curve with the latest digital marketing strategies that are transforming businesses.",
-    time: "5 min read",
-    image: img1,
-  },
-  {
-    id: 2,
-    tag: "SEO",
-    title: "The Complete Guide to SEO in 2026",
-    desc: "Master the art of search engine optimization with our comprehensive guide covering everything.",
-    time: "8 min read",
-    image: img2,
-  },
-  {
-    id: 3,
-    tag: "Design",
-    title: "How AI is Revolutionizing Web Design",
-    desc: "Explore how artificial intelligence is changing the landscape of web design and user experience.",
-    time: "6 min read",
-    image: img3,
-  },
-];
+  const [articles, setArticles] = useState([]);
 
-const BlogsSection = ({ showViewAll = true }) => {
+  useEffect(() => {
+
+    const query = `*[_type == "post" && defined(slug.current)] | order(_createdAt desc){
+      _id,
+      title,
+      slug,
+      category,
+      description,
+      readTime,
+      image
+    }`;
+
+    client.fetch(query).then((data) => {
+      console.log("Sanity Data:", data);
+      setArticles(data);
+    });
+
+  }, []);
+
+  /* ================= FILTER ================= */
+
+  const filteredArticles =
+    category === "All"
+      ? articles
+      : articles.filter(
+          (item) => item.category?.toLowerCase() === category.toLowerCase()
+        );
+
   return (
     <section className="blog-section">
+
       <p className="blog-subtitle">Our Blogs</p>
       <h2 className="blog-title">Latest Blogs & Articles</h2>
+
       <p className="blog-desc">
-        Stay updated with the latest trends, tips and industry insights 
+        Stay updated with the latest trends, tips and industry insights
       </p>
 
       <div className="blog-grid">
-        {articles.map((item) => (
-          <div className="blog-card" key={item.id}>
+
+        {filteredArticles.length === 0 && (
+          <p style={{ textAlign: "center" }}>No Blogs Found</p>
+        )}
+
+        {filteredArticles.map((item) => (
+
+          <div className="blog-card" key={item._id}>
+
             <div className="blog-img-wrapper">
-              <img src={item.image} alt={item.title} />
-              <span className="blog-tag">{item.tag}</span>
+
+              {item.image && (
+                <img
+                  src={urlFor(item.image).width(600).url()}
+                  alt={item.title}
+                />
+              )}
+
+              <span className="blog-tag">{item.category}</span>
+
             </div>
 
             <div className="blog-content">
+
               <h3>{item.title}</h3>
-              <p>{item.desc}</p>
+              <p>{item.description}</p>
 
               <div className="test-divider"></div>
 
               <div className="blog-footer">
-                <span>{item.time}</span>
-                <button className="read-btn">Read More →</button>
+
+                <span>{item.readTime}</span>
+
+                <Link to={`/blog/${item.slug.current}`}>
+                  <button className="read-btn">
+                    Read More →
+                  </button>
+                </Link>
+
               </div>
+
             </div>
+
           </div>
+
         ))}
+
       </div>
 
-      {/* Conditionally render the View All button */}
-{showViewAll && (
-  <Link to="/Blogpg">  {/* Replace with correct route */}
-    <button className="view-btn">View All Articles</button>
-  </Link>
-)}
+      {showViewAll && (
+        <Link to="/blogpg">
+          <button className="view-btn">
+            View All Articles
+          </button>
+        </Link>
+      )}
+
     </section>
   );
 };

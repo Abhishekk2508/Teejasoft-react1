@@ -1,0 +1,210 @@
+/* MAIN SECTION */
+
+.project-page{
+
+  background:rgb(28,26,26);
+  padding:80px 20px;
+  min-height:100vh;
+
+}
+
+/* CONTAINER */
+
+.project-container{
+
+  max-width:1300px;
+  margin:auto;
+
+}
+
+/* HERO */
+
+.project-hero{
+
+  text-align:center;
+  margin-bottom:60px;
+
+}
+
+.project-hero h1{
+
+  font-size:clamp(28px,4vw,44px);
+  font-weight:700;
+
+  background:linear-gradient(
+  135deg,
+  rgba(154, 78, 23, 1) 0%,
+  rgba(217, 114, 45, 1) 54.54%,
+  rgba(155, 78, 23, 1) 100%
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+}
+
+.project-hero p{
+
+  color:#cfcfcf;
+  font-size:clamp(14px,1.3vw,16px);
+
+  max-width:650px;
+  margin:15px auto 0;
+
+}
+
+/* GRID */
+
+.mockup-grid{
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:28px;
+
+}
+
+/* CARD */
+
+.mockup-card{
+
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:16px;
+
+  padding:35px 25px;
+
+  position:relative;
+  overflow:hidden;
+
+  transition:0.35s ease;
+
+}
+
+/* hover glow */
+
+.mockup-card::before{
+
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(
+  135deg,
+  rgba(154,78,23,0.25),
+  rgba(217,114,45,0.25)
+  );
+
+  opacity:0;
+  transition:0.35s;
+
+}
+
+.mockup-card:hover::before{
+  opacity:1;
+}
+
+/* hover lift */
+
+.mockup-card:hover{
+
+  transform:translateY(-8px) scale(1.03);
+  border-color:rgb(173,86,27);
+
+}
+
+/* CARD CONTENT */
+
+.mockup-card-inner{
+
+  position:relative;
+  z-index:2;
+  text-align:center;
+
+}
+
+.mockup-card h3{
+
+  color:white;
+  margin-bottom:25px;
+  font-size:clamp(16px,1.4vw,20px);
+
+}
+
+/* BUTTON */
+
+.view-btn{
+
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:10px 18px;
+
+  border-radius:40px;
+
+  background:linear-gradient(
+  135deg,
+  rgba(154, 78, 23, 1) 0%,
+  rgba(217, 114, 45, 1) 54.54%,
+  rgba(155, 78, 23, 1) 100%
+  );
+
+  color:white;
+  text-decoration:none;
+
+  font-size:14px;
+
+  transition:0.3s;
+
+}
+
+.view-btn img{
+  width:18px;
+      background: #fff;
+}
+
+.view-btn:hover{
+
+  transform:scale(1.07);
+  box-shadow:0 8px 20px rgba(217,114,45,0.4);
+
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .project-page{
+    padding:60px 18px;
+  }
+
+  .mockup-card{
+    padding:28px 20px;
+  }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px){
+
+  .project-hero{
+    margin-bottom:40px;
+  }
+
+  .mockup-grid{
+    gap:20px;
+  }
+
+}
+
+/* LARGE SCREENS */
+
+@media (min-width:1600px){
+
+  .project-container{
+    max-width:1500px;
+  }
+
+}

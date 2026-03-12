@@ -16,10 +16,10 @@ import analyticsImg from "../../assets/images/analytics-reporting.png";
 
 
 const Graphicdesign = () => {
-    // Scroll to top on page load
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -41,13 +41,11 @@ const Graphicdesign = () => {
             </div>
 
             <h1>
-              Graphic Design <br />
-              <span>Solutions</span>
+              Graphic&nbsp;<span>Design</span>
             </h1>
 
             <p>
-              Elevate your brand with data-driven graphic design strategies that deliver measurable results and maximize your ROI.
-            </p>
+              Create a strong and memorable brand identity with design that communicates professionalism and trust. At Teejaysoft, we design visuals that are not only beautiful but also strategically crafted to strengthen your brand and attract the right audience.            </p>
 
             <button className="hero-btn">
               <span className="hero-btn-text">Get Started Today</span>
@@ -60,10 +58,9 @@ const Graphicdesign = () => {
       <section className="servicesoffer-section">
         <div className="services-header">
           <p className="mini-title">What We Offer</p>
-          <h2>Comprehensive Graphic Design Services</h2>
+          <h2>Creative Design Solutions</h2>
           <p className="sub-text">
-            From branding to UI/UX, we provide end-to-end graphic design solutions
-            that help your business grow and thrive in the digital landscape.
+            From brand identity to marketing creatives, we design assets that help your business stand out across digital and print platforms.
           </p>
         </div>
       </section>
@@ -85,7 +82,7 @@ const Graphicdesign = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fas fa-magnifying-glass"></i>
+                <i className="fas fa-palette"></i>
               </div>
               <div className="badge-text">
                 <span>Service # 1</span>
@@ -97,22 +94,21 @@ const Graphicdesign = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-magnifying-glass"></i>
+              <i className="fas fa-palette"></i>
             </div>
 
-            <h3>Search Engine Optimization</h3>
+            <h3>Brand Identity Design</h3>
             <p>
-              Boost your website's visibility and organic traffic with our comprehensive SEO strategies. We optimize your online presence to rank higher in search results and attract quality leads.
-            </p>
+              Build a strong visual identity that represents your business clearly and consistently across all platforms.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Keyword Research & Analysis</li>
-              <li><i className="fas fa-check-circle"></i> On-Page & Technical SEO</li>
-              <li><i className="fas fa-check-circle"></i> Link Building & Outreach</li>
-              <li><i className="fas fa-check-circle"></i> Performance Tracking & Reporting</li>
+              <li><i className="fas fa-check-circle"></i> Logo design</li>
+              <li><i className="fas fa-check-circle"></i> Brand color palette</li>
+              <li><i className="fas fa-check-circle"></i> Brand guidelines</li>
+              <li><i className="fas fa-check-circle"></i> Iconography & visual elements</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -131,7 +127,7 @@ const Graphicdesign = () => {
             {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
-                <i className="fas fa-share-nodes"></i>
+                <i className="fas fa-bullhorn"></i>
               </div>
               <div className="badge-text">
                 <span>Service # 2</span>
@@ -143,22 +139,21 @@ const Graphicdesign = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-share-nodes"></i>
+              <i className="fas fa-bullhorn"></i>
             </div>
 
-            <h3>Social Media Marketing</h3>
+            <h3>Marketing & Social Media Creatives</h3>
             <p>
-              Engage your audience and build a strong brand presence across all major social platforms. Our creative campaigns drive engagement, followers, and conversions.
-            </p>
+              Design engaging visuals for social media, ads and marketing campaigns that capture attention and drive engagement.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Multi-Platform Management</li>
-              <li><i className="fas fa-check-circle"></i> Content Creation & Curation</li>
-              <li><i className="fas fa-check-circle"></i> Community Engagement</li>
-              <li><i className="fas fa-check-circle"></i> Influencer Partnerships</li>
+              <li><i className="fas fa-check-circle"></i> Social media post designs</li>
+              <li><i className="fas fa-check-circle"></i> Ad creatives</li>
+              <li><i className="fas fa-check-circle"></i> Campaign graphics</li>
+              <li><i className="fas fa-check-circle"></i> Story & banner designs</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
@@ -178,8 +173,7 @@ const Graphicdesign = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fa-solid fa-dollar-sign"></i>
-              </div>
+                <i className="fas fa-pencil-ruler"></i>              </div>
               <div className="badge-text">
                 <span>Service # 3</span>
                 <h5>Premium Quality</h5>
@@ -190,22 +184,20 @@ const Graphicdesign = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-                <i className="fa-solid fa-dollar-sign"></i>
-            </div>
+              <i className="fas fa-pencil-ruler"></i>            </div>
 
-            <h3>Pay-Per-Click Advertising</h3>
+            <h3>Website & UI Design</h3>
             <p>
-              Maximize your advertising ROI with targeted PPC campaigns. We create data-driven strategies that convert clicks into customers across Google Ads, Facebook, and more.
-            </p>
+              Design modern, user-friendly interfaces that improve usability and create a seamless digital experience.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Campaign Strategy & Setup</li>
-              <li><i className="fas fa-check-circle"></i> Ad Copy & Creative Design</li>
-              <li><i className="fas fa-check-circle"></i> Bid Management & Optimization</li>
-              <li><i className="fas fa-check-circle"></i> Conversion Rate Optimization</li>
+              <li><i className="fas fa-check-circle"></i> Website layout design</li>
+              <li><i className="fas fa-check-circle"></i> UI design systems</li>
+              <li><i className="fas fa-check-circle"></i> Mobile-friendly layouts</li>
+              <li><i className="fas fa-check-circle"></i> Landing & conversion-focused design</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -224,8 +216,7 @@ const Graphicdesign = () => {
             {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
-                <i className="fa-solid fa-newspaper"></i> 
-              </div>
+                <i className="fas fa-file-alt"></i>              </div>
               <div className="badge-text">
                 <span>Service # 4</span>
                 <h5>Premium Quality</h5>
@@ -236,30 +227,28 @@ const Graphicdesign = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-                <i className="fa-solid fa-newspaper"></i> 
-            </div>
+              <i className="fas fa-file-alt"></i>            </div>
 
-            <h3>Content Marketing</h3>
+            <h3>Marketing Collateral</h3>
             <p>
-              Tell your brand story with compelling content that resonates with your audience. From blog posts to videos, we create content that educates, entertains, and converts.
-            </p>
+              Professionally designed materials that help communicate your message clearly across both digital and print channels.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Content Strategy Development</li>
-              <li><i className="fas fa-check-circle"></i> Blog Writing & SEO Articles</li>
-              <li><i className="fas fa-check-circle"></i> Video Production & Marketing</li>
-              <li><i className="fas fa-check-circle"></i> Infographics & Visual Content</li>
+              <li><i className="fas fa-check-circle"></i> Brochures & flyers</li>
+              <li><i className="fas fa-check-circle"></i> Business cards</li>
+              <li><i className="fas fa-check-circle"></i> Presentation designs</li>
+              <li><i className="fas fa-check-circle"></i> Promotional graphics</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
 
         {/* 5th SERVICE */}
-        <div className="service-row service-one">
+        {/* <div className="service-row service-one">
 
-          {/* LEFT IMAGE */}
+     
           <div className="service-image">
             <div className="image-card"></div>
 
@@ -268,7 +257,6 @@ const Graphicdesign = () => {
               alt="Email Marketing"
             />
 
-            {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
                 <i className="fa-solid fa-envelope"></i>
@@ -280,7 +268,6 @@ const Graphicdesign = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
                 <i className="fa-solid fa-envelope"></i>
@@ -300,12 +287,11 @@ const Graphicdesign = () => {
 
             <button className="learn-btn">Learn More</button>
           </div>
-        </div>
+        </div> */}
 
         {/* 6th SERVICE */}
-        <div className="service-row service-two reverse">
+        {/* <div className="service-row service-two reverse">
 
-          {/* RIGHT IMAGE */}
           <div className="service-image">
             <div className="image-card right-tilt"></div>
 
@@ -314,7 +300,6 @@ const Graphicdesign = () => {
               alt="Analytics"
             />
 
-            {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -326,7 +311,6 @@ const Graphicdesign = () => {
             </div>
           </div>
 
-          {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -347,7 +331,7 @@ const Graphicdesign = () => {
             <button className="learn-btn">Learn More</button>
           </div>
 
-        </div>
+        </div> */}
       </section>
 
       {/* WHY CHOOSE US SECTION */}

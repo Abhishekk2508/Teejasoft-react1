@@ -8,7 +8,22 @@
 }
 
 
+.view-project-btn{
+  text-decoration: none;   /* remove underline */
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
 
+.view-project-btn:hover{
+  text-decoration:none;   /* hover par bhi underline na aaye */
+}
+
+.view-project-btn .btn-text{
+  font-size:14px;
+  font-weight:600;
+  color:rgba(184, 91, 28, 1);
+}
 
 /* 
 .partners-section {

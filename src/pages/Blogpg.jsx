@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom"; //  FIXED
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -8,6 +8,23 @@ import "../styles/Blogpg.css";
 import blogImage from "../assets/images/blog2.png";
 
 const Blogpg = () => {
+
+  const [category, setCategory] = useState("All");
+
+  const categories = [
+    "All",
+    // "SEO",
+    "Domain & Hosting",
+    "Web Development",
+    "Digital Marketing",
+    "Design Services",
+    "Paid Advertising"
+  ];
+
+  const handleCategory = (cat) => {
+    setCategory(cat);
+  };
+
   return (
     <>
       <Navbar />
@@ -68,6 +85,7 @@ const Blogpg = () => {
               Master the art of search engine optimization with our comprehensive
               guide covering everything from basics to advanced strategies.
             </p>
+
             <div className="feature-divider"></div>
 
             <div className="featured-bottom">
@@ -85,18 +103,30 @@ const Blogpg = () => {
           <p>Find Blogs & Articles that match your interests</p>
 
           <div className="category-buttons">
-            <button className="category-btn active category1-btn">All</button>
-            <button className="category-btn category2-btn">Digital Marketing</button>
-            <button className="category-btn category3-btn">Design</button>
-            <button className="category-btn category4-btn">SEO</button>
+
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => handleCategory(cat)}
+                className={`category-btn ${category === cat ? "active" : ""}`}
+              >
+                {cat}
+              </button>
+            ))}
+
           </div>
         </div>
       </section>
 
       {/* ================= BLOGS SECTION ================= */}
       <div className="blog-page">
-        {/* Hide "View All Articles" button on Blog Page */}
-        <BlogsSection showViewAll={false} />
+
+        {/* PASS CATEGORY TO BLOGS SECTION */}
+        <BlogsSection 
+          showViewAll={false} 
+          category={category} 
+        />
+
       </div>
 
       {/* ================= CTA ================= */}

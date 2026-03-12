@@ -12,15 +12,15 @@ import seoImg from "../../assets/images/seo.png";
 import socialmmImg from "../../assets/images/socialmm.png";
 import payperaImg from "../../assets/images/Pay-Pera.png";
 import contentmImg from "../../assets/images/contentm.png";
-import emailmImg from "../../assets/images/emailm.png";
-import analyticsImg from "../../assets/images/analytics-reporting.png";
+// import emailmImg from "../../assets/images/emailm.png";
+// import analyticsImg from "../../assets/images/analytics-reporting.png";
 
 
 const Webdevelopment = () => {
-    // Scroll to top on page load
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -42,13 +42,11 @@ const Webdevelopment = () => {
             </div>
 
             <h1>
-              Web Development <br />
-              <span>Solutions</span>
+              Web&nbsp;<span>Development</span>
             </h1>
 
             <p>
-              Build a strong online presence with our custom web development services. We create responsive, scalable websites that engage users and drive business growth.
-            </p>
+              Build a strong online presence with custom web development designed around your goals. At Teejaysoft, we create fast, responsive and scalable websites that look premium, load quickly and guide visitors to take action—so you get more leads, more sales and better brand trust.            </p>
 
             <button className="hero-btn">
               <span className="hero-btn-text">Get Started Today</span>
@@ -63,8 +61,7 @@ const Webdevelopment = () => {
           <p className="mini-title">What We Offer</p>
           <h2>Comprehensive Web Development Services</h2>
           <p className="sub-text">
-            From responsive design to custom functionality, we provide end-to-end web development solutions
-            that help your business grow and thrive in the digital landscape.
+            We offer end-to-end web development services—from strategy and UI/UX to development, testing and launch. Whether you need a business website, ecommerce store or a custom web app, we build fast, responsive and scalable solutions that are designed to perform and grow with your business.
           </p>
         </div>
       </section>
@@ -86,7 +83,8 @@ const Webdevelopment = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fas fa-magnifying-glass"></i>
+                {/* <i className="fas fa-magnifying-glass"></i> */}
+                <i className="fas fa-pencil-ruler"></i>
               </div>
               <div className="badge-text">
                 <span>Service # 1</span>
@@ -98,22 +96,22 @@ const Webdevelopment = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-magnifying-glass"></i>
+              <i className="fas fa-pencil-ruler"></i>
+
             </div>
 
-            <h3>Search Engine Optimization</h3>
+            <h3>UI/UX & Responsive Design</h3>
             <p>
-              Boost your website's visibility and organic traffic with our comprehensive SEO strategies. We optimize your online presence to rank higher in search results and attract quality leads.
-            </p>
+              Create a clean, modern experience that looks perfect on every device. We design user-friendly interfaces that guide visitors smoothly and improve engagement.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Keyword Research & Analysis</li>
-              <li><i className="fas fa-check-circle"></i> On-Page & Technical SEO</li>
-              <li><i className="fas fa-check-circle"></i> Link Building & Outreach</li>
-              <li><i className="fas fa-check-circle"></i> Performance Tracking & Reporting</li>
+              <li><i className="fas fa-check-circle"></i> Mobile-first layouts</li>
+              <li><i className="fas fa-check-circle"></i> Wireframes & prototyping</li>
+              <li><i className="fas fa-check-circle"></i> Conversion-focused UI</li>
+              <li><i className="fas fa-check-circle"></i> Consistent brand design</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -132,7 +130,8 @@ const Webdevelopment = () => {
             {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
-                <i className="fas fa-share-nodes"></i>
+                <i className="fas fa-layer-group"></i>
+
               </div>
               <div className="badge-text">
                 <span>Service # 2</span>
@@ -144,22 +143,21 @@ const Webdevelopment = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-share-nodes"></i>
+              <i className="fas fa-layer-group"></i>
             </div>
 
-            <h3>Social Media Marketing</h3>
+            <h3>Custom Website Development</h3>
             <p>
-              Engage your audience and build a strong brand presence across all major social platforms. Our creative campaigns drive engagement, followers, and conversions.
-            </p>
+              Get a website built specifically for your business goals—fast, scalable and easy to manage. From simple pages to complex features, we develop it the right way.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Multi-Platform Management</li>
-              <li><i className="fas fa-check-circle"></i> Content Creation & Curation</li>
-              <li><i className="fas fa-check-circle"></i> Community Engagement</li>
-              <li><i className="fas fa-check-circle"></i> Influencer Partnerships</li>
+              <li><i className="fas fa-check-circle"></i> Custom functionality</li>
+              <li><i className="fas fa-check-circle"></i> Fast loading pages</li>
+              <li><i className="fas fa-check-circle"></i> Secure development</li>
+              <li><i className="fas fa-check-circle"></i> Scalable architecture</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
@@ -179,7 +177,7 @@ const Webdevelopment = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fa-solid fa-dollar-sign"></i>
+                <i className="fas fa-shopping-cart"></i>
               </div>
               <div className="badge-text">
                 <span>Service # 3</span>
@@ -191,22 +189,21 @@ const Webdevelopment = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-                <i className="fa-solid fa-dollar-sign"></i>
+              <i className="fas fa-shopping-cart"></i>
             </div>
 
-            <h3>Pay-Per-Click Advertising</h3>
+            <h3>Ecommerce Development</h3>
             <p>
-              Maximize your advertising ROI with targeted PPC campaigns. We create data-driven strategies that convert clicks into customers across Google Ads, Facebook, and more.
-            </p>
+              Launch an online store that’s simple to browse, smooth to checkout and built to convert. We focus on performance, trust and a seamless shopping experience.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Campaign Strategy & Setup</li>
-              <li><i className="fas fa-check-circle"></i> Ad Copy & Creative Design</li>
-              <li><i className="fas fa-check-circle"></i> Bid Management & Optimization</li>
-              <li><i className="fas fa-check-circle"></i> Conversion Rate Optimization</li>
+              <li><i className="fas fa-check-circle"></i> Product & category setup</li>
+              <li><i className="fas fa-check-circle"></i> Payment gateway integration</li>
+              <li><i className="fas fa-check-circle"></i> Cart & checkout optimization</li>
+              <li><i className="fas fa-check-circle"></i> Order & inventory support</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -225,8 +222,7 @@ const Webdevelopment = () => {
             {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
-                <i className="fa-solid fa-newspaper"></i>
-              </div>
+                <i className="fas fa-tools"></i>              </div>
               <div className="badge-text">
                 <span>Service # 4</span>
                 <h5>Premium Quality</h5>
@@ -237,30 +233,27 @@ const Webdevelopment = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-                <i className="fa-solid fa-newspaper"></i>
-            </div>
+              <i className="fas fa-tools"></i>            </div>
 
-            <h3>Content Marketing</h3>
+            <h3>Website Maintenance & Support</h3>
             <p>
-              Tell your brand story with compelling content that resonates with your audience. From blog posts to videos, we create content that educates, entertains, and converts.
-            </p>
+              Keep your website secure, updated and running smoothly. We handle performance checks, bug fixes, backups and updates—so you can focus on business.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Content Strategy Development</li>
-              <li><i className="fas fa-check-circle"></i> Blog Writing & SEO Articles</li>
-              <li><i className="fas fa-check-circle"></i> Video Production & Marketing</li>
-              <li><i className="fas fa-check-circle"></i> Infographics & Visual Content</li>
+              <li><i className="fas fa-check-circle"></i> Security updates & backups</li>
+              <li><i className="fas fa-check-circle"></i> Speed optimization</li>
+              <li><i className="fas fa-check-circle"></i> Bug fixes & monitoring</li>
+              <li><i className="fas fa-check-circle"></i> Content updates support</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
 
         {/* 5th SERVICE */}
-        <div className="service-row service-one">
+        {/* <div className="service-row service-one">
 
-          {/* LEFT IMAGE */}
           <div className="service-image">
             <div className="image-card"></div>
 
@@ -269,7 +262,6 @@ const Webdevelopment = () => {
               alt="Email Marketing"
             />
 
-            {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
                 <i className="fa-solid fa-envelope"></i>
@@ -281,7 +273,7 @@ const Webdevelopment = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
+       
           <div className="service-content">
             <div className="icon-box">
                 <i className="fa-solid fa-envelope"></i>
@@ -301,12 +293,12 @@ const Webdevelopment = () => {
 
             <button className="learn-btn">Learn More</button>
           </div>
-        </div>
+        </div> */}
 
-        {/* 6th SERVICE */}
-        <div className="service-row service-two reverse">
 
-          {/* RIGHT IMAGE */}
+        {/* <div className="service-row service-two reverse">
+
+       
           <div className="service-image">
             <div className="image-card right-tilt"></div>
 
@@ -315,7 +307,6 @@ const Webdevelopment = () => {
               alt="Analytics"
             />
 
-            {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -327,7 +318,6 @@ const Webdevelopment = () => {
             </div>
           </div>
 
-          {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -348,7 +338,7 @@ const Webdevelopment = () => {
             <button className="learn-btn">Learn More</button>
           </div>
 
-        </div>
+        </div> */}
       </section>
 
       {/* WHY CHOOSE US SECTION */}

@@ -17,7 +17,7 @@ import FaqSection from "../sections/FaqSection";
 const Home = () => {
   return (
     <>
-      <Navbar />   {/*  YEH MISSING THA */}
+      <Navbar />   {/*  hh */}
 
       <Hero />
       <AboutSection />
@@ -31,7 +31,7 @@ const Home = () => {
       <BlogsSection />
       <FaqSection />
 
-      <Footer />   {/*  YEH BHI ADD KARO */}
+      <Footer />   {/*  YE */}
     </>
   );
 };

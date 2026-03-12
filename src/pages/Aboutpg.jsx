@@ -6,8 +6,6 @@ import whoImg from "../assets/images/whower.png";
 import Leadership from "../components/Leadership/Leadership";
 
 
-
-
 const Aboutpg = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -178,7 +176,7 @@ const Aboutpg = () => {
         </div>
       </section>
 
-      {/* 🔥 LEADERSHIP SECTION */}
+      {/*  LEADERSHIP SECTION */}
       <Leadership />
 
       {/* ===== ABOUT CONTENT ===== */}

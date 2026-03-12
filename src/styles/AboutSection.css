@@ -7,7 +7,7 @@
   justify-content: center;
   overflow-x: hidden;
   /* padding: clamp(40px, 6vw, 120px) 0; */
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
 }
 
 /* ================= MAIN CONTAINER ================= */

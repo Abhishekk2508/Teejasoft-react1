@@ -16,10 +16,10 @@ import analyticsImg from "../../assets/images/analytics-reporting.png";
 
 
 const Domainhosting = () => {
-    // Scroll to top on page load
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -41,13 +41,11 @@ const Domainhosting = () => {
             </div>
 
             <h1>
-              Domain Hosting <br />
-              <span>Solutions</span>
+              Domain&nbsp;<span>Hosting</span>
             </h1>
 
             <p>
-              Elevate your brand with data-driven Domain Hosting strategies that deliver measurable results and maximize your ROI.
-            </p>
+              Ensure your website runs smoothly with reliable domain registration and secure hosting services. At Teejaysoft, we provide fast, secure and scalable hosting solutions that keep your website online, protected and performing at its best.            </p>
 
             <button className="hero-btn">
               <span className="hero-btn-text">Get Started Today</span>
@@ -60,10 +58,9 @@ const Domainhosting = () => {
       <section className="servicesoffer-section">
         <div className="services-header">
           <p className="mini-title">What We Offer</p>
-          <h2>Comprehensive Domain Hosting Services</h2>
+          <h2>Reliable Domain & Hosting Solutions</h2>
           <p className="sub-text">
-            From SEO to social media, we provide end-to-end domain hosting solutions
-            that help your business grow and thrive in the digital landscape.
+            We handle domain setup, hosting configuration and technical management so your website remains stable, secure and accessible at all times.
           </p>
         </div>
       </section>
@@ -85,8 +82,7 @@ const Domainhosting = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fas fa-magnifying-glass"></i>
-              </div>
+                <i className="fas fa-globe"></i>              </div>
               <div className="badge-text">
                 <span>Service # 1</span>
                 <h5>Premium Quality</h5>
@@ -97,22 +93,20 @@ const Domainhosting = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-magnifying-glass"></i>
-            </div>
+              <i className="fas fa-globe"></i>            </div>
 
-            <h3>Search Engine Optimization</h3>
+            <h3>Domain Registration & Management</h3>
             <p>
-              Boost your website's visibility and organic traffic with our comprehensive SEO strategies. We optimize your online presence to rank higher in search results and attract quality leads.
-            </p>
+              Secure the perfect domain name for your business and manage it easily with professional setup and support.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Keyword Research & Analysis</li>
-              <li><i className="fas fa-check-circle"></i> On-Page & Technical SEO</li>
-              <li><i className="fas fa-check-circle"></i> Link Building & Outreach</li>
-              <li><i className="fas fa-check-circle"></i> Performance Tracking & Reporting</li>
+              <li><i className="fas fa-check-circle"></i> Domain registration</li>
+              <li><i className="fas fa-check-circle"></i> Renewal management</li>
+              <li><i className="fas fa-check-circle"></i> Subdomain setup</li>
+              <li><i className="fas fa-check-circle"></i> DNS configuration & management</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -131,8 +125,7 @@ const Domainhosting = () => {
             {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
-                <i className="fas fa-share-nodes"></i>
-              </div>
+                <i className="fas fa-cloud"></i>              </div>
               <div className="badge-text">
                 <span>Service # 2</span>
                 <h5>Premium Quality</h5>
@@ -143,22 +136,20 @@ const Domainhosting = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fas fa-share-nodes"></i>
-            </div>
+              <i className="fas fa-cloud"></i>            </div>
 
-            <h3>Social Media Marketing</h3>
+            <h3>Secure Web Hosting</h3>
             <p>
-              Engage your audience and build a strong brand presence across all major social platforms. Our creative campaigns drive engagement, followers, and conversions.
-            </p>
+              Host your website on secure, high-performance servers that ensure fast loading and reliable uptime.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Multi-Platform Management</li>
-              <li><i className="fas fa-check-circle"></i> Content Creation & Curation</li>
-              <li><i className="fas fa-check-circle"></i> Community Engagement</li>
-              <li><i className="fas fa-check-circle"></i> Influencer Partnerships</li>
+              <li><i className="fas fa-check-circle"></i> High-speed servers</li>
+              <li><i className="fas fa-check-circle"></i> SSL certificate setup</li>
+              <li><i className="fas fa-check-circle"></i> Server scalability & resource management</li>
+              <li><i className="fas fa-check-circle"></i> Email hosting integration</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
@@ -178,8 +169,7 @@ const Domainhosting = () => {
             {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
-                <i className="fa-solid fa-dollar-sign"></i>
-              </div>
+                <i className="fas fa-mail-bulk"></i>              </div>
               <div className="badge-text">
                 <span>Service # 3</span>
                 <h5>Premium Quality</h5>
@@ -190,22 +180,20 @@ const Domainhosting = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fa-solid fa-dollar-sign"></i>
-            </div>
+              <i className="fas fa-mail-bulk"></i>            </div>
 
-            <h3>Pay-Per-Click Advertising</h3>
+            <h3>Email Hosting</h3>
             <p>
-              Maximize your advertising ROI with targeted PPC campaigns. We create data-driven strategies that convert clicks into customers across Google Ads, Facebook, and more.
-            </p>
+              Create professional business email accounts linked to your domain for better credibility and communication.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Campaign Strategy & Setup</li>
-              <li><i className="fas fa-check-circle"></i> Ad Copy & Creative Design</li>
-              <li><i className="fas fa-check-circle"></i> Bid Management & Optimization</li>
-              <li><i className="fas fa-check-circle"></i> Conversion Rate Optimization</li>
+              <li><i className="fas fa-check-circle"></i> Custom email accounts</li>
+              <li><i className="fas fa-check-circle"></i> Secure access</li>
+              <li><i className="fas fa-check-circle"></i> Webmail and mobile access</li>
+              <li><i className="fas fa-check-circle"></i> Storage management & backups</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -224,8 +212,7 @@ const Domainhosting = () => {
             {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
-                <i className="fa-solid fa-newspaper"></i> 
-                             </div>
+                <i className="fas fa-shield-alt"></i>                                </div>
               <div className="badge-text">
                 <span>Service # 4</span>
                 <h5>Premium Quality</h5>
@@ -236,30 +223,26 @@ const Domainhosting = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-              <i className="fa-solid fa-newspaper"></i>  
-                        </div>
+              <i className="fas fa-shield-alt"></i>                        </div>
 
-            <h3>Content Marketing</h3>
-            <p>
-              Tell your brand story with compelling content that resonates with your audience. From blog posts to videos, we create content that educates, entertains, and converts.
-            </p>
+            <h3>Website Security & Protection</h3>
+            <p>Protect your website and data with advanced security measures and regular monitoring.      </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Content Strategy Development</li>
-              <li><i className="fas fa-check-circle"></i> Blog Writing & SEO Articles</li>
-              <li><i className="fas fa-check-circle"></i> Video Production & Marketing</li>
-              <li><i className="fas fa-check-circle"></i> Infographics & Visual Content</li>
+              <li><i className="fas fa-check-circle"></i> Malware protection</li>
+              <li><i className="fas fa-check-circle"></i> Firewall security</li>
+              <li><i className="fas fa-check-circle"></i> SSL encryption</li>
+              <li><i className="fas fa-check-circle"></i> Security monitoring</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
 
         {/* 5th SERVICE */}
-        <div className="service-row service-one">
+        {/* <div className="service-row service-one">
 
-          {/* LEFT IMAGE */}
           <div className="service-image">
             <div className="image-card"></div>
 
@@ -268,7 +251,6 @@ const Domainhosting = () => {
               alt="Email Marketing"
             />
 
-            {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
                 <i className="fa-solid fa-envelope"></i>
@@ -280,7 +262,6 @@ const Domainhosting = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
               <i className="fa-solid fa-envelope"></i>     
@@ -300,12 +281,11 @@ const Domainhosting = () => {
 
             <button className="learn-btn">Learn More</button>
           </div>
-        </div>
+        </div> */}
 
         {/* 6th SERVICE */}
-        <div className="service-row service-two reverse">
+        {/* <div className="service-row service-two reverse">
 
-          {/* RIGHT IMAGE */}
           <div className="service-image">
             <div className="image-card right-tilt"></div>
 
@@ -314,7 +294,6 @@ const Domainhosting = () => {
               alt="Analytics"
             />
 
-            {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -326,7 +305,6 @@ const Domainhosting = () => {
             </div>
           </div>
 
-          {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
               <i className="fa-solid fa-chart-column"></i>     
@@ -347,7 +325,7 @@ const Domainhosting = () => {
             <button className="learn-btn">Learn More</button>
           </div>
 
-        </div>
+        </div> */}
       </section>
 
       {/* WHY CHOOSE US SECTION */}

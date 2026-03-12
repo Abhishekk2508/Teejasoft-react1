@@ -16,10 +16,10 @@ import analyticsImg from "../../assets/images/analytics-reporting.png";
 
 
 const Paidads = () => {
-    // Scroll to top on page load
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -41,13 +41,11 @@ const Paidads = () => {
             </div>
 
             <h1>
-              Paid Ads <br />
-              <span>Solutions</span>
+              Paid&nbsp;<span>Ads</span>
             </h1>
 
             <p>
-              Elevate your brand with data-driven paid advertising strategies that deliver measurable results and maximize your ROI.
-            </p>
+              Accelerate growth and reach your ideal customers faster with targeted paid advertising campaigns. At Teejaysoft, we create performance-focused ad strategies designed to maximize ROI and generate high-quality leads.            </p>
 
             <button className="hero-btn">
               <span className="hero-btn-text">Get Started Today</span>
@@ -60,10 +58,9 @@ const Paidads = () => {
       <section className="servicesoffer-section">
         <div className="services-header">
           <p className="mini-title">What We Offer</p>
-          <h2>Comprehensive Paid Advertising Services</h2>
+          <h2>Performance-Driven Advertising</h2>
           <p className="sub-text">
-            From Google Ads to Facebook campaigns, we provide end-to-end paid advertising solutions
-            that help your business grow and thrive in the digital landscape.
+            We plan, launch and optimize paid campaigns across major platforms to ensure your advertising budget delivers measurable results.
           </p>
         </div>
       </section>
@@ -100,19 +97,18 @@ const Paidads = () => {
               <i className="fas fa-magnifying-glass"></i>
             </div>
 
-            <h3>Search Engine Optimization</h3>
+            <h3>Search Engine Advertising</h3>
             <p>
-              Boost your website's visibility and organic traffic with our comprehensive SEO strategies. We optimize your online presence to rank higher in search results and attract quality leads.
-            </p>
+              Capture high-intent customers searching for your services with well-optimized search campaigns.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Keyword Research & Analysis</li>
-              <li><i className="fas fa-check-circle"></i> On-Page & Technical SEO</li>
-              <li><i className="fas fa-check-circle"></i> Link Building & Outreach</li>
-              <li><i className="fas fa-check-circle"></i> Performance Tracking & Reporting</li>
+              <li><i className="fas fa-check-circle"></i> Keyword targeting</li>
+              <li><i className="fas fa-check-circle"></i> Ad copy creation</li>
+              <li><i className="fas fa-check-circle"></i> Bid strategy optimization</li>
+              <li><i className="fas fa-check-circle"></i> Conversion tracking</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -146,19 +142,18 @@ const Paidads = () => {
               <i className="fas fa-share-nodes"></i>
             </div>
 
-            <h3>Social Media Marketing</h3>
+            <h3>Social Media Advertising</h3>
             <p>
-              Engage your audience and build a strong brand presence across all major social platforms. Our creative campaigns drive engagement, followers, and conversions.
-            </p>
+              Reach your target audience through highly targeted campaigns across social platforms.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Multi-Platform Management</li>
-              <li><i className="fas fa-check-circle"></i> Content Creation & Curation</li>
-              <li><i className="fas fa-check-circle"></i> Community Engagement</li>
-              <li><i className="fas fa-check-circle"></i> Influencer Partnerships</li>
+              <li><i className="fas fa-check-circle"></i> Audience targeting</li>
+              <li><i className="fas fa-check-circle"></i> Campaign setup & management</li>
+              <li><i className="fas fa-check-circle"></i> Creative ad design</li>
+              <li><i className="fas fa-check-circle"></i> Performance optimization</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
@@ -190,22 +185,21 @@ const Paidads = () => {
           {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-                <i className="fa-solid fa-dollar-sign"></i>
+              <i className="fa-solid fa-dollar-sign"></i>
             </div>
 
-            <h3>Pay-Per-Click Advertising</h3>
+            <h3>Display & Remarketing Ads</h3>
             <p>
-              Maximize your advertising ROI with targeted PPC campaigns. We create data-driven strategies that convert clicks into customers across Google Ads, Facebook, and more.
-            </p>
+              Stay visible to potential customers and re-engage visitors who have already interacted with your brand.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Campaign Strategy & Setup</li>
-              <li><i className="fas fa-check-circle"></i> Ad Copy & Creative Design</li>
-              <li><i className="fas fa-check-circle"></i> Bid Management & Optimization</li>
-              <li><i className="fas fa-check-circle"></i> Conversion Rate Optimization</li>
+              <li><i className="fas fa-check-circle"></i> Retargeting campaigns</li>
+              <li><i className="fas fa-check-circle"></i> Audience segmentation</li>
+              <li><i className="fas fa-check-circle"></i> Conversion tracking</li>
+              <li><i className="fas fa-check-circle"></i> Banner & display ad design</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
         </div>
 
@@ -236,30 +230,28 @@ const Paidads = () => {
           {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
-                <i className="fa-solid fa-newspaper"></i>
+              <i className="fa-solid fa-newspaper"></i>
             </div>
 
-            <h3>Content Marketing</h3>
+            <h3>Campaign Analytics & Optimization</h3>
             <p>
-              Tell your brand story with compelling content that resonates with your audience. From blog posts to videos, we create content that educates, entertains, and converts.
-            </p>
+              Monitor results and continuously refine campaigns to improve performance and maximize return on investment.            </p>
 
             <ul>
-              <li><i className="fas fa-check-circle"></i> Content Strategy Development</li>
-              <li><i className="fas fa-check-circle"></i> Blog Writing & SEO Articles</li>
-              <li><i className="fas fa-check-circle"></i> Video Production & Marketing</li>
-              <li><i className="fas fa-check-circle"></i> Infographics & Visual Content</li>
+              <li><i className="fas fa-check-circle"></i> Performance tracking</li>
+              <li><i className="fas fa-check-circle"></i> Cost-per-lead optimization</li>
+              <li><i className="fas fa-check-circle"></i> Audience insights</li>
+              <li><i className="fas fa-check-circle"></i> Strategy adjustments</li>
             </ul>
 
-            <button className="learn-btn">Learn More</button>
+            {/* <button className="learn-btn">Learn More</button> */}
           </div>
 
         </div>
 
         {/* 5th SERVICE */}
-        <div className="service-row service-one">
+        {/* <div className="service-row service-one">
 
-          {/* LEFT IMAGE */}
           <div className="service-image">
             <div className="image-card"></div>
 
@@ -268,7 +260,6 @@ const Paidads = () => {
               alt="Email Marketing"
             />
 
-            {/* Bottom Left Overlay Card */}
             <div className="image-badge">
               <div className="badge-icon">
                 <i className="fa-solid fa-envelope"></i>
@@ -280,7 +271,6 @@ const Paidads = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
                 <i className="fa-solid fa-envelope"></i>
@@ -300,12 +290,11 @@ const Paidads = () => {
 
             <button className="learn-btn">Learn More</button>
           </div>
-        </div>
+        </div> */}
 
         {/* 6th SERVICE */}
-        <div className="service-row service-two reverse">
+        {/* <div className="service-row service-two reverse">
 
-          {/* RIGHT IMAGE */}
           <div className="service-image">
             <div className="image-card right-tilt"></div>
 
@@ -314,7 +303,6 @@ const Paidads = () => {
               alt="Analytics"
             />
 
-            {/* Bottom Right Overlay Badge */}
             <div className="image-badge badge-right">
               <div className="badge-icon">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -326,7 +314,6 @@ const Paidads = () => {
             </div>
           </div>
 
-          {/* LEFT CONTENT */}
           <div className="service-content">
             <div className="icon-box">
                 <i className="fa-solid fa-chart-column"></i> 
@@ -347,7 +334,7 @@ const Paidads = () => {
             <button className="learn-btn">Learn More</button>
           </div>
 
-        </div>
+        </div> */}
       </section>
 
       {/* WHY CHOOSE US SECTION */}
