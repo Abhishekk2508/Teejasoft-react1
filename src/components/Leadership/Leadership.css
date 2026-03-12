@@ -1,10 +1,22 @@
 /* ================= SECTION ================= */
 .leadership-section {
   width: 100%;
-  background: #1c1a1a;
+  background: linear-gradient(135deg, #1c1a1a 0%, #2a2727 100%);
   display: flex;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+}
+
+.leadership-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(173, 86, 27, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .leadership-container {
@@ -12,475 +24,57 @@
   max-width: 1920px;
   text-align: center;
   color: #fff;
-
-  /* TOP PADDING: Mobile pe 10px aur Desktop pe max 30px (Bohot kam kar di hai) */
-  padding-top: clamp(10px, 2vw, 30px);
-
-  /* SIDE PADDING: Mobile pe 15px, Desktop pe 20px */
-  padding-inline: clamp(15px, 2vw, 20px);
-
-  /* BOTTOM PADDING: Isse thoda breathing space diya hai (Mobile 50px, Desktop 80px) */
-  padding-bottom: clamp(50px, 6vw, 80px);
+  padding-top: clamp(40px, 6vw, 80px);
+  padding-inline: clamp(15px, 3vw, 40px);
+  padding-bottom: clamp(60px, 8vw, 100px);
+  position: relative;
+  z-index: 1;
 }
 
-/* 320px ke liye specific fine-tuning */
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .leadership-container {
-    padding-top: 5px; /* Ultra minimal gap for very small screens */
-    padding-inline: 10px;
+    padding-top: clamp(25px, 5vw, 40px);
+    padding-bottom: clamp(40px, 6vw, 60px);
   }
 }
 
 /* ================= HEADER ================= */
-/* ================= HEADER SECTION ================= */
-
 .leadership-label {
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: #ad561b;
   display: block;
-  
-  /* 320px par 16px -> 1920px par 22px tak scale hoga */
-  font-size: clamp(16px, 1.2vw, 22px);
-  
-  /* Spacing bhi responsive hogi */
-  margin-bottom: clamp(6px, 0.8vw, 10px);
-  letter-spacing: 0.05em;
+  font-size: clamp(14px, 1vw, 18px);
+  margin-bottom: clamp(8px, 1vw, 16px);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .leadership-title {
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
-  
-  /* 320px par 28px -> 1920px par 46px tak scale hoga */
-  font-size: clamp(28px, 3.2vw, 46px);
-  
-  /* Line-height ensure karti hai ki mobile par headings overlap na karein */
-  line-height: 1.2;
-  /* margin-bottom: clamp(8px, 1vw, 12px); */
+  font-size: clamp(32px, 4vw, 56px);
+  line-height: 1.3;
+  margin-bottom: clamp(12px, 1.5vw, 20px);
+  background: linear-gradient(135deg, #fff 0%, #ddd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .leadership-subtitle {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #8f96a3;
-  
-  /* 320px par 16px -> 1920px par 20px tak scale hoga */
-  font-size: clamp(16px, 1.2vw, 20px);
-  
-  line-height: 1.5;
-  
-  /* Margin-bottom 70px desktop par achi hai, par mobile par gap kam hona chahiye */
-  /* margin-bottom: clamp(40px, 5vw, 70px); */
-  
-  max-width: 800px; /* Text ko bohot zyada wide hone se rokta hai */
-  margin-inline: auto; /* Subtitle ko hamesha center mein rakhta hai */
+  color: #a8b0ba;
+  font-size: clamp(16px, 1.2vw, 18px);
+  line-height: 1.6;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: clamp(50px, 6vw, 80px);
 }
 
-/* ================= LEADERSHIP SLIDER (Modern Glass/Neumorphic) ================= */
-.leadership-row {
-  display: flex;
-  gap: 30px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  scrollbar-width: none;
-}
-
-.leadership-row::-webkit-scrollbar {
-  display: none;
-}
-
-/* ================= LEADER CARD ================= */
-.leader-card {
-  min-width: 260px;
-  flex-shrink: 0;
-  text-align: center;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5), -6px -6px 20px rgba(255, 255, 255, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-  padding: 15px 10px 30px;
-}
-
-.leader-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.6), -8px -8px 25px rgba(255, 255, 255, 0.15);
-}
-
-/* ================= IMAGE WRAP ================= */
-/* ================= LEADERSHIP SLIDER (Modern Glass/Neumorphic) ================= */
-.leadership-row {
-  display: flex;
-  gap: 30px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  scrollbar-width: none;
-}
-
-.leadership-row::-webkit-scrollbar {
-  display: none;
-}
-
-/* ================= LEADER CARD ================= */
-.leader-card {
-  min-width: 260px;
-  flex-shrink: 0;
-  text-align: center;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5), -6px -6px 20px rgba(255, 255, 255, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-  padding: 15px 10px 30px;
-}
-
-.leader-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.6), -8px -8px 25px rgba(255, 255, 255, 0.15);
-}
-
-/* ================= IMAGE WRAP ================= */
-.leader-image-wrap {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.leader-card:hover .leader-image-wrap {
-  transform: scale(1.05);
-}
-
-.leader-image-wrap img {
-  width: 90%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 50%;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-/* ================= NAME & ROLE ================= */
-.leader-name {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffd07f; /* Goldish highlight */
-  margin-bottom: 6px;
-}
-
-.leader-role {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #ddd;
-  letter-spacing: 0.5px;
-}
-
-/* ================= NAVIGATION BUTTONS ================= */
-.leadership-nav {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  /* margin: clamp(30px, 5vw, 60px) 0; */
-}
-
-.nav-btn {
-  width: clamp(80px, 10vw, 140px);
-  height: clamp(80px, 10vw, 140px);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #ffd07f;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: clamp(12px, 1.2vw, 16px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-btn:hover {
-  background: rgba(255, 208, 127, 0.2);
-  color: #fff;
-  transform: scale(1.1);
-  border-color: #ffd07f;
-}
-
-/* ================= ARROW ================= */
-.nav-arrow {
-  width: clamp(30px, 4vw, 50px);
-  height: 2px;
-  background: #ffd07f;
-  position: relative;
-  margin-top: 4px;
-}
-
-.nav-arrow::after {
-  content: '';
-  position: absolute;
-  width: clamp(6px, 0.6vw, 8px);
-  height: clamp(6px, 0.6vw, 8px);
-  border-top: 2px solid #ffd07f;
-  border-right: 2px solid #ffd07f;
-  top: -3px;
-}
-
-.left-arrow::after { 
-    left: 0; 
-    transform: rotate(-135deg); 
-}
-
-.right-arrow::after { 
-    right: 0; 
-    transform: rotate(45deg); 
-}
-
-/* ================= DOTS ================= */
-.dots span {
-  display: inline-block;
-  width: 22px;
-  height: 4px;
-  border-radius: 2px;
-  margin: 0 5px;
-  background: rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.dots .active {
-  background: #ffd07f;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .leader-card {
-    min-width: 200px;
-    padding-bottom: 20px;
-  }
-  .leader-image-wrap {
-    height: 220px;
-  }
-  .leader-name {
-    font-size: 20px;
-  }
-  .leader-role {
-    font-size: 13px;
-  }
-}
-
-/* ================= NAME & ROLE ================= */
-.leader-name {
-  font-family: 'Inter', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffd07f; /* Goldish highlight */
-  margin-bottom: 6px;
-}
-
-.leader-role {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #ddd;
-  letter-spacing: 0.5px;
-}
-
-/* ================= NAVIGATION BUTTONS ================= */
-.leadership-nav {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  /* margin: clamp(30px, 5vw, 60px) 0; */
-}
-
-.nav-btn {
-  width: clamp(80px, 10vw, 140px);
-  height: clamp(80px, 10vw, 140px);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #ffd07f;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: clamp(12px, 1.2vw, 16px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-btn:hover {
-  background: rgba(255, 208, 127, 0.2);
-  color: #fff;
-  transform: scale(1.1);
-  border-color: #ffd07f;
-}
-
-/* ================= ARROW ================= */
-.nav-arrow {
-  width: clamp(30px, 4vw, 50px);
-  height: 2px;
-  background: #ffd07f;
-  position: relative;
-  margin-top: 4px;
-}
-
-.nav-arrow::after {
-  content: '';
-  position: absolute;
-  width: clamp(6px, 0.6vw, 8px);
-  height: clamp(6px, 0.6vw, 8px);
-  border-top: 2px solid #ffd07f;
-  border-right: 2px solid #ffd07f;
-  top: -3px;
-}
-
-.left-arrow::after { 
-    left: 0; 
-    transform: rotate(-135deg); 
-}
-
-.right-arrow::after { 
-    right: 0; 
-    transform: rotate(45deg); 
-}
-
-/* ================= DOTS ================= */
-.dots span {
-  display: inline-block;
-  width: 22px;
-  height: 4px;
-  border-radius: 2px;
-  margin: 0 5px;
-  background: rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
-}
-
-.dots .active {
-  background: #ffd07f;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .leader-card {
-    min-width: 200px;
-    padding-bottom: 20px;
-  }
-  .leader-image-wrap {
-    height: 220px;
-  }
-  .leader-name {
-    font-size: 20px;
-  }
-  .leader-role {
-    font-size: 13px;
-  }
-}
-/* ================= CTA SECTION ================= */
-
-.leadership-cta {
-    width: 100%;
-    padding-inline: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: clamp(60px, 5vw, 100px);
-}
-
-.leadership-cta h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    /* 320px par 28px aur 1920px par 46px tak scale hoga */
-    font-size: clamp(28px, 3vw, 46px);
-    line-height: clamp(34px, 3.5vw, 52px);
-    margin-bottom: clamp(10px, 1.5vw, 20px);
-    color: #FFFFFF;
-}
-
-.leadership-cta h3 span {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: inherit; /* H3 ki size follow karega */
-    color: #ad561b;
-}
-
-.leadership-cta p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    /* 320px par 16px aur 1920px par 20px tak scale hoga */
-    font-size: clamp(16px, 1.5vw, 20px);
-    line-height: clamp(22px, 2vw, 26px);
-    color: #8F96A3;
-    margin-bottom: clamp(25px, 3vw, 40px);
-    max-width: 700px; /* Text bohot lamba na faile desktop par */
-}
-
-/* ================= CTA BUTTON ================= */
-
-.ctaa-btn {
-    /* Responsive width */
-    width: clamp(200px, 15vw, 260px);
-    height: clamp(48px, 4vw, 54px);
-    
-    border-radius: 49px;
-    background: linear-gradient(270deg, #CB6520 0%, #994D17 100%);
-    
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: clamp(15px, 1vw, 18px);
-    color: #FFFFFF;
-    
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    
-    /* Button center karne ke liye agar parent flex na ho */
-    margin: 0 auto; 
-    letter-spacing: 0.02em;
-}
-
-/* Hover effect for premium feel */
-.ctaa-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(173, 86, 27, 0.3);
-    filter: brightness(1.1);
-}
-
-.ctaa-btn:active {
-    transform: translateY(0);
-}
-/* Card design ko mat chhedo, bas wrapper alignment ensure karo */
+/* ================= CAROUSEL CONTAINER ================= */
 .leadership-row-container {
   width: 100%;
   position: relative;
@@ -489,52 +83,309 @@
 
 .leadership-row {
   display: flex;
-  gap: 30px;
+  gap: clamp(20px, 3vw, 40px);
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; 
-  padding: 40px 0; /* Space for wave visibility */
+  scrollbar-width: none;
+  padding: clamp(20px, 2vw, 40px) 0;
+  scroll-snap-type: x mandatory;
 }
 
 .leadership-row::-webkit-scrollbar {
   display: none;
 }
 
-/* Aapka original Wave Logic as it is rakha hai */
-.leader-card:nth-child(odd) .leader-image-wrap {
-  border-radius: 50% 50% 0 0 / 0% 0% 0 0;
-}
-.leader-card:nth-child(even) .leader-image-wrap {
-      border-radius: 0 0 50% 50% / 0 0 0% 0;
-}
-/* ... baaki properties waisi hi hain ... */
-.leader-name, .leader-role {
+/* ================= LEADER CARD ================= */
+.leader-card {
+  min-width: clamp(220px, 70vw, 340px);
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  text-align: center;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  padding: clamp(15px, 3vw, 30px) clamp(12px, 2vw, 20px) clamp(20px, 4vw, 40px);
+  position: relative;
   overflow: hidden;
-  display: block;
 }
 
-/* Hover par text thoda upar jump karega */
-.leader-card:hover .leader-name {
-  transform: translateY(-3px);
-  transition: transform 0.3s ease;
+.leader-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
 }
+
+.leader-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 60px rgba(173, 86, 27, 0.4);
+  border-color: rgba(173, 86, 27, 0.5);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+.leader-card:hover::before {
+  left: 100%;
+}
+
+/* ================= IMAGE WRAP ================= */
+.leader-image-wrap {
+  height: clamp(200px, 30vw, 300px);
+  width: clamp(200px, 30vw, 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto clamp(15px, 2vw, 25px);
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(173, 86, 27, 0.2) 0%, rgba(255, 208, 127, 0.1) 100%);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3), 0 0 30px rgba(173, 86, 27, 0.2);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.leader-card:hover .leader-image-wrap {
+  transform: scale(1.08) rotateZ(2deg);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2), 0 0 50px rgba(173, 86, 27, 0.4);
+}
+
+.leader-image-wrap img {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.leader-card:hover .leader-image-wrap img {
+  transform: scale(1.05);
+}
+
+/* ================= NAME & ROLE ================= */
 .leader-name {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 700;
+  color: #ffd07f;
+  margin-bottom: clamp(6px, 1vw, 12px);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .leader-role {
-  transition: all 0.4s ease 0.1s; /* Role thoda late move hoga */
-  opacity: 0.7;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(12px, 1.2vw, 14px);
+  font-weight: 500;
+  color: #a8b0ba;
+  letter-spacing: 0.5px;
+  transition: all 0.4s ease 0.1s;
 }
 
 .leader-card:hover .leader-name {
-  transform: translateY(-5px);
   color: #fff;
+  transform: translateY(-5px);
 }
 
 .leader-card:hover .leader-role {
+  color: #ad561b;
   transform: translateY(-3px);
-  opacity: 1;
-  color: #ad561b; /* Role ka color change */
 }
 
+/* ================= DOTS NAVIGATION ================= */
+.leadership-dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(12px, 2vw, 20px);
+  margin-top: clamp(40px, 5vw, 60px);
+}
+
+.dots {
+  display: flex;
+  gap: clamp(8px, 1.5vw, 14px);
+  align-items: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: clamp(8px, 1.2vw, 12px);
+  height: clamp(8px, 1.2vw, 12px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+
+.dots span:hover {
+  background: rgba(255, 208, 127, 0.4);
+  border-color: #ffd07f;
+  transform: scale(1.2);
+}
+
+.dots .active {
+  background: #ffd07f;
+  border-color: #ad561b;
+  box-shadow: 0 0 20px rgba(255, 208, 127, 0.5);
+  transform: scale(1.4);
+}
+
+/* ================= CTA SECTION ================= */
+.leadership-cta {
+  width: 100%;
+  padding-inline: clamp(15px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: clamp(60px, 8vw, 100px);
+}
+
+.leadership-cta h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: clamp(28px, 3.5vw, 48px);
+  line-height: 1.3;
+  margin-bottom: clamp(12px, 1.5vw, 24px);
+  color: #ffffff;
+  background: linear-gradient(135deg, #fff 0%, #ddd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.leadership-cta h3 span {
+  color: #ad561b;
+  -webkit-text-fill-color: #ad561b;
+}
+
+.leadership-cta p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.3vw, 18px);
+  line-height: 1.7;
+  color: #a8b0ba;
+  margin-bottom: clamp(30px, 4vw, 50px);
+  max-width: 750px;
+}
+
+/* ================= CTA BUTTON ================= */
+.ctaa-btn {
+  width: clamp(180px, 20vw, 280px);
+  height: clamp(48px, 5vw, 56px);
+  border-radius: 50px;
+  background: linear-gradient(135deg, #CB6520 0%, #994D17 100%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: #ffffff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 0.05em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(173, 86, 27, 0.3);
+}
+
+.ctaa-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+.ctaa-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(173, 86, 27, 0.5);
+  border-color: #ffd07f;
+}
+
+.ctaa-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.ctaa-btn:active {
+  transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .leader-card {
+    min-width: clamp(200px, 60vw, 300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .leadership-title {
+    font-size: clamp(28px, 6vw, 40px);
+  }
+
+  .leader-card {
+    min-width: clamp(180px, 75vw, 280px);
+    padding: 12px 10px 25px;
+  }
+
+  .leader-image-wrap {
+    height: clamp(150px, 40vw, 250px);
+    width: clamp(150px, 40vw, 250px);
+  }
+
+  .leadership-dots-container {
+    margin-top: clamp(30px, 5vw, 50px);
+  }
+}
+
+@media (max-width: 480px) {
+  .leadership-container {
+    padding-inline: 12px;
+  }
+
+  .leader-card {
+    min-width: 90vw;
+    margin: 0 auto;
+  }
+
+  .leadership-row {
+    padding-left: 0;
+  }
+
+  .dots span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dots .active {
+    transform: scale(1.3);
+  }
+}
+
+/* ================= ACCESSIBILITY ================= */
+@media (prefers-reduced-motion: reduce) {
+  .leader-card,
+  .leader-image-wrap,
+  .leader-name,
+  .leader-role,
+  .dots span,
+  .ctaa-btn {
+    transition: none;
+  }
+}

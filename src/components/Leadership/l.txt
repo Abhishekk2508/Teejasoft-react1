@@ -72,164 +72,179 @@
   line-height: 1.5;
   
   /* Margin-bottom 70px desktop par achi hai, par mobile par gap kam hona chahiye */
-  margin-bottom: clamp(40px, 5vw, 70px);
+  /* margin-bottom: clamp(40px, 5vw, 70px); */
   
   max-width: 800px; /* Text ko bohot zyada wide hone se rokta hai */
   margin-inline: auto; /* Subtitle ko hamesha center mein rakhta hai */
 }
-/* ================= CARDS (Slider Support Added) ================= */
+
+/* ================= LEADERSHIP SLIDER (Modern Glass/Neumorphic) ================= */
 .leadership-row {
   display: flex;
   gap: 30px;
-  overflow-x: auto; /* Buttons ke liye enable kiya */
+  overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox hide scrollbar */
   padding-bottom: 20px;
+  padding-left: 15px;
+  scrollbar-width: none;
 }
 
 .leadership-row::-webkit-scrollbar {
-  display: none; /* Chrome/Safari hide scrollbar */
+  display: none;
 }
 
+/* ================= LEADER CARD ================= */
 .leader-card {
-  text-align: center;
-  min-width: 280px; /* Slider ke liye fixed width zaroori hai */
+  min-width: 260px;
   flex-shrink: 0;
+  text-align: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5), -6px -6px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  padding: 15px 10px 30px;
 }
 
-/* WAVE SHAPE (As it is) */
-.leader-image-wrap {
-  height: 320px;
+.leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.6), -8px -8px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* ================= IMAGE WRAP ================= */
+/* ================= LEADERSHIP SLIDER (Modern Glass/Neumorphic) ================= */
+.leadership-row {
   display: flex;
-  align-items: flex-end;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  scrollbar-width: none;
+}
+
+.leadership-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================= LEADER CARD ================= */
+.leader-card {
+  min-width: 260px;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5), -6px -6px 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  padding: 15px 10px 30px;
+}
+
+.leader-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.6), -8px -8px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* ================= IMAGE WRAP ================= */
+.leader-image-wrap {
+  height: 300px;
+  display: flex;
+  align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.leader-card:hover .leader-image-wrap {
+  transform: scale(1.05);
 }
 
 .leader-image-wrap img {
   width: 90%;
   height: auto;
-  object-fit: contain;
-  z-index: 2;
-  position: relative;
-}
-
-/* ODD CARDS */
-.leader-card:nth-child(odd) .leader-image-wrap {
-  border-radius: 50% 50% 0 0 / 15% 15% 0 0;
-}
-.leader-card:nth-child(odd) .leader-image-wrap::after {
-  content: '';
-  position: absolute;
-  bottom: -35px;
-  left: -10%;
-  width: 120%;
-  height: 70px;
-  background-color: #1c1a1a;
+  object-fit: cover;
   border-radius: 50%;
-  z-index: 3;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* EVEN CARDS */
-.leader-card:nth-child(even) .leader-image-wrap {
-  border-radius: 0 0 50% 50% / 0 0 15% 15%;
-}
-.leader-card:nth-child(even) .leader-image-wrap::before {
-  content: '';
-  position: absolute;
-  top: -35px;
-  left: -10%;
-  width: 120%;
-  height: 70px;
-  background-color: #1c1a1a;
-  border-radius: 50%;
-  z-index: 3;
-}
-
-/* TEXT (Figma specific) */
+/* ================= NAME & ROLE ================= */
 .leader-name {
-  margin-top: 25px;
-  font-family: 'Inter';
-  font-size: 27px;
-  font-weight: 600;
-  color: #ad561b;
-  text-transform: capitalize;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffd07f; /* Goldish highlight */
+  margin-bottom: 6px;
 }
 
 .leader-role {
-  display: block;
-  font-family: 'Inter';
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
   font-weight: 500;
-  color: #FFFFFF;
-  margin-top: 10px;
+  color: #ddd;
+  letter-spacing: 0.5px;
 }
 
-/* ================= NAV (148x148) ================= */
-/* ================= NAV (148x148 Circle) ================= */
-/* ================= NAV CONTAINER ================= */
+/* ================= NAVIGATION BUTTONS ================= */
 .leadership-nav {
-    /* Margin bhi screen ke hisaab se adjust hogi */
-    margin: clamp(40px, 5vw, 60px) 0 clamp(50px, 6vw, 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(20px, 4vw, 40px); /* Buttons ke beech ka gap mobile pe kam ho jayega */
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  /* margin: clamp(30px, 5vw, 60px) 0; */
 }
 
-/* ================= CIRCLE BUTTONS ================= */
 .nav-btn {
-    /* Size will scale from 90px (mobile) to 148px (desktop) */
-    width: clamp(90px, 12vw, 148px);
-    height: clamp(90px, 12vw, 148px);
-    
-    border: 1px solid #FFFFFF;
-    background: transparent;
-    color: #ad561b;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    
-    /* Font size also scales */
-    font-size: clamp(12px, 1.2vw, 16px);
-    
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 50%; 
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    position: relative;
-    overflow: hidden; /* For any hover effects */
+  width: clamp(80px, 10vw, 140px);
+  height: clamp(80px, 10vw, 140px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffd07f;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: clamp(12px, 1.2vw, 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-/* ================= ARROW & TEXT ================= */
-.nav-text {
-    margin-bottom: clamp(4px, 0.8vw, 8px);
+.nav-btn:hover {
+  background: rgba(255, 208, 127, 0.2);
+  color: #fff;
+  transform: scale(1.1);
+  border-color: #ffd07f;
 }
 
+/* ================= ARROW ================= */
 .nav-arrow {
-    /* Arrow line will scale from 35px to 54px */
-    width: clamp(35px, 4.5vw, 54px);
-    height: 1px;
-    background: #FFFFFF;
-    position: relative;
-    transition: 0.3s ease;
+  width: clamp(30px, 4vw, 50px);
+  height: 2px;
+  background: #ffd07f;
+  position: relative;
+  margin-top: 4px;
 }
 
-/* Arrow Tip (The triangle part) */
 .nav-arrow::after {
-    content: '';
-    position: absolute;
-    /* Tip size will scale slightly */
-    width: clamp(6px, 0.6vw, 8px);
-    height: clamp(6px, 0.6vw, 8px);
-    border-top: 1px solid white;
-    border-right: 1px solid white;
-    top: clamp(-3px, -0.4vw, -4px);
+  content: '';
+  position: absolute;
+  width: clamp(6px, 0.6vw, 8px);
+  height: clamp(6px, 0.6vw, 8px);
+  border-top: 2px solid #ffd07f;
+  border-right: 2px solid #ffd07f;
+  top: -3px;
 }
 
 .left-arrow::after { 
@@ -242,38 +257,152 @@
     transform: rotate(45deg); 
 }
 
-/* ================= HOVER EFFECTS ================= */
-.nav-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #ad561b;
-    color: #fff; /* Optional: text white ho jaye hover pe */
-    transform: scale(1.05); /* Subtle pop effect */
-}
-
-.nav-btn:hover .nav-arrow {
-    background: #ad561b;
-    width: clamp(40px, 5vw, 60px); /* Arrow slightly grows on hover */
-}
-
-.nav-btn:hover .nav-arrow::after {
-    border-color: #ad561b;
-}
-
-/* Mobile Touch Support */
-@media (max-width: 480px) {
-    .nav-btn:active {
-        transform: scale(0.95); /* Click feedback on mobile */
-    }
-}
+/* ================= DOTS ================= */
 .dots span {
   display: inline-block;
-  width: 20px;
-  height: 3px;
-  background: #444;
-  margin: 0 4px;
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  margin: 0 5px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
-.dots .active { background: #ad561b; }
 
+.dots .active {
+  background: #ffd07f;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .leader-card {
+    min-width: 200px;
+    padding-bottom: 20px;
+  }
+  .leader-image-wrap {
+    height: 220px;
+  }
+  .leader-name {
+    font-size: 20px;
+  }
+  .leader-role {
+    font-size: 13px;
+  }
+}
+
+/* ================= NAME & ROLE ================= */
+.leader-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffd07f; /* Goldish highlight */
+  margin-bottom: 6px;
+}
+
+.leader-role {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ddd;
+  letter-spacing: 0.5px;
+}
+
+/* ================= NAVIGATION BUTTONS ================= */
+.leadership-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  /* margin: clamp(30px, 5vw, 60px) 0; */
+}
+
+.nav-btn {
+  width: clamp(80px, 10vw, 140px);
+  height: clamp(80px, 10vw, 140px);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffd07f;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: clamp(12px, 1.2vw, 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 208, 127, 0.2);
+  color: #fff;
+  transform: scale(1.1);
+  border-color: #ffd07f;
+}
+
+/* ================= ARROW ================= */
+.nav-arrow {
+  width: clamp(30px, 4vw, 50px);
+  height: 2px;
+  background: #ffd07f;
+  position: relative;
+  margin-top: 4px;
+}
+
+.nav-arrow::after {
+  content: '';
+  position: absolute;
+  width: clamp(6px, 0.6vw, 8px);
+  height: clamp(6px, 0.6vw, 8px);
+  border-top: 2px solid #ffd07f;
+  border-right: 2px solid #ffd07f;
+  top: -3px;
+}
+
+.left-arrow::after { 
+    left: 0; 
+    transform: rotate(-135deg); 
+}
+
+.right-arrow::after { 
+    right: 0; 
+    transform: rotate(45deg); 
+}
+
+/* ================= DOTS ================= */
+.dots span {
+  display: inline-block;
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  margin: 0 5px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.dots .active {
+  background: #ffd07f;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .leader-card {
+    min-width: 200px;
+    padding-bottom: 20px;
+  }
+  .leader-image-wrap {
+    height: 220px;
+  }
+  .leader-name {
+    font-size: 20px;
+  }
+  .leader-role {
+    font-size: 13px;
+  }
+}
 /* ================= CTA SECTION ================= */
 
 .leadership-cta {
@@ -373,10 +502,10 @@
 
 /* Aapka original Wave Logic as it is rakha hai */
 .leader-card:nth-child(odd) .leader-image-wrap {
-  border-radius: 50% 50% 0 0 / 15% 15% 0 0;
+  border-radius: 50% 50% 0 0 / 0% 0% 0 0;
 }
 .leader-card:nth-child(even) .leader-image-wrap {
-  border-radius: 0 0 50% 50% / 0 0 15% 15%;
+      border-radius: 0 0 50% 50% / 0 0 0% 0;
 }
 /* ... baaki properties waisi hi hain ... */
 .leader-name, .leader-role {
@@ -409,106 +538,3 @@
   color: #ad561b; /* Role ka color change */
 }
 
-
-------------------------------
-
-import React, { useRef, useEffect } from "react";
-import "./Leadership.css";
-
-// Correct image imports
-import T1 from "../../assets/images/CEO.png";
-import T2 from "../../assets/images/ravinder.png";
-import T3 from "../../assets/images/yogesh.png";
-import T4 from "../../assets/images/pooja.png";
-import T5 from "../../assets/images/ankit.png";
-import T6 from "../../assets/images/abhishek.png";
-import T7 from "../../assets/images/seomanager.png";
-
-const leaders = [
-  { name: "Inderpreet Singh", role: "CEO & Founder", img: T1, bg: "#FFE0C2" },
-  { name: "Ravinder Sharma", role: "Full-Stack Developer", img: T2, bg: "#FFD6D6" },
-  { name: "Yogesh", role: "SEO & Digital Marketing Expert", img: T3, bg: "#DCEFFF" },
-  { name: "Pooja", role: "Social Media Manager", img: T4, bg: "#FFE9CC" },
-  { name: "Ankit Mandial", role: "UI/UX And Graphic Designer", img: T5, bg: "#FFD6D6" },
-  { name: "Abhishek Kumar", role: "Software Engineer", img: T6, bg: "#DCEFFF" },
-  { name: "Robin Beni", role: "Digital Marketing Manager", img: T7, bg: "#FFE9CC" },
-];
-
-export default function Leadership() {
-  const scrollRef = useRef(null);
-
-  // Manual Scroll Function
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const scrollAmount = 310; // Card width + gap
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  // --- AUTOMATIC SCROLL LOGIC ---
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (scrollRef.current) {
-        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-        
-        // Agar end tak pahunch gaye ho toh wapas start pe aa jao
-        if (scrollLeft + clientWidth >= scrollWidth - 5) {
-          scrollRef.current.scrollTo({ left: 0, behavior: "smooth" });
-        } else {
-          scroll("right");
-        }
-      }
-    }, 3000); // Har 3 second mein slide hoga
-
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, []);
-
-  return (
-    <section className="leadership-section">
-      <div className="leadership-container">
-        <span className="leadership-label">Our Team</span>
-        <h2 className="leadership-title">Meet Our Visionaries</h2>
-        <p className="leadership-subtitle">
-          The masterminds driving innovation and excellence
-        </p>
-
-        <div className="leadership-row-container">
-          <div className="leadership-row" ref={scrollRef}>
-            {leaders.map((item, i) => (
-              <div className="leader-card" key={i}>
-                <div className="leader-image-wrap" style={{ background: item.bg }}>
-                  <img src={item.img} alt={item.name} />
-                </div>
-                <h4 className="leader-name">{item.name}</h4>
-                <span className="leader-role">{item.role}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="leadership-nav">
-          <button className="nav-btn" onClick={() => scroll("left")}>
-            <span className="nav-text">Prev</span>
-            <div className="nav-arrow left-arrow"></div>
-          </button>
-
-         
-
-          <button className="nav-btn" onClick={() => scroll("right")}>
-            <span className="nav-text">Next</span>
-            <div className="nav-arrow right-arrow"></div>
-          </button>
-        </div>
-
-        <div className="leadership-cta">
-          <h3>Ready to <span>Transform</span> Your Business?</h3>
-          <p>Let's work together to bring your vision to life</p>
-          <button className="ctaa-btn">Get Started Today</button>
-        </div>
-      </div>
-    </section>
-  );
-}

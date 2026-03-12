@@ -117,7 +117,7 @@ export default function Leadership() {
 
         </div>
 
-        <div className="leadership-nav">
+        {/* <div className="leadership-nav">
 
           <button
             className="nav-btn"
@@ -133,7 +133,7 @@ export default function Leadership() {
             Next
           </button>
 
-        </div>
+        </div> */}
 
       </div>
 
