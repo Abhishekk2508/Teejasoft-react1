@@ -32,7 +32,7 @@ const projects = [
   {
     title: "SEO Campaign",
     img: p4,
-    link: "/SeoProject",
+    link: "/ecommerce-project",
   },
   {
     title: "Association Platform",
